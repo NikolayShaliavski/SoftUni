@@ -1,0 +1,6 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\14.DreamItem\bin\Debug\14.DreamItem.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\14.DreamItem\bin\Debug\14.DreamItem.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\14.DreamItem\bin\Debug\14.DreamItem.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\14.DreamItem\obj\Debug\14.DreamItem.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\14.DreamItem\obj\Debug\14.DreamItem.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\14.DreamItem\obj\Debug\14.DreamItem.pdb

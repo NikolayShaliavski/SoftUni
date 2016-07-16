@@ -1,0 +1,6 @@
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\02.DetectiveBoev\bin\Debug\02.DetectiveBoev.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\02.DetectiveBoev\bin\Debug\02.DetectiveBoev.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\02.DetectiveBoev\bin\Debug\02.DetectiveBoev.pdb
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\02.DetectiveBoev\obj\Debug\02.DetectiveBoev.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\02.DetectiveBoev\obj\Debug\02.DetectiveBoev.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\02.DetectiveBoev\obj\Debug\02.DetectiveBoev.pdb

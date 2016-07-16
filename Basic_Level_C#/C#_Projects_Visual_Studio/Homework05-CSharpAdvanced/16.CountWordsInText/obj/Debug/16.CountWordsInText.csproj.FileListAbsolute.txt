@@ -1,0 +1,5 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\16.CountWordsInText\bin\Debug\16.CountWordsInText.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\16.CountWordsInText\bin\Debug\16.CountWordsInText.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\16.CountWordsInText\bin\Debug\16.CountWordsInText.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\16.CountWordsInText\obj\Debug\16.CountWordsInText.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\16.CountWordsInText\obj\Debug\16.CountWordsInText.pdb

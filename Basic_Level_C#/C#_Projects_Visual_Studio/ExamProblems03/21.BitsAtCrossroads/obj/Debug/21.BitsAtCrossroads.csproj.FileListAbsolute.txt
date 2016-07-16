@@ -1,0 +1,9 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\21.BitsAtCrossroads\bin\Debug\21.BitsAtCrossroads.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\21.BitsAtCrossroads\bin\Debug\21.BitsAtCrossroads.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\21.BitsAtCrossroads\bin\Debug\21.BitsAtCrossroads.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\21.BitsAtCrossroads\obj\Debug\21.BitsAtCrossroads.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\21.BitsAtCrossroads\obj\Debug\21.BitsAtCrossroads.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\21.BitsAtCrossroads\obj\Debug\21.BitsAtCrossroads.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems03\21.BitsAtCrossroads\bin\Debug\21.BitsAtCrossroads.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems03\21.BitsAtCrossroads\obj\Debug\21.BitsAtCrossroads.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems03\21.BitsAtCrossroads\obj\Debug\21.BitsAtCrossroads.pdb

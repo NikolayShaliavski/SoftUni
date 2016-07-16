@@ -1,0 +1,6 @@
+c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\03.StripedTowel\bin\Debug\03.StripedTowel.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\03.StripedTowel\obj\Debug\03.StripedTowel.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\03.StripedTowel\bin\Debug\03.StripedTowel.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\03.StripedTowel\bin\Debug\03.StripedTowel.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\03.StripedTowel\obj\Debug\03.StripedTowel.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\03.StripedTowel\obj\Debug\03.StripedTowel.pdb

@@ -1,0 +1,6 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\10.JoinLists\bin\Debug\10.JoinLists.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\10.JoinLists\bin\Debug\10.JoinLists.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\10.JoinLists\bin\Debug\10.JoinLists.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\10.JoinLists\obj\Debug\10.JoinLists.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\10.JoinLists\obj\Debug\10.JoinLists.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\10.JoinLists\obj\Debug\10.JoinLists.pdb

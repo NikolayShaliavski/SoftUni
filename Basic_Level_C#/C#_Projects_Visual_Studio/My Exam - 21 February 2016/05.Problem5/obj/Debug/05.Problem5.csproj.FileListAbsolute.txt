@@ -1,0 +1,12 @@
+c:\users\nick\documents\visual studio 2015\Projects\My Exam - 21 February 2016\05.Problem5\bin\Debug\05.Problem5.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\05.Problem5\bin\Debug\05.Problem5.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\05.Problem5\bin\Debug\05.Problem5.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\05.Problem5\obj\Debug\05.Problem5.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\05.Problem5\obj\Debug\05.Problem5.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\05.Problem5\obj\Debug\05.Problem5.pdb
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\05.Problem5\bin\Debug\05.Problem5.exe.config
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\05.Problem5\obj\Debug\05.Problem5.exe
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\05.Problem5\obj\Debug\05.Problem5.pdb
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\05.Problem5\bin\Debug\05.Problem5.exe
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\05.Problem5\bin\Debug\05.Problem5.pdb
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\05.Problem5\obj\Debug\05.Problem5.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\03.DivideBySevenAndFive\bin\Debug\03.DivideBySevenAndFive.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\03.DivideBySevenAndFive\bin\Debug\03.DivideBySevenAndFive.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\03.DivideBySevenAndFive\bin\Debug\03.DivideBySevenAndFive.pdb
+c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\03.DivideBySevenAndFive\obj\Debug\03.DivideBySevenAndFive.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\03.DivideBySevenAndFive\obj\Debug\03.DivideBySevenAndFive.pdb
+C:\Users\Nick\Desktop\Projects\Homework02 - OperatorsAndExpressions\03.DivideBySevenAndFive\bin\Debug\03.DivideBySevenAndFive.exe.config
+C:\Users\Nick\Desktop\Projects\Homework02 - OperatorsAndExpressions\03.DivideBySevenAndFive\obj\Debug\03.DivideBySevenAndFive.exe
+C:\Users\Nick\Desktop\Projects\Homework02 - OperatorsAndExpressions\03.DivideBySevenAndFive\obj\Debug\03.DivideBySevenAndFive.pdb

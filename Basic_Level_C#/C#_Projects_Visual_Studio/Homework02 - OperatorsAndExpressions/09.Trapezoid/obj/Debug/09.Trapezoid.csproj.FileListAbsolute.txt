@@ -1,0 +1,6 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\09.Trapezoid\bin\Debug\09.Trapezoid.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\09.Trapezoid\bin\Debug\09.Trapezoid.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\09.Trapezoid\bin\Debug\09.Trapezoid.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\09.Trapezoid\obj\Debug\09.Trapezoid.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\09.Trapezoid\obj\Debug\09.Trapezoid.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\09.Trapezoid\obj\Debug\09.Trapezoid.pdb

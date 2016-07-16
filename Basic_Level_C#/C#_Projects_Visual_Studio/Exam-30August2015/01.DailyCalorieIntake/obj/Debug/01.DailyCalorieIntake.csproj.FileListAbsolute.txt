@@ -1,0 +1,6 @@
+c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\01.DailyCalorieIntake\bin\Debug\01.DailyCalorieIntake.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\01.DailyCalorieIntake\bin\Debug\01.DailyCalorieIntake.exe
+c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\01.DailyCalorieIntake\bin\Debug\01.DailyCalorieIntake.pdb
+c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\01.DailyCalorieIntake\obj\Debug\01.DailyCalorieIntake.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\01.DailyCalorieIntake\obj\Debug\01.DailyCalorieIntake.exe
+c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\01.DailyCalorieIntake\obj\Debug\01.DailyCalorieIntake.pdb

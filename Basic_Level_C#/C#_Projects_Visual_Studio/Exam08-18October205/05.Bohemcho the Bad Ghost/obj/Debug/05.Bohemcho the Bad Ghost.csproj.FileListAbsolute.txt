@@ -1,0 +1,6 @@
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\05.Bohemcho the Bad Ghost\bin\Debug\05.Bohemcho the Bad Ghost.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\05.Bohemcho the Bad Ghost\bin\Debug\05.Bohemcho the Bad Ghost.exe
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\05.Bohemcho the Bad Ghost\bin\Debug\05.Bohemcho the Bad Ghost.pdb
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\05.Bohemcho the Bad Ghost\obj\Debug\05.Bohemcho the Bad Ghost.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\05.Bohemcho the Bad Ghost\obj\Debug\05.Bohemcho the Bad Ghost.exe
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\05.Bohemcho the Bad Ghost\obj\Debug\05.Bohemcho the Bad Ghost.pdb

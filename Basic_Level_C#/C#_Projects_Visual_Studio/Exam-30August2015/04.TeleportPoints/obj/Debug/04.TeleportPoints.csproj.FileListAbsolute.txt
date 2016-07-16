@@ -1,0 +1,6 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\04.TeleportPoints\bin\Debug\04.TeleportPoints.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\04.TeleportPoints\bin\Debug\04.TeleportPoints.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\04.TeleportPoints\bin\Debug\04.TeleportPoints.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\04.TeleportPoints\obj\Debug\04.TeleportPoints.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\04.TeleportPoints\obj\Debug\04.TeleportPoints.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\04.TeleportPoints\obj\Debug\04.TeleportPoints.pdb

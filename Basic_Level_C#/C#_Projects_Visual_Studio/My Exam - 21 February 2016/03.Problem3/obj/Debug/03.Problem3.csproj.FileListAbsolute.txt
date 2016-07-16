@@ -1,0 +1,10 @@
+c:\users\nick\documents\visual studio 2015\Projects\My Exam - 21 February 2016\03.Problem3\bin\Debug\03.Problem3.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\03.Problem3\bin\Debug\03.Problem3.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\03.Problem3\bin\Debug\03.Problem3.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\03.Problem3\obj\Debug\03.Problem3.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\03.Problem3\obj\Debug\03.Problem3.pdb
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\03.Problem3\bin\Debug\03.Problem3.exe.config
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\03.Problem3\obj\Debug\03.Problem3.exe
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\03.Problem3\obj\Debug\03.Problem3.pdb
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\03.Problem3\bin\Debug\03.Problem3.exe
+C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\03.Problem3\bin\Debug\03.Problem3.pdb

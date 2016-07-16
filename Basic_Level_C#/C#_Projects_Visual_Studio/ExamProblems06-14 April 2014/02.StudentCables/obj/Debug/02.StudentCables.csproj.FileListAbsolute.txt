@@ -1,0 +1,6 @@
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\02.StudentCables\bin\Debug\02.StudentCables.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\02.StudentCables\bin\Debug\02.StudentCables.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\02.StudentCables\bin\Debug\02.StudentCables.pdb
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\02.StudentCables\obj\Debug\02.StudentCables.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\02.StudentCables\obj\Debug\02.StudentCables.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\02.StudentCables\obj\Debug\02.StudentCables.pdb

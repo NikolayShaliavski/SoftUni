@@ -1,0 +1,6 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\11.ExtractThirdBit\bin\Debug\11.ExtractThirdBit.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\11.ExtractThirdBit\bin\Debug\11.ExtractThirdBit.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\11.ExtractThirdBit\bin\Debug\11.ExtractThirdBit.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\11.ExtractThirdBit\obj\Debug\11.ExtractThirdBit.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\11.ExtractThirdBit\obj\Debug\11.ExtractThirdBit.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\11.ExtractThirdBit\obj\Debug\11.ExtractThirdBit.pdb

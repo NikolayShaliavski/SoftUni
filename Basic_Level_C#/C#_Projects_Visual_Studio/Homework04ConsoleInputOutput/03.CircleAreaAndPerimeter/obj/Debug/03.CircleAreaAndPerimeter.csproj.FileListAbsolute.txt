@@ -1,0 +1,5 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\03.CircleAreaAndPerimeter\bin\Debug\03.CircleAreaAndPerimeter.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\03.CircleAreaAndPerimeter\bin\Debug\03.CircleAreaAndPerimeter.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\03.CircleAreaAndPerimeter\bin\Debug\03.CircleAreaAndPerimeter.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\03.CircleAreaAndPerimeter\obj\Debug\03.CircleAreaAndPerimeter.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\03.CircleAreaAndPerimeter\obj\Debug\03.CircleAreaAndPerimeter.pdb

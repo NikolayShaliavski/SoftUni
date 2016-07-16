@@ -1,0 +1,9 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\17.BookProblem\bin\Debug\17.BookProblem.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\17.BookProblem\bin\Debug\17.BookProblem.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\17.BookProblem\bin\Debug\17.BookProblem.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\17.BookProblem\obj\Debug\17.BookProblem.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\17.BookProblem\obj\Debug\17.BookProblem.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\17.BookProblem\obj\Debug\17.BookProblem.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems03\17.BookProblem\bin\Debug\17.BookProblem.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems03\17.BookProblem\obj\Debug\17.BookProblem.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems03\17.BookProblem\obj\Debug\17.BookProblem.pdb

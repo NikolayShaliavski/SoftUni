@@ -1,0 +1,6 @@
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\02.BeerStock\bin\Debug\02.BeerStock.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\02.BeerStock\bin\Debug\02.BeerStock.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\02.BeerStock\bin\Debug\02.BeerStock.pdb
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\02.BeerStock\obj\Debug\02.BeerStock.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\02.BeerStock\obj\Debug\02.BeerStock.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\02.BeerStock\obj\Debug\02.BeerStock.pdb

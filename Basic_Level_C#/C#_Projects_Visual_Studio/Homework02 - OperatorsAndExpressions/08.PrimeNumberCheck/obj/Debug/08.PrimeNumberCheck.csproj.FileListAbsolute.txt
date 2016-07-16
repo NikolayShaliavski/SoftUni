@@ -1,0 +1,6 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\08.PrimeNumberCheck\bin\Debug\08.PrimeNumberCheck.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\08.PrimeNumberCheck\bin\Debug\08.PrimeNumberCheck.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\08.PrimeNumberCheck\bin\Debug\08.PrimeNumberCheck.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\08.PrimeNumberCheck\obj\Debug\08.PrimeNumberCheck.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\08.PrimeNumberCheck\obj\Debug\08.PrimeNumberCheck.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\08.PrimeNumberCheck\obj\Debug\08.PrimeNumberCheck.pdb

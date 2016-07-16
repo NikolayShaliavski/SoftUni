@@ -1,0 +1,6 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\06.FallingRocks\bin\Debug\06.FallingRocks.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\06.FallingRocks\bin\Debug\06.FallingRocks.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\06.FallingRocks\bin\Debug\06.FallingRocks.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\06.FallingRocks\obj\Debug\06.FallingRocks.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\06.FallingRocks\obj\Debug\06.FallingRocks.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\06.FallingRocks\obj\Debug\06.FallingRocks.pdb

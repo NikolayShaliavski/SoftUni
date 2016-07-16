@@ -1,0 +1,6 @@
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLifeDemo\bin\Debug\05.GameOfLifeDemo.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLifeDemo\bin\Debug\05.GameOfLifeDemo.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLifeDemo\bin\Debug\05.GameOfLifeDemo.pdb
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLifeDemo\obj\Debug\05.GameOfLifeDemo.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLifeDemo\obj\Debug\05.GameOfLifeDemo.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLifeDemo\obj\Debug\05.GameOfLifeDemo.pdb

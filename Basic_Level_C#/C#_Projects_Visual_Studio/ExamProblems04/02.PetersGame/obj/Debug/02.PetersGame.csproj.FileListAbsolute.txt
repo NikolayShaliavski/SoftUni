@@ -1,0 +1,6 @@
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\02.PetersGame\bin\Debug\02.PetersGame.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\02.PetersGame\bin\Debug\02.PetersGame.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\02.PetersGame\bin\Debug\02.PetersGame.pdb
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\02.PetersGame\obj\Debug\02.PetersGame.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\02.PetersGame\obj\Debug\02.PetersGame.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\02.PetersGame\obj\Debug\02.PetersGame.pdb

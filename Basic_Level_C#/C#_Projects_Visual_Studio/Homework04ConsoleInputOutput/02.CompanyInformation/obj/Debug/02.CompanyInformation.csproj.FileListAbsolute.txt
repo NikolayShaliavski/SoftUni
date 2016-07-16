@@ -1,0 +1,6 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\02.CompanyInformation\bin\Debug\02.CompanyInformation.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\02.CompanyInformation\bin\Debug\02.CompanyInformation.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\02.CompanyInformation\bin\Debug\02.CompanyInformation.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\02.CompanyInformation\obj\Debug\02.CompanyInformation.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\02.CompanyInformation\obj\Debug\02.CompanyInformation.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\02.CompanyInformation\obj\Debug\02.CompanyInformation.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\01.DeclareVariables\bin\Debug\01.DeclareVariables.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\01.DeclareVariables\bin\Debug\01.DeclareVariables.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\01.DeclareVariables\bin\Debug\01.DeclareVariables.pdb
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\01.DeclareVariables\obj\Debug\01.DeclareVariables.csprojResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\01.DeclareVariables\obj\Debug\01.DeclareVariables.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\01.DeclareVariables\obj\Debug\01.DeclareVariables.pdb

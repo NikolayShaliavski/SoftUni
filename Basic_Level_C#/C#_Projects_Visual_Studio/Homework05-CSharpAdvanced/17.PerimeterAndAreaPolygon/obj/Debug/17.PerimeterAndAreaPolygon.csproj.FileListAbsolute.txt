@@ -1,0 +1,6 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\17.PerimeterAndAreaPolygon\bin\Debug\17.PerimeterAndAreaPolygon.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\17.PerimeterAndAreaPolygon\bin\Debug\17.PerimeterAndAreaPolygon.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\17.PerimeterAndAreaPolygon\bin\Debug\17.PerimeterAndAreaPolygon.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\17.PerimeterAndAreaPolygon\obj\Debug\17.PerimeterAndAreaPolygon.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\17.PerimeterAndAreaPolygon\obj\Debug\17.PerimeterAndAreaPolygon.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\17.PerimeterAndAreaPolygon\obj\Debug\17.PerimeterAndAreaPolygon.pdb

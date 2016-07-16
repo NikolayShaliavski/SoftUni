@@ -1,0 +1,6 @@
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\01.TheBetterMusicProducer\bin\Debug\01.TheBetterMusicProducer.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\01.TheBetterMusicProducer\bin\Debug\01.TheBetterMusicProducer.exe
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\01.TheBetterMusicProducer\bin\Debug\01.TheBetterMusicProducer.pdb
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\01.TheBetterMusicProducer\obj\Debug\01.TheBetterMusicProducer.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\01.TheBetterMusicProducer\obj\Debug\01.TheBetterMusicProducer.exe
+c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\01.TheBetterMusicProducer\obj\Debug\01.TheBetterMusicProducer.pdb

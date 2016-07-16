@@ -1,0 +1,5 @@
+c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\NumberSequence\bin\Debug\NumberSequence.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\NumberSequence\bin\Debug\NumberSequence.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\NumberSequence\bin\Debug\NumberSequence.pdb
+c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\NumberSequence\obj\Debug\NumberSequence.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\NumberSequence\obj\Debug\NumberSequence.pdb

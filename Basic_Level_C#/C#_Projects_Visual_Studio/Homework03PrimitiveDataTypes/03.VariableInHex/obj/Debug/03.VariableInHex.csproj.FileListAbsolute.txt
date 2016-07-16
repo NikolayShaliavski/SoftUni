@@ -1,0 +1,5 @@
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\03.VariableInHex\bin\Debug\03.VariableInHex.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\03.VariableInHex\bin\Debug\03.VariableInHex.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\03.VariableInHex\bin\Debug\03.VariableInHex.pdb
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\03.VariableInHex\obj\Debug\03.VariableInHex.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\03.VariableInHex\obj\Debug\03.VariableInHex.pdb

@@ -1,0 +1,10 @@
+c:\users\nick\documents\visual studio 2015\Projects\LAB-Exam08November2014\03.Roklq\bin\Debug\03.Roklq.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\LAB-Exam08November2014\03.Roklq\bin\Debug\03.Roklq.exe
+c:\users\nick\documents\visual studio 2015\Projects\LAB-Exam08November2014\03.Roklq\bin\Debug\03.Roklq.pdb
+c:\users\nick\documents\visual studio 2015\Projects\LAB-Exam08November2014\03.Roklq\obj\Debug\03.Roklq.exe
+c:\users\nick\documents\visual studio 2015\Projects\LAB-Exam08November2014\03.Roklq\obj\Debug\03.Roklq.pdb
+C:\Users\Nick\Desktop\Projects\LAB-Exam08November2014\03.Roklq\bin\Debug\03.Roklq.exe.config
+C:\Users\Nick\Desktop\Projects\LAB-Exam08November2014\03.Roklq\obj\Debug\03.Roklq.exe
+C:\Users\Nick\Desktop\Projects\LAB-Exam08November2014\03.Roklq\obj\Debug\03.Roklq.pdb
+C:\Users\Nick\Desktop\Projects\LAB-Exam08November2014\03.Roklq\bin\Debug\03.Roklq.exe
+C:\Users\Nick\Desktop\Projects\LAB-Exam08November2014\03.Roklq\bin\Debug\03.Roklq.pdb

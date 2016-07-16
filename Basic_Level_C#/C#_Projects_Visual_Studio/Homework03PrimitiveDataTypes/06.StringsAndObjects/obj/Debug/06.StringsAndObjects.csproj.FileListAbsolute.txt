@@ -1,0 +1,5 @@
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\06.StringsAndObjects\bin\Debug\06.StringsAndObjects.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\06.StringsAndObjects\bin\Debug\06.StringsAndObjects.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\06.StringsAndObjects\bin\Debug\06.StringsAndObjects.pdb
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\06.StringsAndObjects\obj\Debug\06.StringsAndObjects.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\06.StringsAndObjects\obj\Debug\06.StringsAndObjects.pdb

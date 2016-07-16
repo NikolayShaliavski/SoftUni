@@ -1,0 +1,5 @@
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\14.ComparingFloats\bin\Debug\14.ComparingFloats.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\14.ComparingFloats\bin\Debug\14.ComparingFloats.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\14.ComparingFloats\bin\Debug\14.ComparingFloats.pdb
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\14.ComparingFloats\obj\Debug\14.ComparingFloats.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\14.ComparingFloats\obj\Debug\14.ComparingFloats.pdb

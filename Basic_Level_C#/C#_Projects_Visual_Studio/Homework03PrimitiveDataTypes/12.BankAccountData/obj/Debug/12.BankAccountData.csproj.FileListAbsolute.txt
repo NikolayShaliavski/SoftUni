@@ -1,0 +1,5 @@
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\12.BankAccountData\bin\Debug\12.BankAccountData.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\12.BankAccountData\bin\Debug\12.BankAccountData.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\12.BankAccountData\bin\Debug\12.BankAccountData.pdb
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\12.BankAccountData\obj\Debug\12.BankAccountData.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\12.BankAccountData\obj\Debug\12.BankAccountData.pdb

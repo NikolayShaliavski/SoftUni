@@ -1,0 +1,6 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\03.PrimesInRange\bin\Debug\03.PrimesInRange.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\03.PrimesInRange\bin\Debug\03.PrimesInRange.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\03.PrimesInRange\bin\Debug\03.PrimesInRange.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\03.PrimesInRange\obj\Debug\03.PrimesInRange.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\03.PrimesInRange\obj\Debug\03.PrimesInRange.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\03.PrimesInRange\obj\Debug\03.PrimesInRange.pdb

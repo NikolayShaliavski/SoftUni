@@ -1,0 +1,5 @@
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\10.ExchangeValues\bin\Debug\10.ExchangeValues.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\10.ExchangeValues\bin\Debug\10.ExchangeValues.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\10.ExchangeValues\bin\Debug\10.ExchangeValues.pdb
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\10.ExchangeValues\obj\Debug\10.ExchangeValues.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\10.ExchangeValues\obj\Debug\10.ExchangeValues.pdb

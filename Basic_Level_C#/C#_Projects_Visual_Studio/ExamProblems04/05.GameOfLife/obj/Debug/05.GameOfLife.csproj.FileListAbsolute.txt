@@ -1,0 +1,5 @@
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLife\bin\Debug\05.GameOfLife.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLife\bin\Debug\05.GameOfLife.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLife\bin\Debug\05.GameOfLife.pdb
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLife\obj\Debug\05.GameOfLife.exe
+c:\users\nick\documents\visual studio 2015\Projects\ExamProblems04\05.GameOfLife\obj\Debug\05.GameOfLife.pdb

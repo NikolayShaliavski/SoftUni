@@ -1,0 +1,6 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\13.BinaryToDecimal\bin\Debug\13.BinaryToDecimal.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\13.BinaryToDecimal\bin\Debug\13.BinaryToDecimal.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\13.BinaryToDecimal\bin\Debug\13.BinaryToDecimal.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\13.BinaryToDecimal\obj\Debug\13.BinaryToDecimal.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\13.BinaryToDecimal\obj\Debug\13.BinaryToDecimal.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\13.BinaryToDecimal\obj\Debug\13.BinaryToDecimal.pdb

@@ -1,0 +1,5 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\06.FactorialNAndK\bin\Debug\06.FactorialNAndK.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\06.FactorialNAndK\bin\Debug\06.FactorialNAndK.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\06.FactorialNAndK\bin\Debug\06.FactorialNAndK.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\06.FactorialNAndK\obj\Debug\06.FactorialNAndK.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\06.FactorialNAndK\obj\Debug\06.FactorialNAndK.pdb

@@ -1,0 +1,5 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\07.MatrixOfPalindromes\bin\Debug\07.MatrixOfPalindromes.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\07.MatrixOfPalindromes\bin\Debug\07.MatrixOfPalindromes.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\07.MatrixOfPalindromes\bin\Debug\07.MatrixOfPalindromes.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\07.MatrixOfPalindromes\obj\Debug\07.MatrixOfPalindromes.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\07.MatrixOfPalindromes\obj\Debug\07.MatrixOfPalindromes.pdb

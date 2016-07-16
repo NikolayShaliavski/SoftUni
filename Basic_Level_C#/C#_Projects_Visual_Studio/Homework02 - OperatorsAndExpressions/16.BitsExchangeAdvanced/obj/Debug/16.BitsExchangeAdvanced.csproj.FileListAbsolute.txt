@@ -1,0 +1,5 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\16.BitsExchangeAdvanced\bin\Debug\16.BitsExchangeAdvanced.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\16.BitsExchangeAdvanced\bin\Debug\16.BitsExchangeAdvanced.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\16.BitsExchangeAdvanced\bin\Debug\16.BitsExchangeAdvanced.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\16.BitsExchangeAdvanced\obj\Debug\16.BitsExchangeAdvanced.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\16.BitsExchangeAdvanced\obj\Debug\16.BitsExchangeAdvanced.pdb

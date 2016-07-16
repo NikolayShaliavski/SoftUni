@@ -1,0 +1,15 @@
+c:\users\hp\documents\visual studio 2015\Projects\ExamProblems2\15.MagicWand\bin\Debug\15.MagicWand.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\ExamProblems2\15.MagicWand\bin\Debug\15.MagicWand.exe
+c:\users\hp\documents\visual studio 2015\Projects\ExamProblems2\15.MagicWand\bin\Debug\15.MagicWand.pdb
+c:\users\hp\documents\visual studio 2015\Projects\ExamProblems2\15.MagicWand\obj\Debug\15.MagicWand.csprojResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2015\Projects\ExamProblems2\15.MagicWand\obj\Debug\15.MagicWand.exe
+c:\users\hp\documents\visual studio 2015\Projects\ExamProblems2\15.MagicWand\obj\Debug\15.MagicWand.pdb
+C:\Users\Nick\Desktop\ExamProblems2\15.MagicWand\bin\Debug\15.MagicWand.exe.config
+C:\Users\Nick\Desktop\ExamProblems2\15.MagicWand\obj\Debug\15.MagicWand.exe
+C:\Users\Nick\Desktop\ExamProblems2\15.MagicWand\obj\Debug\15.MagicWand.pdb
+C:\Users\Nick\Desktop\ExamProblems2\15.MagicWand\bin\Debug\15.MagicWand.exe
+C:\Users\Nick\Desktop\ExamProblems2\15.MagicWand\bin\Debug\15.MagicWand.pdb
+C:\Users\Nick\Desktop\ExamProblems2\15.MagicWand\obj\Debug\15.MagicWand.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems2\15.MagicWand\bin\Debug\15.MagicWand.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems2\15.MagicWand\obj\Debug\15.MagicWand.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems2\15.MagicWand\obj\Debug\15.MagicWand.pdb

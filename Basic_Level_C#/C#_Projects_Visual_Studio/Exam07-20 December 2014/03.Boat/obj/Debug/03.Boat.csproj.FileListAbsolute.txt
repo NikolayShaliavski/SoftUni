@@ -1,0 +1,5 @@
+c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\03.Boat\bin\Debug\03.Boat.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\03.Boat\bin\Debug\03.Boat.exe
+c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\03.Boat\bin\Debug\03.Boat.pdb
+c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\03.Boat\obj\Debug\03.Boat.exe
+c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\03.Boat\obj\Debug\03.Boat.pdb

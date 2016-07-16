@@ -1,0 +1,5 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems05July2015\05.WiggleWiggle\bin\Debug\05.WiggleWiggle.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems05July2015\05.WiggleWiggle\bin\Debug\05.WiggleWiggle.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems05July2015\05.WiggleWiggle\bin\Debug\05.WiggleWiggle.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems05July2015\05.WiggleWiggle\obj\Debug\05.WiggleWiggle.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems05July2015\05.WiggleWiggle\obj\Debug\05.WiggleWiggle.pdb

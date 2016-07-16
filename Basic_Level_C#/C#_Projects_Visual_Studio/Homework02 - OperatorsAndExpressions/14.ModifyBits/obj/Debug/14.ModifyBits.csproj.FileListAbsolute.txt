@@ -1,0 +1,5 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\14.ModifyBits\bin\Debug\14.ModifyBits.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\14.ModifyBits\bin\Debug\14.ModifyBits.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\14.ModifyBits\bin\Debug\14.ModifyBits.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\14.ModifyBits\obj\Debug\14.ModifyBits.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\14.ModifyBits\obj\Debug\14.ModifyBits.pdb

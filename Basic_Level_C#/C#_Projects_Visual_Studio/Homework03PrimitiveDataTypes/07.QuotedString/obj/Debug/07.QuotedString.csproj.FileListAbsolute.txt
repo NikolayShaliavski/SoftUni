@@ -1,0 +1,5 @@
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\07.QuotedString\bin\Debug\07.QuotedString.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\07.QuotedString\bin\Debug\07.QuotedString.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\07.QuotedString\bin\Debug\07.QuotedString.pdb
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\07.QuotedString\obj\Debug\07.QuotedString.exe
+c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\07.QuotedString\obj\Debug\07.QuotedString.pdb

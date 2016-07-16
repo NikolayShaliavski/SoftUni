@@ -1,0 +1,5 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.CatalanNumbers\bin\Debug\08.CatalanNumbers.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.CatalanNumbers\bin\Debug\08.CatalanNumbers.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.CatalanNumbers\bin\Debug\08.CatalanNumbers.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.CatalanNumbers\obj\Debug\08.CatalanNumbers.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.CatalanNumbers\obj\Debug\08.CatalanNumbers.pdb

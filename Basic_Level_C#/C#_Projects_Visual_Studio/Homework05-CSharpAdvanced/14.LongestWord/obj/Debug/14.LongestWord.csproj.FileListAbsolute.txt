@@ -1,0 +1,5 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\14.LongestWord\bin\Debug\14.LongestWord.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\14.LongestWord\bin\Debug\14.LongestWord.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\14.LongestWord\bin\Debug\14.LongestWord.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\14.LongestWord\obj\Debug\14.LongestWord.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\14.LongestWord\obj\Debug\14.LongestWord.pdb

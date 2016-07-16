@@ -1,0 +1,5 @@
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\03.MinMaxSumAverage\bin\Debug\03.MinMaxSumAverage.exe.config
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\03.MinMaxSumAverage\bin\Debug\03.MinMaxSumAverage.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\03.MinMaxSumAverage\bin\Debug\03.MinMaxSumAverage.pdb
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\03.MinMaxSumAverage\obj\Debug\03.MinMaxSumAverage.exe
+C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\03.MinMaxSumAverage\obj\Debug\03.MinMaxSumAverage.pdb
