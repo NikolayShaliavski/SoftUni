@@ -1,0 +1,4 @@
+6,Math 6.00 2.50,Literature 5.50 6.00,History 6.00 5.00
+7,Math 3.00,Hystory 3.50
+8,Philosophy 4.50 6.00
+9,Java 6.00 3.00,Math 5.50

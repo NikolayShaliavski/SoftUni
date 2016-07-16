@@ -1,0 +1,4 @@
+6,Nikolay,Shalyavski,27,Sofia
+7,Desislava,Atanasova,30,Sofia
+8,Georgi,Ivanov,19,Plovdiv
+9,Dragan,Draganov,23,Pleven
