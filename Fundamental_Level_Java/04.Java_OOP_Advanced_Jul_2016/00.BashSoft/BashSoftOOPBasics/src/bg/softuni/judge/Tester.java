@@ -1,5 +1,6 @@
 package bg.softuni.judge;
 
+import bg.softuni.contracts.ContentCompare;
 import bg.softuni.exceptions.InvalidPathException;
 import bg.softuni.io.OutputWriter;
 import bg.softuni.staticData.ExceptionMessages;
@@ -8,8 +9,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Tester {
-
+public class Tester implements ContentCompare {
+    @Override
     public void compareContent(
             String actualOutput,
             String expectedOutput) throws IOException {

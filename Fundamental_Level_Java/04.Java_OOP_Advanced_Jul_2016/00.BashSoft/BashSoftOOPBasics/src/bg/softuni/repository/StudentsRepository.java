@@ -1,8 +1,9 @@
 package bg.softuni.repository;
 
+import bg.softuni.contracts.*;
 import bg.softuni.io.OutputWriter;
-import bg.softuni.models.Course;
-import bg.softuni.models.Student;
+import bg.softuni.models.SoftUniCourse;
+import bg.softuni.models.SoftUniStudent;
 import bg.softuni.staticData.ExceptionMessages;
 import bg.softuni.staticData.SessionData;
 
@@ -16,21 +17,21 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class StudentsRepository {
+public class StudentsRepository implements Database {
 
     private LinkedHashMap<String, Course> courses;
     private LinkedHashMap<String, Student> students;
     private boolean isDataInitialized;
-    private RepositoryFilter filter;
-    private RepositorySorter sorter;
+    private DataFilter filter;
+    private DataSorter sorter;
 
     public StudentsRepository(
-            RepositoryFilter filter,
-            RepositorySorter sorter) {
+            DataFilter filter,
+            DataSorter sorter) {
         this.filter = filter;
         this.sorter = sorter;
     }
-
+    @Override
     public void loadData(String fileName) throws IOException {
         if (this.isDataInitialized) {
             OutputWriter.displayException(ExceptionMessages.DATA_ALREADY_INITIALIZED);
@@ -41,7 +42,7 @@ public class StudentsRepository {
         this.courses = new LinkedHashMap<>();
         this.readData(fileName);
     }
-
+    @Override
     public void unloadData() {
         if (!this.isDataInitialized) {
             throw new RuntimeException(ExceptionMessages.DATA_NOT_INITIALIZED);
@@ -77,22 +78,22 @@ public class StudentsRepository {
                                 ExceptionMessages.INVALID_SCORE);
                         continue;
                     }
-                    if (scores.length > Course.NUMBER_OF_TASKS_ON_EXAM) {
+                    if (scores.length > SoftUniCourse.NUMBER_OF_TASKS_ON_EXAM) {
                         OutputWriter.displayException(
                                 ExceptionMessages.INVALID_NUMBER_OF_SCORES);
                         continue;
                     }
                     if (!this.students.containsKey(studentName)) {
-                        this.students.put(studentName, new Student(studentName));
+                        this.students.put(studentName, new SoftUniStudent(studentName));
                     }
                     if (!this.courses.containsKey(courseName)) {
-                        this.courses.put(courseName, new Course(courseName));
+                        this.courses.put(courseName, new SoftUniCourse(courseName));
                     }
-                    Course course = this.courses.get(courseName);
-                    Student student = this.students.get(studentName);
-                    student.enrollInCourse(course);
-                    student.setMarkOnCourse(courseName, scores);
-                    course.enrollStudent(student);
+                    Course softUniCourse = this.courses.get(courseName);
+                    Student softUniStudent = this.students.get(studentName);
+                    softUniStudent.enrollInCourse(softUniCourse);
+                    softUniStudent.setMarkOnCourse(courseName, scores);
+                    softUniCourse.enrollStudent(softUniStudent);
                 } catch (NumberFormatException nfe) {
                     OutputWriter.displayException(nfe.getMessage() + " at line: " + lineIndex);
                 }
@@ -101,7 +102,7 @@ public class StudentsRepository {
         isDataInitialized = true;
         OutputWriter.writeMessageOnNewLine("Data read.");
     }
-
+    @Override
     public void getStudentMarkInCourse(String courseName, String studentName) {
         if (!isQueryForStudentPossible(courseName, studentName)) {
             return;
@@ -110,7 +111,7 @@ public class StudentsRepository {
         String output = students.get(studentName).getMarkForCourse(courseName);
         OutputWriter.writeMessageOnNewLine(output);
     }
-
+    @Override
     public void getStudentsByCourse(String courseName) {
         if (!isQueryForCoursePossible(courseName)) {
             return;
@@ -150,12 +151,12 @@ public class StudentsRepository {
 
         return true;
     }
-
+    @Override
     public void filterAndTake(String courseName, String filter) {
         int studentsToTake = this.courses.get(courseName).getStudentsByName().size();
         this.filterAndTake(courseName, filter, studentsToTake);
     }
-
+    @Override
     public void filterAndTake(String courseName, String filter, int studentsToTake) {
         if (!isQueryForCoursePossible(courseName)) {
             return;
@@ -170,7 +171,7 @@ public class StudentsRepository {
 
         this.filter.printFilteredStudents(marks, filter, studentsToTake);
     }
-
+    @Override
     public void orderAndTake(String courseName, String orderType, int studentsToTake) {
         if (!this.isQueryForCoursePossible(courseName)) {
             return;
@@ -184,7 +185,7 @@ public class StudentsRepository {
 
         this.sorter.printSortedStudents(marks, orderType, studentsToTake);
     }
-
+    @Override
     public void orderAndTake(String courseName, String orderType) {
         int studentsToTake = this.courses.get(courseName).getStudentsByName().size();
         this.orderAndTake(courseName, orderType, studentsToTake);

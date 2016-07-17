@@ -1,23 +1,28 @@
 package bg.softuni.models;
 
+import bg.softuni.contracts.Course;
+import bg.softuni.contracts.Student;
 import bg.softuni.exceptions.DuplicateEntryInStructureException;
 import bg.softuni.exceptions.InvalidStringException;
 import bg.softuni.exceptions.KeyNotFoundException;
 import bg.softuni.staticData.ExceptionMessages;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
-public class Student {
+public class SoftUniStudent implements Student {
     private String userName;
     private LinkedHashMap<String, Course> enrolledCourses;
     private LinkedHashMap<String, Double> marksByCourseName;
 
-    public Student(String userName) {
+    public SoftUniStudent(String userName) {
         this.setUserName(userName);
         this.enrolledCourses = new LinkedHashMap<>();
         this.marksByCourseName = new LinkedHashMap<>();
     }
-
+    @Override
     public String getUserName() {
         return userName;
     }
@@ -28,15 +33,15 @@ public class Student {
         }
         this.userName = userName;
     }
-
+    @Override
     public Map<String, Course> getEnrolledCourses() {
         return Collections.unmodifiableMap(this.enrolledCourses);
     }
-
+    @Override
     public Map<String, Double> getMarksByCourseName() {
         return Collections.unmodifiableMap(marksByCourseName);
     }
-
+    @Override
     public void enrollInCourse(Course course) {
         if (this.enrolledCourses.containsKey(course.getName())) {
             throw new DuplicateEntryInStructureException(
@@ -45,13 +50,13 @@ public class Student {
 
         this.enrolledCourses.put(course.getName(), course);
     }
-
+    @Override
     public void setMarkOnCourse(String courseName, int[] scores) {
         if (!this.enrolledCourses.containsKey(courseName)) {
             throw new KeyNotFoundException();
         }
 
-        if (scores.length > Course.NUMBER_OF_TASKS_ON_EXAM) {
+        if (scores.length > SoftUniCourse.NUMBER_OF_TASKS_ON_EXAM) {
             throw new IllegalArgumentException(
                     ExceptionMessages.INVALID_NUMBER_OF_SCORES);
         }
@@ -62,11 +67,11 @@ public class Student {
 
     private double calculateMark(int[] scores) {
         double percentageOfSolvedExam = Arrays.stream(scores).sum() /
-                (double) (Course.NUMBER_OF_TASKS_ON_EXAM * Course.MAX_SCORE_ON_EXAM_TASK);
+                (double) (SoftUniCourse.NUMBER_OF_TASKS_ON_EXAM * SoftUniCourse.MAX_SCORE_ON_EXAM_TASK);
         double mark = percentageOfSolvedExam * 4 + 2;
         return mark;
     }
-
+    @Override
     public String getMarkForCourse(String courseName) {
         String output = String.format("%s - %f",
                 this.userName, marksByCourseName.get(courseName));

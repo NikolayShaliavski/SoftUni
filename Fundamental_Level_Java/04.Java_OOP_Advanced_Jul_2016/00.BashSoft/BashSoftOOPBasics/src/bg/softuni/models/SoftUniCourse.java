@@ -1,5 +1,7 @@
 package bg.softuni.models;
 
+import bg.softuni.contracts.Course;
+import bg.softuni.contracts.Student;
 import bg.softuni.exceptions.DuplicateEntryInStructureException;
 import bg.softuni.exceptions.InvalidStringException;
 
@@ -7,19 +9,19 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Course {
+public class SoftUniCourse implements Course {
 
     public static final int NUMBER_OF_TASKS_ON_EXAM = 5;
     public static final int MAX_SCORE_ON_EXAM_TASK = 100;
 
     private String name;
-    private LinkedHashMap<String, Student> studentsByName;
+    private Map<String, Student> studentsByName;
 
-    public Course(String name) {
+    public SoftUniCourse(String name) {
         this.setName(name);
         this.studentsByName = new LinkedHashMap<>();
     }
-
+    @Override
     public String getName() {
         return name;
     }
@@ -30,11 +32,11 @@ public class Course {
         }
         this.name = name;
     }
-
+    @Override
     public Map<String, Student> getStudentsByName() {
         return Collections.unmodifiableMap(this.studentsByName);
     }
-
+    @Override
     public void enrollStudent(Student student) {
         if (this.studentsByName.containsKey(student.getUserName())) {
             throw new DuplicateEntryInStructureException(
