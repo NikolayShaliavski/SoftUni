@@ -15,4 +15,10 @@ public interface CustomList<T> {
     T getMax();
 
     T getMin();
+
+    T get(int index);
+
+    void set(int index, T element);
+
+    int size();
 }

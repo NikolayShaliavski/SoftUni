@@ -2,26 +2,30 @@ package problem_07.collections;
 
 import problem_07.interfaces.CustomList;
 
-import java.lang.reflect.Array;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
-public class CustomListImpl<T extends Comparable> implements CustomList<T> {
+public class CustomListImpl<T extends Comparable<T>> implements CustomList<T>, Iterable<T>{
 
     private static final Integer DEFAULT_ARRAY_SIZE = 16;
 
     private T[] collection;
     private int count;
-    private Class<?> classType;
+    //private Class<?> classType;
 
     public CustomListImpl() throws ClassNotFoundException {
-        this.classType = Class.forName("java.lang.String");
-        this.collection = (T[]) Array.newInstance(this.classType, 3);
+        //this.classType = Class.forName("java.lang.String");
+        //this.collection = (T[]) Array.newInstance(this.classType, DEFAULT_ARRAY_SIZE);
+        this.collection = (T[]) new String[DEFAULT_ARRAY_SIZE];
+        this.collection.getClass().getName();
         this.count = 0;
     }
 
     @Override
     public void add(T element) {
         if (this.count == this.collection.length) {
-            T[] newCollection = (T[]) Array.newInstance(this.classType, this.collection.length * 2);
+            //T[] newCollection = (T[]) Array.newInstance(this.classType, this.collection.length * 2);
+            T[] newCollection = (T[]) new String[this.collection.length * 2];
             for (int i = 0; i < this.count; i++) {
                 newCollection[i] = this.collection[i];
             }
@@ -37,10 +41,12 @@ public class CustomListImpl<T extends Comparable> implements CustomList<T> {
             throw new IndexOutOfBoundsException("Index is out of bounds.");
         }
         T removed = null;
-        T[] newCollection = (T[]) Array.newInstance(this.classType, this.count - 1);
+        //T[] newCollection = (T[]) Array.newInstance(this.classType, this.count - 1);
+        T[] newCollection = (T[]) new String[this.count - 1];
         if (newCollection.length == 0) {
             removed = this.collection[0];
             this.collection = newCollection;
+            this.count = 0;
             return removed;
         }
         for (int i = 0; i < index; i++) {
@@ -110,12 +116,65 @@ public class CustomListImpl<T extends Comparable> implements CustomList<T> {
     }
 
     @Override
+    public T get(int index) {
+        if (index < 0 || index >= this.count) {
+            throw new IndexOutOfBoundsException("Index is out of bounds.");
+        }
+        return this.collection[index];
+    }
+
+    @Override
+    public void set(int index, T element) {
+        if (index < 0 || index >= this.count) {
+            throw new IndexOutOfBoundsException("Index is out of bounds.");
+        }
+        this.collection[index] = element;
+    }
+
+    @Override
+    public int size() {
+        return this.count;
+    }
+
+    @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < this.count; i++) {
-            builder.append(this.collection[i]).
+//        for (T element : this.collection) {
+//            builder.append(element).
+//                    append(System.lineSeparator());
+//        }
+        Iterator<T> iterator = this.iterator();
+
+        while (iterator.hasNext()) {
+            builder.append(iterator.next()).
                     append(System.lineSeparator());
         }
         return builder.toString();
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+
+        Iterator<T> iterator = new Iterator<T>() {
+            int index = 0;
+            @Override
+            public boolean hasNext() {
+                if (index < count) {
+                    return true;
+                }
+                return false;
+            }
+
+            @Override
+            public T next() {
+                return collection[index++];
+            }
+        };
+        return iterator;
+    }
+
+    @Override
+    public void forEach(Consumer<? super T> action) {
+
     }
 }

@@ -3,6 +3,7 @@ package problem_07.commandInterpreter;
 import problem_07.IO.Reader;
 import problem_07.IO.Writer;
 import problem_07.collections.CustomListImpl;
+import problem_07.sorter.Sorter;
 
 import java.io.IOException;
 
@@ -11,11 +12,13 @@ public class CommandInterpreter {
     private Writer writer;
     private Reader reader;
     private CustomListImpl<String> customList;
+    private Sorter<String> sorter;
 
     public CommandInterpreter() throws ClassNotFoundException {
         this.reader = new Reader();
         this.writer = new Writer();
         this.customList = new CustomListImpl();
+        this.sorter = new Sorter<>();
     }
 
     public void executeCommands() throws IOException {
@@ -29,8 +32,8 @@ public class CommandInterpreter {
                         this.customList.add(params[1]);
                         break;
                     case "Remove":
-                        this.writer.print(this.customList.remove(Integer.valueOf(params[1])).toString());
-                        //this.customList.remove(Integer.valueOf(params[1]));
+                        //this.writer.print(this.customList.remove(Integer.valueOf(params[1])).toString());
+                        this.customList.remove(Integer.valueOf(params[1]));
                         break;
                     case "Contains":
                         boolean hasFound = this.customList.contains(params[1]);
@@ -51,7 +54,15 @@ public class CommandInterpreter {
                         this.writer.print(String.valueOf(this.customList.getMin()));
                         break;
                     case "Print":
-                        this.writer.printAll(this.customList.toString());
+                        //this.writer.printAll(this.customList.toString());
+                        //here foreach loop without iterator don't work
+                        //but if we iterate over collection in class is we don't need to implement Iterable
+                        for (String element : this.customList) {
+                            System.out.println(element);
+                        }
+                        break;
+                    case "Sort":
+                        this.customList = this.sorter.sort(this.customList);
                         break;
                 }
                 command = this.readCommand();
