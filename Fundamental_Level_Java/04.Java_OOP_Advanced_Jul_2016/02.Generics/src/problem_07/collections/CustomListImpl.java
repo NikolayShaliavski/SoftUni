@@ -3,7 +3,6 @@ package problem_07.collections;
 import problem_07.interfaces.CustomList;
 
 import java.util.Iterator;
-import java.util.function.Consumer;
 
 public class CustomListImpl<T extends Comparable<T>> implements CustomList<T>, Iterable<T>{
 
@@ -171,10 +170,5 @@ public class CustomListImpl<T extends Comparable<T>> implements CustomList<T>, I
             }
         };
         return iterator;
-    }
-
-    @Override
-    public void forEach(Consumer<? super T> action) {
-
     }
 }
