@@ -61,6 +61,7 @@ public class CustomStack<T> implements Stack<T> {
         return customIterator;
     }
 
+    @SuppressWarnings("unchecked")
     private void increaseStackCapacity() {
         T[] newArrayStack = (T[]) Array.newInstance(classType, this.arrayStack.length * 2);
         for (int i = 0; i < this.arrayStack.length; i++) {
@@ -69,6 +70,7 @@ public class CustomStack<T> implements Stack<T> {
         this.arrayStack = newArrayStack;
     }
 
+    @SuppressWarnings("unchecked")
     private void decreaseStackCapacity() {
         T[] newArrayStack = (T[]) Array.newInstance(classType, this.arrayStack.length / 2);
         for (int i = 0; i < newArrayStack.length; i++) {

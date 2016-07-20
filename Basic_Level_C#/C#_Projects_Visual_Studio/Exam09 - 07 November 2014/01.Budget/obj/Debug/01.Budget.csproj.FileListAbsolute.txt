@@ -4,3 +4,6 @@ C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\01
 C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\01.Budget\obj\Debug\01.Budget.csprojResolveAssemblyReference.cache
 C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\01.Budget\obj\Debug\01.Budget.exe
 C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\01.Budget\obj\Debug\01.Budget.pdb
+D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\01.Budget\bin\Debug\01.Budget.exe.config
+D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\01.Budget\obj\Debug\01.Budget.exe
+D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\01.Budget\obj\Debug\01.Budget.pdb
