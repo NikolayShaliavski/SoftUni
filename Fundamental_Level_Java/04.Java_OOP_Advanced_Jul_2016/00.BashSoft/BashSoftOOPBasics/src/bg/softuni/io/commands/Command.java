@@ -25,22 +25,6 @@ public abstract class Command implements Executable {
         this.ioManager = ioManager;
     }
 
-    protected Database getRepository() {
-        return repository;
-    }
-
-    protected ContentCompare getTester() {
-        return tester;
-    }
-
-    protected DirectoryManager getIoManager() {
-        return ioManager;
-    }
-
-    protected AsynchDownloader getDownloadManager() {
-        return downloadManager;
-    }
-
     protected String getInput() {
         return input;
     }
@@ -64,4 +48,20 @@ public abstract class Command implements Executable {
     }
 
     public abstract void execute() throws Exception;
+
+    protected Database getRepository() {
+        return repository;
+    }
+
+    protected ContentCompare getTester() {
+        return tester;
+    }
+
+    protected DirectoryManager getIoManager() {
+        return ioManager;
+    }
+
+    protected AsynchDownloader getDownloadManager() {
+        return downloadManager;
+    }
 }

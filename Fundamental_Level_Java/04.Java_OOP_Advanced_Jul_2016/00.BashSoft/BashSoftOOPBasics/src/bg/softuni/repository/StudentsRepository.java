@@ -1,6 +1,7 @@
 package bg.softuni.repository;
 
 import bg.softuni.contracts.*;
+import bg.softuni.dataStructures.SimpleSortedList;
 import bg.softuni.io.OutputWriter;
 import bg.softuni.models.SoftUniCourse;
 import bg.softuni.models.SoftUniStudent;
@@ -10,10 +11,7 @@ import bg.softuni.staticData.SessionData;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -51,6 +49,112 @@ public class StudentsRepository implements Database {
         this.students = null;
         this.courses = null;
         this.isDataInitialized = false;
+    }
+
+    @Override
+    public void getStudentMarkInCourse(String courseName, String studentName) {
+        if (!isQueryForStudentPossible(courseName, studentName)) {
+            return;
+        }
+
+        String output = students.get(studentName).getMarkForCourse(courseName);
+        OutputWriter.writeMessageOnNewLine(output);
+    }
+    @Override
+    public void getStudentsByCourse(String courseName) {
+        if (!isQueryForCoursePossible(courseName)) {
+            return;
+        }
+
+        OutputWriter.writeMessageOnNewLine(courseName + ":");
+        for (Map.Entry<String, Student> student :
+                this.courses.get(courseName).getStudentsByName().entrySet()) {
+            this.getStudentMarkInCourse(courseName, student.getKey());
+        }
+    }
+
+    @Override
+    public SimpleSortedList<Course> getAllCoursesSorted(Comparator<Course> cmp) {
+        SimpleSortedList<Course> courseSortedList =
+                new SimpleSortedList<>(Course.class, cmp);
+        courseSortedList.addAll(this.courses.values());
+        return courseSortedList;
+    }
+
+    @Override
+    public SimpleSortedList<Student> getAllStudentsSorted(Comparator<Student> cmp) {
+        SimpleSortedList<Student> studentsSortedList =
+                new SimpleSortedList<>(Student.class, cmp);
+        studentsSortedList.addAll(this.students.values());
+        return studentsSortedList;
+    }
+
+    @Override
+    public void filterAndTake(String courseName, String filter) {
+        int studentsToTake = this.courses.get(courseName).getStudentsByName().size();
+        this.filterAndTake(courseName, filter, studentsToTake);
+    }
+    @Override
+    public void filterAndTake(String courseName, String filter, int studentsToTake) {
+        if (!isQueryForCoursePossible(courseName)) {
+            return;
+        }
+
+        LinkedHashMap<String, Double> marks = new LinkedHashMap<>();
+        for (Map.Entry<String, Student> entry :
+                this.courses.get(courseName).getStudentsByName().entrySet()) {
+            marks.put(entry.getKey(), entry.getValue()
+                    .getMarksByCourseName().get(courseName));
+        }
+
+        this.filter.printFilteredStudents(marks, filter, studentsToTake);
+    }
+    @Override
+    public void orderAndTake(String courseName, String orderType, int studentsToTake) {
+        if (!this.isQueryForCoursePossible(courseName)) {
+            return;
+        }
+
+        LinkedHashMap<String, Double> marks = new LinkedHashMap<>();
+        for (Map.Entry<String, Student> entry :
+                this.courses.get(courseName).getStudentsByName().entrySet()) {
+            marks.put(entry.getKey(), entry.getValue().getMarksByCourseName().get(courseName));
+        }
+
+        this.sorter.printSortedStudents(marks, orderType, studentsToTake);
+    }
+    @Override
+    public void orderAndTake(String courseName, String orderType) {
+        int studentsToTake = this.courses.get(courseName).getStudentsByName().size();
+        this.orderAndTake(courseName, orderType, studentsToTake);
+    }
+
+    private boolean isQueryForCoursePossible(String courseName) {
+        if (!this.isDataInitialized) {
+            OutputWriter.displayException(ExceptionMessages.DATA_NOT_INITIALIZED);
+            return false;
+        }
+
+        if (!this.courses.containsKey(courseName)) {
+            OutputWriter.displayException(ExceptionMessages.NON_EXISTING_COURSE);
+            return false;
+        }
+
+        return true;
+    }
+
+    private boolean isQueryForStudentPossible(
+            String courseName, String studentName) {
+        if (!this.isQueryForCoursePossible(courseName)) {
+            return false;
+        }
+
+        if (!this.courses.get(courseName).getStudentsByName().containsKey(studentName)) {
+            OutputWriter.displayException(ExceptionMessages.NON_EXISTING_STUDENT);
+            return false;
+        }
+
+        return true;
     }
 
     private void readData(String fileName) throws IOException {
@@ -101,93 +205,5 @@ public class StudentsRepository implements Database {
         }
         isDataInitialized = true;
         OutputWriter.writeMessageOnNewLine("Data read.");
-    }
-    @Override
-    public void getStudentMarkInCourse(String courseName, String studentName) {
-        if (!isQueryForStudentPossible(courseName, studentName)) {
-            return;
-        }
-
-        String output = students.get(studentName).getMarkForCourse(courseName);
-        OutputWriter.writeMessageOnNewLine(output);
-    }
-    @Override
-    public void getStudentsByCourse(String courseName) {
-        if (!isQueryForCoursePossible(courseName)) {
-            return;
-        }
-
-        OutputWriter.writeMessageOnNewLine(courseName + ":");
-        for (Map.Entry<String, Student> student :
-                this.courses.get(courseName).getStudentsByName().entrySet()) {
-            this.getStudentMarkInCourse(courseName, student.getKey());
-        }
-    }
-
-    private boolean isQueryForCoursePossible(String courseName) {
-        if (!this.isDataInitialized) {
-            OutputWriter.displayException(ExceptionMessages.DATA_NOT_INITIALIZED);
-            return false;
-        }
-
-        if (!this.courses.containsKey(courseName)) {
-            OutputWriter.displayException(ExceptionMessages.NON_EXISTING_COURSE);
-            return false;
-        }
-
-        return true;
-    }
-
-    private boolean isQueryForStudentPossible(
-            String courseName, String studentName) {
-        if (!this.isQueryForCoursePossible(courseName)) {
-            return false;
-        }
-
-        if (!this.courses.get(courseName).getStudentsByName().containsKey(studentName)) {
-            OutputWriter.displayException(ExceptionMessages.NON_EXISTING_STUDENT);
-            return false;
-        }
-
-        return true;
-    }
-    @Override
-    public void filterAndTake(String courseName, String filter) {
-        int studentsToTake = this.courses.get(courseName).getStudentsByName().size();
-        this.filterAndTake(courseName, filter, studentsToTake);
-    }
-    @Override
-    public void filterAndTake(String courseName, String filter, int studentsToTake) {
-        if (!isQueryForCoursePossible(courseName)) {
-            return;
-        }
-
-        LinkedHashMap<String, Double> marks = new LinkedHashMap<>();
-        for (Map.Entry<String, Student> entry :
-                this.courses.get(courseName).getStudentsByName().entrySet()) {
-            marks.put(entry.getKey(), entry.getValue()
-                    .getMarksByCourseName().get(courseName));
-        }
-
-        this.filter.printFilteredStudents(marks, filter, studentsToTake);
-    }
-    @Override
-    public void orderAndTake(String courseName, String orderType, int studentsToTake) {
-        if (!this.isQueryForCoursePossible(courseName)) {
-            return;
-        }
-
-        LinkedHashMap<String, Double> marks = new LinkedHashMap<>();
-        for (Map.Entry<String, Student> entry :
-                this.courses.get(courseName).getStudentsByName().entrySet()) {
-            marks.put(entry.getKey(), entry.getValue().getMarksByCourseName().get(courseName));
-        }
-
-        this.sorter.printSortedStudents(marks, orderType, studentsToTake);
-    }
-    @Override
-    public void orderAndTake(String courseName, String orderType) {
-        int studentsToTake = this.courses.get(courseName).getStudentsByName().size();
-        this.orderAndTake(courseName, orderType, studentsToTake);
     }
 }
