@@ -1,5 +1,10 @@
 package problem_03.enums;
 
+import problem_06.annotations.CustomEnumAnnotation;
+
+@CustomEnumAnnotation(type = "Enumeration",
+        category = "Rank",
+        description = "Provides rank constants for a Card class.")
 public enum CardRanks {
     ACE(14),
     TWO(2),
@@ -17,7 +22,7 @@ public enum CardRanks {
 
     private Integer rankPower;
 
-    private CardRanks(Integer rankPower) {
+    CardRanks(Integer rankPower) {
         this.rankPower = rankPower;
     }
 

@@ -3,7 +3,7 @@ package problem_03;
 import problem_03.enums.CardRanks;
 import problem_03.enums.CardSuits;
 
-public class Card {
+public class Card implements Comparable<Card> {
 
     private CardRanks cardRank;
     private CardSuits cardSuit;
@@ -24,9 +24,13 @@ public class Card {
         this.cardSuit = cardSuit;
     }
 
+    private int getCardPower() {
+        return this.cardPower;
+    }
+
     private void setCardPower() {
         this.cardPower = this.cardRank.getRankPower() +
-                this.cardSuit.getCardPower();
+                this.cardSuit.getSuitPower();
     }
 
     @Override
@@ -36,5 +40,11 @@ public class Card {
                 this.cardRank.name(),
                 this.cardSuit.name(),
                 this.cardPower);
+    }
+
+    @Override
+    public int compareTo(Card otherCard) {
+        return Integer.compare(this.getCardPower(),
+                otherCard.getCardPower());
     }
 }

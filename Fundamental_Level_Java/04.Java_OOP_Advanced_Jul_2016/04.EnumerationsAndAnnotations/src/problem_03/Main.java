@@ -12,13 +12,26 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         String rank = reader.readLine();
         String suit = reader.readLine();
-
         CardRanks cardRank = CardRanks.valueOf(rank);
         CardSuits cardSuit = CardSuits.valueOf(suit);
 
-        Card card = new Card(cardRank, cardSuit);
-        System.out.println(card.toString());
+        Card firstCard = new Card(cardRank, cardSuit);
+
+        rank = reader.readLine();
+        suit = reader.readLine();
+        cardRank = CardRanks.valueOf(rank);
+        cardSuit = CardSuits.valueOf(suit);
+
+        Card secondCard = new Card(cardRank, cardSuit);
+        int resultOfComparing = firstCard.compareTo(secondCard);
+
+        if (resultOfComparing < 0) {
+            System.out.println(secondCard);
+        } else {
+            System.out.println(firstCard);
+        }
     }
 }
