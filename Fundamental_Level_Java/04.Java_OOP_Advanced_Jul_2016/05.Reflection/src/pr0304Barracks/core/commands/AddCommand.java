@@ -12,9 +12,9 @@ import pr0304Barracks.contracts.UnitFactory;
 @CommandName(name = "add")
 public class AddCommand extends Command {
 
-    @Inject(name = "repository")
+    @Inject
     private Repository repository;
-    @Inject(name = "factory")
+    @Inject
     private UnitFactory unitFactory;
 
     public AddCommand(String[] dataArg) {

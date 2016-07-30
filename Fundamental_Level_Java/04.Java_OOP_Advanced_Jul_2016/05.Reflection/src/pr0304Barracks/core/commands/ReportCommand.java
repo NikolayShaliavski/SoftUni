@@ -10,7 +10,7 @@ import pr0304Barracks.contracts.Repository;
 @CommandName(name = "report")
 public class ReportCommand extends Command {
 
-    @Inject(name = "repository")
+    @Inject
     private Repository repository;
 
     public ReportCommand(String[] dataArg) {

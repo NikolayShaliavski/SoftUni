@@ -12,7 +12,7 @@ import java.util.NoSuchElementException;
 @CommandName(name = "retire")
 public class RetireCommand extends Command {
 
-    @Inject(name = "repository")
+    @Inject
     private Repository repository;
 
     public RetireCommand(String[] dataArg) {

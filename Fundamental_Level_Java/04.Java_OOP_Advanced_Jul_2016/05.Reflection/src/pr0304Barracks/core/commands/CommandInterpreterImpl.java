@@ -30,13 +30,15 @@ public class CommandInterpreterImpl implements CommandInterpreter {
         String commandDirectoryPath = System.getProperty("user.dir") + "\\src\\" +
                 this.getClass().getPackage().getName().replace(".", "\\");
 
+        //This does not work in Judge
+        //you have to make first letter to upperCase and create command directly
         File file = new File(commandDirectoryPath);
         for (File currentFile : file.listFiles()) {
             if (currentFile.isFile() && currentFile.getName().endsWith(".java")) {
                 String fullName = currentFile.getName();
                 String fileName = fullName.substring(0, fullName.indexOf('.'));
                 Class commandClass =
-                         Class.forName(COMMAND_PACKAGE + fileName);
+                        Class.forName(COMMAND_PACKAGE + fileName);
                 if (commandClass.isAnnotationPresent(CommandName.class)) {
                     CommandName commandName = (CommandName) commandClass.getAnnotation(CommandName.class);
 
@@ -51,14 +53,17 @@ public class CommandInterpreterImpl implements CommandInterpreter {
         }
         Field[] fields = executable.getClass().getDeclaredFields();
         for (Field field : fields) {
-            if (field.isAnnotationPresent(Inject.class)) {
-                Inject injectAnot = field.getAnnotation(Inject.class);
-                field.setAccessible(true);
-                if (injectAnot.name().equals("repository")) {
-                    field.set(executable, this.engine.getRepository());
-                } else if (injectAnot.name().equals("factory")) {
-                    field.set(executable, this.engine.getUnitFactory());
+            if (!field.isAnnotationPresent(Inject.class)) {
+                continue;
+            }
+            field.setAccessible(true);
+            Field[] engineFields = this.engine.getClass().getDeclaredFields();
+            for (Field engineField : engineFields) {
+                if (!field.getType().equals(engineField.getType())) {
+                    continue;
                 }
+                engineField.setAccessible(true);
+                field.set(executable, engineField.get(this.engine));
             }
         }
         return executable;
