@@ -1,11 +1,14 @@
 package problem_10.models.weapons;
 
+import problem_10.annotations.ClassInfo;
 import problem_10.contracts.Gem;
 import problem_10.contracts.Weapon;
 
-/**
- * Created by Nikolay Shalyavski on 23.7.2016 г..
- */
+@ClassInfo(
+        author = "Pesho",
+        revision = 3,
+        description = "Used for Java OOP Advanced course - Enumerations and Annotations.",
+        reviewers = {"Pesho", "Svetlio"})
 public abstract class WeaponImpl implements Weapon {
 
     private String name;

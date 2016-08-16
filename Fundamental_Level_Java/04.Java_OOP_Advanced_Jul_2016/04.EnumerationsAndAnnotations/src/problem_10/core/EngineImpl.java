@@ -2,12 +2,14 @@ package problem_10.core;
 
 import problem_10.IO.ConsoleReader;
 import problem_10.IO.ConsoleWriter;
+import problem_10.annotations.ClassInfo;
 import problem_10.contracts.*;
 import problem_10.enums.GemsEnum;
 import problem_10.enums.WeaponsEnum;
 import problem_10.factories.GemFactory;
 import problem_10.factories.WeaponFactory;
 import problem_10.models.InfernoRepository;
+import problem_10.models.weapons.WeaponImpl;
 
 import java.io.IOException;
 import java.util.NoSuchElementException;
@@ -99,6 +101,27 @@ public class EngineImpl implements Engine {
                 if (!winner.equals("Weapons don't exist.")) {
                     this.writer.write(winner);
                 }
+                break;
+            case "Author":
+                ClassInfo classInfo = WeaponImpl.class.getAnnotation(ClassInfo.class);
+                String author = classInfo.author();
+                this.writer.write("Author: " + author);
+                break;
+            case "Revision":
+                classInfo = WeaponImpl.class.getAnnotation(ClassInfo.class);
+                int revision = classInfo.revision();
+                this.writer.write("Revision: " + revision);
+                break;
+            case "Description":
+                classInfo = WeaponImpl.class.getAnnotation(ClassInfo.class);
+                String description = classInfo.description();
+                this.writer.write("Class description: " + description);
+                break;
+            case "Reviewers":
+                classInfo = WeaponImpl.class.getAnnotation(ClassInfo.class);
+                String[] reviewersArr = classInfo.reviewers();
+                String reviewers = String.join(", ", reviewersArr);
+                this.writer.write("Reviewers: " + reviewers);
                 break;
             case "END":
                 this.isRunning = false;
