@@ -1,10 +1,12 @@
 package models.attacks;
 
-import models.Blob;
+import interfaces.Attack;
+import interfaces.Blob;
 
-public class PutridFart extends AbstractAttack {
+public class PutridFart implements Attack {
 
+    @Override
     public void execute(Blob source, Blob target) {
-        target.respond(source.getDamage());
+        target.setHealth(target.getHealth() - source.getDamage());
     }
 }
