@@ -14,13 +14,13 @@ namespace _07.PathInLabyrinth
         static List<char> path = new List<char>();
         static int allPaths = 0;
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             FindWay(0, 0, 'S');
             Console.WriteLine(allPaths);
         }
 
-        static void FindWay(int row, int col, char direction)
+        private static void FindWay(int row, int col, char direction)
         {
             //bottoms of recursion
             if (!InRange(row, col))
