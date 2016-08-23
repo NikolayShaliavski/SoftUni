@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.CombinationsWithRepetiti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.TowerOfHanoi", "05.TowerOfHanoi\05.TowerOfHanoi.csproj", "{EA96F794-7DA1-40CC-86F4-001AF1D5ADE1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08.ConnectedAreasInMatrix", "08.ConnectedAreasInMatrix", "{E877B271-8F43-4773-A08C-100A504D5B25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.ConnectedAreasInMatrix", "08.ConnectedAreasInMatrix\08.ConnectedAreasInMatrix.csproj", "{BEC56ACF-A754-4B42-90F6-AD7E0BD079FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +43,15 @@ Global
 		{EA96F794-7DA1-40CC-86F4-001AF1D5ADE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA96F794-7DA1-40CC-86F4-001AF1D5ADE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA96F794-7DA1-40CC-86F4-001AF1D5ADE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC56ACF-A754-4B42-90F6-AD7E0BD079FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC56ACF-A754-4B42-90F6-AD7E0BD079FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC56ACF-A754-4B42-90F6-AD7E0BD079FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC56ACF-A754-4B42-90F6-AD7E0BD079FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BEC56ACF-A754-4B42-90F6-AD7E0BD079FD} = {E877B271-8F43-4773-A08C-100A504D5B25}
 	EndGlobalSection
 EndGlobal
