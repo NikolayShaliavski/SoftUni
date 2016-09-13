@@ -1,58 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace _05.SumUnlimitedAmountOfCoins
 {
     class SumUnlimitedAmountOfCoins
     {
-        private static int allSumsCount;
-        private static int sum;
-        private static List<int> currentCom;
-        private static List<string> allSums;
-
-        static void Main(string[] args)
+        public static void Main()
         {
-            var targetSum = 100;
-            int[] coins = { 1, 2, 5, 10, 20, 50, 100 };
-            allSumsCount = 0;
-            sum = 0;
-            currentCom = new List<int>();
-            allSums = new List<string>();
-
-            GenSum(targetSum, coins);
-            Console.WriteLine(allSumsCount);
-
-            //foreach (var sum in allSums)
-            //{
-            //    Console.WriteLine(sum);
-            //}
+            foreach (int[] way in GetSumWays(new[] { 1, 2, 5 }, 5))
+            {
+                Console.WriteLine(string.Join(" ", way));
+            }
         }
 
-        private static void GenSum(int targetSum, int[] coins)
+        private static int[][] GetSumWays(int[] array, int k)
         {
-            if (sum > targetSum)
+            int[][][] ways = new int[k + 1][][];
+            ways[0] = new[] { new int[0] };
+
+            for (int i = 1; i <= k; i++)
             {
-                return;
+                ways[i] = (
+                    from val in array
+                    where i - val >= 0
+                    from subway in ways[i - val]
+                    where subway.Length == 0 || subway[0] >= val
+                    select Enumerable.Repeat(val, 1)
+                        .Concat(subway)
+                        .ToArray()
+                ).ToArray();
             }
-            if (sum == targetSum)
-            {
-                currentCom.Sort();
-                string sum = string.Join("", currentCom);
-                if (!allSums.Contains(sum))
-                {
-                    allSumsCount++;
-                    allSums.Add(sum);
-                }
-                return;
-            }
-            for (int i = 0; i < coins.Length; i++)
-            {
-                sum += coins[i];
-                currentCom.Add(coins[i]);
-                GenSum(targetSum, coins);
-                sum -= coins[i];
-                currentCom.Remove(coins[i]);
-            }
+
+            return ways[k];
         }
     }
 }

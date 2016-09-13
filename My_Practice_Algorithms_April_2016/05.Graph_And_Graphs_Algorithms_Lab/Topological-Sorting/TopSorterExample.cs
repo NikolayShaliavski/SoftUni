@@ -13,13 +13,17 @@ class TopSorterExample
         //    { "conditionals", new List<string>() { "loops" } },
         //};
 
+        //var graph = new Dictionary<string, List<string>>() {
+        //    { "A", new List<string>() { "B", "C" } },
+        //    { "B", new List<string>() { "D", "E" } },
+        //    { "C", new List<string>() { "F" } },
+        //    { "D", new List<string>() { "C", "F" } },
+        //    { "E", new List<string>() { "D" } },
+        //    { "F", new List<string>() { } },
+        //};
+
         var graph = new Dictionary<string, List<string>>() {
-            { "A", new List<string>() { "B", "C" } },
-            { "B", new List<string>() { "D", "E" } },
-            { "C", new List<string>() { "F" } },
-            { "D", new List<string>() { "C", "F" } },
-            { "E", new List<string>() { "D" } },
-            { "F", new List<string>() { } },
+            { "First", new List<string>() { "Second" } }
         };
 
         var topSorter = new TopologicalSorter(graph);
