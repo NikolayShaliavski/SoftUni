@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SubsetOfStringsRecursive
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.Snakes", "07.Snakes\07.Snakes.csproj", "{F52B4005-9F1D-49FF-8464-FA39A2322A06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Cubes", "08.Cubes\08.Cubes.csproj", "{29610C4A-87A3-4C15-B83D-F747F864B93D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F52B4005-9F1D-49FF-8464-FA39A2322A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F52B4005-9F1D-49FF-8464-FA39A2322A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F52B4005-9F1D-49FF-8464-FA39A2322A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29610C4A-87A3-4C15-B83D-F747F864B93D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29610C4A-87A3-4C15-B83D-F747F864B93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29610C4A-87A3-4C15-B83D-F747F864B93D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29610C4A-87A3-4C15-B83D-F747F864B93D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
