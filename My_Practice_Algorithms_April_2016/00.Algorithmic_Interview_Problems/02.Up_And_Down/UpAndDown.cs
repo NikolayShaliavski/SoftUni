@@ -11,16 +11,17 @@ namespace _02.Up_And_Down
         static void Main(string[] args)
         {
 
-            int inputNumber = 666;
+            int inputNumber = 499;
 
             int left = 1;
             int right = 1000;
-
+            int counter = 0;
 
             int outputNumber = 0;
 
             while (left <= right)
             {
+                counter++;
                 int mid = (left + right) / 2;
                 int result = GuessNum(mid, inputNumber);
                 if (result == 0)
@@ -38,6 +39,7 @@ namespace _02.Up_And_Down
                 }
             }
             Console.WriteLine(outputNumber);
+            Console.WriteLine(counter);
         }
 
         static int GuessNum(int numberToTest, int inputNumber)
