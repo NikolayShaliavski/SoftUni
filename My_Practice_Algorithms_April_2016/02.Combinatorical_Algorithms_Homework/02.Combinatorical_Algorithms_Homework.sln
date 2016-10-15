@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.Words", "09.Words\09.Wor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.WordsIterative", "09.WordsIterative\09.WordsIterative.csproj", "{A8154D72-FC4E-49C8-B55B-947744D9AC8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.WordsKristiqnSolution", "09.WordsKristiqnSolution\09.WordsKristiqnSolution.csproj", "{1045750C-EBE2-45AE-B122-5F0BD5F6AE5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.Blocks", "10.Blocks\10.Blocks.csproj", "{4B568631-D6D5-4F4C-89F1-A28EC9E23F43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{A8154D72-FC4E-49C8-B55B-947744D9AC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8154D72-FC4E-49C8-B55B-947744D9AC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8154D72-FC4E-49C8-B55B-947744D9AC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1045750C-EBE2-45AE-B122-5F0BD5F6AE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1045750C-EBE2-45AE-B122-5F0BD5F6AE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1045750C-EBE2-45AE-B122-5F0BD5F6AE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1045750C-EBE2-45AE-B122-5F0BD5F6AE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B568631-D6D5-4F4C-89F1-A28EC9E23F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B568631-D6D5-4F4C-89F1-A28EC9E23F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B568631-D6D5-4F4C-89F1-A28EC9E23F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B568631-D6D5-4F4C-89F1-A28EC9E23F43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

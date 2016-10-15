@@ -9,8 +9,8 @@ namespace _02.VariationsWithoutRepetitions
 
         static void Main(string[] args)
         {
-            int n = 3;
-            int k = 2;
+            int n = 4;
+            int k = 4;
 
             array = new int[k];
             used = new bool[n + 1];
