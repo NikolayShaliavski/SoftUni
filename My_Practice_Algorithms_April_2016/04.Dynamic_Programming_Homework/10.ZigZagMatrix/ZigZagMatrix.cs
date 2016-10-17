@@ -10,7 +10,7 @@ class ZigZagMatrix
         var cols = int.Parse(Console.ReadLine());
         var matrix = new int[rows, cols];
         FillMatrix(rows, matrix);
-
+  
         var maxPaths = new int[rows, cols];
         var prevRowIndex = new int[rows, cols];
 
