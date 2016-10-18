@@ -1,5 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\FullName\bin\Debug\FullName.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\FullName\bin\Debug\FullName.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\FullName\bin\Debug\FullName.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\FullName\obj\Debug\FullName.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\FullName\obj\Debug\FullName.pdb

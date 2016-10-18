@@ -1,5 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\04.DifferenceBetweenDates\bin\Debug\04.DifferenceBetweenDates.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\04.DifferenceBetweenDates\bin\Debug\04.DifferenceBetweenDates.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\04.DifferenceBetweenDates\bin\Debug\04.DifferenceBetweenDates.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\04.DifferenceBetweenDates\obj\Debug\04.DifferenceBetweenDates.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\04.DifferenceBetweenDates\obj\Debug\04.DifferenceBetweenDates.pdb

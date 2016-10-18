@@ -1,9 +1,0 @@
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\17.KnidhtPath\bin\Debug\17.KnidhtPath.exe.config
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\17.KnidhtPath\obj\Debug\17.KnidhtPath.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\17.KnidhtPath\obj\Debug\17.KnidhtPath.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\17.KnidhtPath\bin\Debug\17.KnidhtPath.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\17.KnidhtPath\bin\Debug\17.KnidhtPath.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\17.KnidhtPath\obj\Debug\17.KnightPath.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems2\17.KnidhtPath\bin\Debug\17.KnidhtPath.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems2\17.KnidhtPath\obj\Debug\17.KnidhtPath.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems2\17.KnidhtPath\obj\Debug\17.KnidhtPath.pdb

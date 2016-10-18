@@ -1,9 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\02.OddOrEvenCounter\bin\Debug\02.OddOrEvenCounter.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\02.OddOrEvenCounter\bin\Debug\02.OddOrEvenCounter.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\02.OddOrEvenCounter\bin\Debug\02.OddOrEvenCounter.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\02.OddOrEvenCounter\obj\Debug\02.OddOrEvenCounter.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\02.OddOrEvenCounter\obj\Debug\02.OddOrEvenCounter.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\02.OddOrEvenCounter\obj\Debug\02.OddOrEvenCounter.pdb
-D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\02.OddOrEvenCounter\bin\Debug\02.OddOrEvenCounter.exe.config
-D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\02.OddOrEvenCounter\obj\Debug\02.OddOrEvenCounter.exe
-D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\02.OddOrEvenCounter\obj\Debug\02.OddOrEvenCounter.pdb

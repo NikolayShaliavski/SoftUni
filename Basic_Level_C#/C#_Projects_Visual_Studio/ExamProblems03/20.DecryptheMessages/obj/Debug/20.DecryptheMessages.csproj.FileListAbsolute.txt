@@ -1,6 +1,0 @@
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\20.DecryptheMessages\bin\Debug\20.DecryptheMessages.exe.config
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\20.DecryptheMessages\bin\Debug\20.DecryptheMessages.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\20.DecryptheMessages\bin\Debug\20.DecryptheMessages.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\20.DecryptheMessages\obj\Debug\20.DecryptheMessages.csprojResolveAssemblyReference.cache
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\20.DecryptheMessages\obj\Debug\20.DecryptheMessages.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems03\20.DecryptheMessages\obj\Debug\20.DecryptheMessages.pdb

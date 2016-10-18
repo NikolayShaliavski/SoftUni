@@ -1,5 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\05.IsThirdDigitSeven\bin\Debug\05.IsThirdDigitSeven.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\05.IsThirdDigitSeven\bin\Debug\05.IsThirdDigitSeven.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\05.IsThirdDigitSeven\bin\Debug\05.IsThirdDigitSeven.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\05.IsThirdDigitSeven\obj\Debug\05.IsThirdDigitSeven.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\05.IsThirdDigitSeven\obj\Debug\05.IsThirdDigitSeven.pdb

@@ -1,6 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\AgeAfterTenYears\bin\Debug\AgeAfterTenYears.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\AgeAfterTenYears\bin\Debug\AgeAfterTenYears.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\AgeAfterTenYears\bin\Debug\AgeAfterTenYears.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\AgeAfterTenYears\obj\Debug\AgeAfterTenYears.csprojResolveAssemblyReference.cache
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\AgeAfterTenYears\obj\Debug\AgeAfterTenYears.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\AgeAfterTenYears\obj\Debug\AgeAfterTenYears.pdb

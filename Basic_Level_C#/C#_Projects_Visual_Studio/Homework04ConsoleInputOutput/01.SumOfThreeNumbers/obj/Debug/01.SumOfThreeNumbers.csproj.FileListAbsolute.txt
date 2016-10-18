@@ -1,6 +1,0 @@
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\01.SumOfThreeNumbers\bin\Debug\01.SumOfThreeNumbers.exe.config
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\01.SumOfThreeNumbers\bin\Debug\01.SumOfThreeNumbers.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\01.SumOfThreeNumbers\bin\Debug\01.SumOfThreeNumbers.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\01.SumOfThreeNumbers\obj\Debug\01.SumOfThreeNumbers.csprojResolveAssemblyReference.cache
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\01.SumOfThreeNumbers\obj\Debug\01.SumOfThreeNumbers.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\01.SumOfThreeNumbers\obj\Debug\01.SumOfThreeNumbers.pdb

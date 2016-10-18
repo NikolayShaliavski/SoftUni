@@ -1,6 +1,0 @@
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\04.EncryptedMatrix\bin\Debug\04.EncryptedMatrix.exe.config
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\04.EncryptedMatrix\bin\Debug\04.EncryptedMatrix.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\04.EncryptedMatrix\bin\Debug\04.EncryptedMatrix.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\04.EncryptedMatrix\obj\Debug\04.EncryptedMatrix.csprojResolveAssemblyReference.cache
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\04.EncryptedMatrix\obj\Debug\04.EncryptedMatrix.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\04.EncryptedMatrix\obj\Debug\04.EncryptedMatrix.pdb

@@ -1,9 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\Exam09 - 07 November 2014\04.WeirdCombinations\bin\Debug\04.WeirdCombinations.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\Exam09 - 07 November 2014\04.WeirdCombinations\bin\Debug\04.WeirdCombinations.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam09 - 07 November 2014\04.WeirdCombinations\bin\Debug\04.WeirdCombinations.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Exam09 - 07 November 2014\04.WeirdCombinations\obj\Debug\04.WeirdCombinations.csprojResolveAssemblyReference.cache
-c:\users\nick\documents\visual studio 2015\Projects\Exam09 - 07 November 2014\04.WeirdCombinations\obj\Debug\04.WeirdCombinations.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam09 - 07 November 2014\04.WeirdCombinations\obj\Debug\04.WeirdCombinations.pdb
-D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\04.WeirdCombinations\bin\Debug\04.WeirdCombinations.exe.config
-D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\04.WeirdCombinations\obj\Debug\04.WeirdCombinations.exe
-D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\04.WeirdCombinations\obj\Debug\04.WeirdCombinations.pdb

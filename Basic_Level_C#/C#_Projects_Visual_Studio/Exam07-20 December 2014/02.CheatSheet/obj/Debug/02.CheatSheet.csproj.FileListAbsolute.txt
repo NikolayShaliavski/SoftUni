@@ -1,6 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\02.CheatSheet\bin\Debug\02.CheatSheet.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\02.CheatSheet\bin\Debug\02.CheatSheet.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\02.CheatSheet\bin\Debug\02.CheatSheet.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\02.CheatSheet\obj\Debug\02.CheatSheet.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\02.CheatSheet\obj\Debug\02.CheatSheet.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Exam07-20 December 2014\02.CheatSheet\obj\Debug\02.CheatSheet.csprojResolveAssemblyReference.cache

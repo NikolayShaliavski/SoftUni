@@ -1,5 +1,0 @@
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\12.ExtractBits\bin\Debug\12.ExtractBits.exe.config
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\12.ExtractBits\bin\Debug\12.ExtractBits.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\12.ExtractBits\bin\Debug\12.ExtractBits.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\12.ExtractBits\obj\Debug\12.ExtractBits.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\12.ExtractBits\obj\Debug\12.ExtractBits.pdb

@@ -1,9 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\05.BitSwapper\bin\Debug\05.BitSwapper.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\05.BitSwapper\bin\Debug\05.BitSwapper.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\05.BitSwapper\bin\Debug\05.BitSwapper.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\05.BitSwapper\obj\Debug\05.BitSwapper.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\05.BitSwapper\obj\Debug\05.BitSwapper.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam09 - 07 November 2014\05.BitSwapper\obj\Debug\05.BitSwapper.pdb
-D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\05.BitSwapper\bin\Debug\05.BitSwapper.exe.config
-D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\05.BitSwapper\obj\Debug\05.BitSwapper.exe
-D:\GitHub\SoftUni\Basic_Level_C#\C#_Projects_Visual_Studio\Exam09 - 07 November 2014\05.BitSwapper\obj\Debug\05.BitSwapper.pdb

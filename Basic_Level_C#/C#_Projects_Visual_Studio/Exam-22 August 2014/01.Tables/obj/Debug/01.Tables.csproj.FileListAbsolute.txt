@@ -1,6 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\01.Tables\bin\Debug\01.Tables.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\01.Tables\bin\Debug\01.Tables.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\01.Tables\bin\Debug\01.Tables.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\01.Tables\obj\Debug\01.Tables.csprojResolveAssemblyReference.cache
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\01.Tables\obj\Debug\01.Tables.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\01.Tables\obj\Debug\01.Tables.pdb

@@ -1,9 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\01.InsideTheBuilding\bin\Debug\01.InsideTheBuilding.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\01.InsideTheBuilding\bin\Debug\01.InsideTheBuilding.exe
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\01.InsideTheBuilding\bin\Debug\01.InsideTheBuilding.pdb
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\01.InsideTheBuilding\obj\Debug\01.InsideTheBuilding.csprojResolveAssemblyReference.cache
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\01.InsideTheBuilding\obj\Debug\01.InsideTheBuilding.exe
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems06-14 April 2014\01.InsideTheBuilding\obj\Debug\01.InsideTheBuilding.pdb
-C:\Users\Nick\Desktop\Projects\ExamProblems06-14 April 2014\01.InsideTheBuilding\bin\Debug\01.InsideTheBuilding.exe.config
-C:\Users\Nick\Desktop\Projects\ExamProblems06-14 April 2014\01.InsideTheBuilding\obj\Debug\01.InsideTheBuilding.exe
-C:\Users\Nick\Desktop\Projects\ExamProblems06-14 April 2014\01.InsideTheBuilding\obj\Debug\01.InsideTheBuilding.pdb

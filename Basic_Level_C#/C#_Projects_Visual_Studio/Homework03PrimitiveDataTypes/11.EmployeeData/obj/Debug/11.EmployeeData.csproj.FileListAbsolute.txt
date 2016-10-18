@@ -1,5 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\11.EmployeeData\bin\Debug\11.EmployeeData.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\11.EmployeeData\bin\Debug\11.EmployeeData.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\11.EmployeeData\bin\Debug\11.EmployeeData.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\11.EmployeeData\obj\Debug\11.EmployeeData.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\11.EmployeeData\obj\Debug\11.EmployeeData.pdb

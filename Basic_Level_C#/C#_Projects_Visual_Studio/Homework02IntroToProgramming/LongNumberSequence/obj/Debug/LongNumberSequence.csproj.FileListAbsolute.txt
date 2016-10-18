@@ -1,6 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\LongNumberSequence\bin\Debug\LongNumberSequence.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\LongNumberSequence\bin\Debug\LongNumberSequence.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\LongNumberSequence\bin\Debug\LongNumberSequence.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\LongNumberSequence\obj\Debug\LongNumberSequence.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework02IntroToProgramming\LongNumberSequence\obj\Debug\LongNumberSequence.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework02IntroToProgramming\LongNumberSequence\obj\Debug\LongNumberSequence.csprojResolveAssemblyReference.cache

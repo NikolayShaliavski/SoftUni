@@ -1,6 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\17.GreatestCommonDiviser\bin\Debug\17.GreatestCommonDiviser.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\17.GreatestCommonDiviser\bin\Debug\17.GreatestCommonDiviser.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\17.GreatestCommonDiviser\bin\Debug\17.GreatestCommonDiviser.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\17.GreatestCommonDiviser\obj\Debug\17.GreatestCommonDiviser.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\17.GreatestCommonDiviser\obj\Debug\17.GreatestCommonDiviser.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\17.GreatestCommonDiviser\obj\Debug\17.GreatestCommonDiviser.pdb

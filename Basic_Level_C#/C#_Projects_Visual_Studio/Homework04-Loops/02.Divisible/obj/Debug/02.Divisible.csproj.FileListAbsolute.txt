@@ -1,6 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\02.Divisible\bin\Debug\02.Divisible.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\02.Divisible\obj\Debug\02.Divisible.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\02.Divisible\bin\Debug\02.Divisible.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\02.Divisible\bin\Debug\02.Divisible.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\02.Divisible\obj\Debug\02.Divisible.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\02.Divisible\obj\Debug\02.Divisible.pdb

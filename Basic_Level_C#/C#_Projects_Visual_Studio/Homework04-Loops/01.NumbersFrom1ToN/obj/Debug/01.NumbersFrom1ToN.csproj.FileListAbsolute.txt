@@ -1,5 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\Homework04-Loops\01.NumbersFrom1ToN\bin\Debug\01.NumbersFrom1ToN.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\Homework04-Loops\01.NumbersFrom1ToN\bin\Debug\01.NumbersFrom1ToN.exe
-c:\users\nick\documents\visual studio 2015\Projects\Homework04-Loops\01.NumbersFrom1ToN\bin\Debug\01.NumbersFrom1ToN.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Homework04-Loops\01.NumbersFrom1ToN\obj\Debug\01.NumbersFrom1ToN.exe
-c:\users\nick\documents\visual studio 2015\Projects\Homework04-Loops\01.NumbersFrom1ToN\obj\Debug\01.NumbersFrom1ToN.pdb

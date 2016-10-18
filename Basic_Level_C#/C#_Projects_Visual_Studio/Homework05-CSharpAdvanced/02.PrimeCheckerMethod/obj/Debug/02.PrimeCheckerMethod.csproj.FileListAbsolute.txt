@@ -1,6 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\02.PrimeCheckerMethod\bin\Debug\02.PrimeCheckerMethod.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\02.PrimeCheckerMethod\bin\Debug\02.PrimeCheckerMethod.exe
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\02.PrimeCheckerMethod\bin\Debug\02.PrimeCheckerMethod.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\02.PrimeCheckerMethod\obj\Debug\02.PrimeCheckerMethod.exe
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\02.PrimeCheckerMethod\obj\Debug\02.PrimeCheckerMethod.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\02.PrimeCheckerMethod\obj\Debug\02.PrimeCheckerMethod.csprojResolveAssemblyReference.cache

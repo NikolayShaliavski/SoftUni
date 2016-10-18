@@ -1,9 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\06.ShufflingDigits\bin\Debug\06.ShufflingDigits.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\06.ShufflingDigits\bin\Debug\06.ShufflingDigits.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\06.ShufflingDigits\bin\Debug\06.ShufflingDigits.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\06.ShufflingDigits\obj\Debug\06.ShufflingDigits.csprojResolveAssemblyReference.cache
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\06.ShufflingDigits\obj\Debug\06.ShufflingDigits.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\06.ShufflingDigits\obj\Debug\06.ShufflingDigits.pdb
-C:\Users\Nick\Desktop\Projects\Homework02 - OperatorsAndExpressions\06.ShufflingDigits\bin\Debug\06.ShufflingDigits.exe.config
-C:\Users\Nick\Desktop\Projects\Homework02 - OperatorsAndExpressions\06.ShufflingDigits\obj\Debug\06.ShufflingDigits.exe
-C:\Users\Nick\Desktop\Projects\Homework02 - OperatorsAndExpressions\06.ShufflingDigits\obj\Debug\06.ShufflingDigits.pdb

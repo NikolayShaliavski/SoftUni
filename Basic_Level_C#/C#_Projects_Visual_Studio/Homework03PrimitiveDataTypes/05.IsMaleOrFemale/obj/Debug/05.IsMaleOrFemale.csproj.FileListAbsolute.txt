@@ -1,5 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\05.IsMaleOrFemale\bin\Debug\05.IsMaleOrFemale.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\05.IsMaleOrFemale\bin\Debug\05.IsMaleOrFemale.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\05.IsMaleOrFemale\bin\Debug\05.IsMaleOrFemale.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\05.IsMaleOrFemale\obj\Debug\05.IsMaleOrFemale.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\05.IsMaleOrFemale\obj\Debug\05.IsMaleOrFemale.pdb

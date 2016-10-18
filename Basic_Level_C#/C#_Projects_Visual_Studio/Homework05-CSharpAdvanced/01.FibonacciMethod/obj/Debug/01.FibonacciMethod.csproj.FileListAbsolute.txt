@@ -1,6 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\01.FibonacciMethod\bin\Debug\01.FibonacciMethod.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\01.FibonacciMethod\bin\Debug\01.FibonacciMethod.exe
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\01.FibonacciMethod\bin\Debug\01.FibonacciMethod.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\01.FibonacciMethod\obj\Debug\01.FibonacciMethod.csprojResolveAssemblyReference.cache
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\01.FibonacciMethod\obj\Debug\01.FibonacciMethod.exe
-c:\users\nick\documents\visual studio 2015\Projects\Homework05-CSharpAdvanced\01.FibonacciMethod\obj\Debug\01.FibonacciMethod.pdb

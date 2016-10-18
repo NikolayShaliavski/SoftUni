@@ -1,6 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\05.WaveBits\bin\Debug\05.WaveBits.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\05.WaveBits\bin\Debug\05.WaveBits.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\05.WaveBits\bin\Debug\05.WaveBits.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\05.WaveBits\obj\Debug\05.WaveBits.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\05.WaveBits\obj\Debug\05.WaveBits.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Exam-30August2015\05.WaveBits\obj\Debug\05.WaveBits.pdb

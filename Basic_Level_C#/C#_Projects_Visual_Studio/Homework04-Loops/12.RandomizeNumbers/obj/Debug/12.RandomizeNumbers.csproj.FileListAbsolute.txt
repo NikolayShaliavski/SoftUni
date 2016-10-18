@@ -1,6 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\12.RandomizeNumbers\bin\Debug\12.RandomizeNumbers.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\12.RandomizeNumbers\bin\Debug\12.RandomizeNumbers.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\12.RandomizeNumbers\bin\Debug\12.RandomizeNumbers.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\12.RandomizeNumbers\obj\Debug\12.RandomizeNumbers.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\12.RandomizeNumbers\obj\Debug\12.RandomizeNumbers.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\12.RandomizeNumbers\obj\Debug\12.RandomizeNumbers.pdb

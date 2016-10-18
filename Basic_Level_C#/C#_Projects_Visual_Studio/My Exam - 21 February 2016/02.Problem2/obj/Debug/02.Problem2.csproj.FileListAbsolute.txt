@@ -1,9 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\My Exam - 21 February 2016\02.Problem2\bin\Debug\02.Problem2.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\02.Problem2\bin\Debug\02.Problem2.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\02.Problem2\bin\Debug\02.Problem2.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\02.Problem2\obj\Debug\02.Problem2.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\02.Problem2\obj\Debug\02.Problem2.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\My Exam - 21 February 2016\02.Problem2\obj\Debug\02.Problem2.pdb
-C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\02.Problem2\bin\Debug\02.Problem2.exe.config
-C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\02.Problem2\obj\Debug\02.Problem2.exe
-C:\Users\Nick\Desktop\Projects\My Exam - 21 February 2016\02.Problem2\obj\Debug\02.Problem2.pdb

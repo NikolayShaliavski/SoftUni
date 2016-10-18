@@ -1,6 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.TrailingZerosInFactoriel\bin\Debug\08.TrailingZerosInFactoriel.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.TrailingZerosInFactoriel\bin\Debug\08.TrailingZerosInFactoriel.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.TrailingZerosInFactoriel\bin\Debug\08.TrailingZerosInFactoriel.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.TrailingZerosInFactoriel\obj\Debug\18.TrailingZerosInFactoriel.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.TrailingZerosInFactoriel\obj\Debug\08.TrailingZerosInFactoriel.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\08.TrailingZerosInFactoriel\obj\Debug\08.TrailingZerosInFactoriel.pdb

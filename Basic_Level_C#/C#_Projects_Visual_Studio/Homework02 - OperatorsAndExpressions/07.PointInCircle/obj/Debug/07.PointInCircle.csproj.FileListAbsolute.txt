@@ -1,6 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\07.PointInCircle\bin\Debug\07.PointInCircle.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\07.PointInCircle\bin\Debug\07.PointInCircle.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\07.PointInCircle\bin\Debug\07.PointInCircle.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\07.PointInCircle\obj\Debug\07.PointInCircle.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\07.PointInCircle\obj\Debug\07.PointInCircle.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework05 - OperatorsAndExpressions\07.PointInCircle\obj\Debug\07.PointInCircle.csprojResolveAssemblyReference.cache

@@ -1,6 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\05.EmergencyRepair\bin\Debug\05.EmergencyRepair.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\05.EmergencyRepair\bin\Debug\05.EmergencyRepair.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\05.EmergencyRepair\bin\Debug\05.EmergencyRepair.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\05.EmergencyRepair\obj\Debug\05.EmergencyRepair.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\05.EmergencyRepair\obj\Debug\05.EmergencyRepair.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\05.EmergencyRepair\obj\Debug\05.EmergencyRepair.pdb

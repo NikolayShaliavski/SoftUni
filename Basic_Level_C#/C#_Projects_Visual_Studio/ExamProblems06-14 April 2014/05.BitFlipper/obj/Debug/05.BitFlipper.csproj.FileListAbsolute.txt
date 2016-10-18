@@ -1,5 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\05.BitFlipper\bin\Debug\05.BitFlipper.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\05.BitFlipper\bin\Debug\05.BitFlipper.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\05.BitFlipper\bin\Debug\05.BitFlipper.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\05.BitFlipper\obj\Debug\05.BitFlipper.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\05.BitFlipper\obj\Debug\05.BitFlipper.pdb

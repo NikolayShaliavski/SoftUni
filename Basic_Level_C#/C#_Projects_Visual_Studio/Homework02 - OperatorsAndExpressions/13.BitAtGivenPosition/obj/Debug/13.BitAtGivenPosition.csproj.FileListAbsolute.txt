@@ -1,5 +1,0 @@
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\13.BitAtGivenPosition\bin\Debug\13.BitAtGivenPosition.exe.config
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\13.BitAtGivenPosition\bin\Debug\13.BitAtGivenPosition.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\13.BitAtGivenPosition\bin\Debug\13.BitAtGivenPosition.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\13.BitAtGivenPosition\obj\Debug\13.BitAtGivenPosition.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework05 - OperatorsAndExpressions\13.BitAtGivenPosition\obj\Debug\13.BitAtGivenPosition.pdb

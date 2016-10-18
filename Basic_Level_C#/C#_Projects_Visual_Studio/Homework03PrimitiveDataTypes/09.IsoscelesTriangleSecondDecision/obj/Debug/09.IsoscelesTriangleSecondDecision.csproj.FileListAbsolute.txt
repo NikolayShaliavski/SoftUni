@@ -1,5 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\09.IsoscelesTriangleSecondDecision\bin\Debug\09.IsoscelesTriangleSecondDecision.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\09.IsoscelesTriangleSecondDecision\bin\Debug\09.IsoscelesTriangleSecondDecision.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\09.IsoscelesTriangleSecondDecision\bin\Debug\09.IsoscelesTriangleSecondDecision.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\09.IsoscelesTriangleSecondDecision\obj\Debug\09.IsoscelesTriangleSecondDecision.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\09.IsoscelesTriangleSecondDecision\obj\Debug\09.IsoscelesTriangleSecondDecision.pdb

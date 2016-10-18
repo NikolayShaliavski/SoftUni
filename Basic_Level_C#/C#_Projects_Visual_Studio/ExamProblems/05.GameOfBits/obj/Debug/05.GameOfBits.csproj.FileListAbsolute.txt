@@ -1,6 +1,0 @@
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\05.GameOfBits\bin\Debug\05.GameOfBits.exe.config
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\05.GameOfBits\bin\Debug\05.GameOfBits.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\05.GameOfBits\bin\Debug\05.GameOfBits.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\05.GameOfBits\obj\Debug\05.GameOfBits.csprojResolveAssemblyReference.cache
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\05.GameOfBits\obj\Debug\05.GameOfBits.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems\05.GameOfBits\obj\Debug\05.GameOfBits.pdb

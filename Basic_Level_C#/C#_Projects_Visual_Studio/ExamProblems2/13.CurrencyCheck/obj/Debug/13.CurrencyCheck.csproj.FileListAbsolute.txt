@@ -1,9 +1,0 @@
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\13.CurrencyCheck\bin\Debug\13.CurrencyCheck.exe.config
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\13.CurrencyCheck\bin\Debug\13.CurrencyCheck.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\13.CurrencyCheck\bin\Debug\13.CurrencyCheck.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\13.CurrencyCheck\obj\Debug\13.CurrencyCheck.csprojResolveAssemblyReference.cache
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\13.CurrencyCheck\obj\Debug\13.CurrencyCheck.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\ExamProblems2\13.CurrencyCheck\obj\Debug\13.CurrencyCheck.pdb
-C:\Users\Nick\Desktop\ExamProblems2\13.CurrencyCheck\bin\Debug\13.CurrencyCheck.exe.config
-C:\Users\Nick\Desktop\ExamProblems2\13.CurrencyCheck\obj\Debug\13.CurrencyCheck.exe
-C:\Users\Nick\Desktop\ExamProblems2\13.CurrencyCheck\obj\Debug\13.CurrencyCheck.pdb

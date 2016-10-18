@@ -1,9 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework04ConsoleInputOutput\09.SumOfNumbers\bin\Debug\09.SumOfNumbers.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework04ConsoleInputOutput\09.SumOfNumbers\bin\Debug\09.SumOfNumbers.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework04ConsoleInputOutput\09.SumOfNumbers\bin\Debug\09.SumOfNumbers.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework04ConsoleInputOutput\09.SumOfNumbers\obj\Debug\09.SumOfNumbers.csprojResolveAssemblyReference.cache
-c:\users\hp\documents\visual studio 2015\Projects\Homework04ConsoleInputOutput\09.SumOfNumbers\obj\Debug\09.SumOfNumbers.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework04ConsoleInputOutput\09.SumOfNumbers\obj\Debug\09.SumOfNumbers.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\09.SumOfNumbers\bin\Debug\09.SumOfNumbers.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\09.SumOfNumbers\obj\Debug\09.SumOfNumbers.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\09.SumOfNumbers\obj\Debug\09.SumOfNumbers.pdb

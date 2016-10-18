@@ -1,6 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\01.CakeTycoon\bin\Debug\01.CakeTycoon.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\01.CakeTycoon\bin\Debug\01.CakeTycoon.exe
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\01.CakeTycoon\bin\Debug\01.CakeTycoon.pdb
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\01.CakeTycoon\obj\Debug\01.CakeTycoon.csprojResolveAssemblyReference.cache
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\01.CakeTycoon\obj\Debug\01.CakeTycoon.exe
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblem05-January2016\01.CakeTycoon\obj\Debug\01.CakeTycoon.pdb

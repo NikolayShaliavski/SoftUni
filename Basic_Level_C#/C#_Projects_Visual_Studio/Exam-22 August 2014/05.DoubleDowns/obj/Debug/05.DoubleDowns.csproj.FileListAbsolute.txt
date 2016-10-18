@@ -1,6 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\05.DoubleDowns\bin\Debug\05.DoubleDowns.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\05.DoubleDowns\bin\Debug\05.DoubleDowns.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\05.DoubleDowns\bin\Debug\05.DoubleDowns.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\05.DoubleDowns\obj\Debug\05.DoubleDowns.csprojResolveAssemblyReference.cache
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\05.DoubleDowns\obj\Debug\05.DoubleDowns.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam-22 August 2014\05.DoubleDowns\obj\Debug\05.DoubleDowns.pdb

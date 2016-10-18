@@ -1,5 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\04.UnicodeCharacter\bin\Debug\04.UnicodeCharacter.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\04.UnicodeCharacter\bin\Debug\04.UnicodeCharacter.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\04.UnicodeCharacter\bin\Debug\04.UnicodeCharacter.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\04.UnicodeCharacter\obj\Debug\04.UnicodeCharacter.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\04.UnicodeCharacter\obj\Debug\04.UnicodeCharacter.pdb

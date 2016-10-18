@@ -1,6 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\01.FourFactors\bin\Debug\01.FourFactors.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\01.FourFactors\bin\Debug\01.FourFactors.exe
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\01.FourFactors\bin\Debug\01.FourFactors.pdb
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\01.FourFactors\obj\Debug\01.FourFactors.csprojResolveAssemblyReference.cache
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\01.FourFactors\obj\Debug\01.FourFactors.exe
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\01.FourFactors\obj\Debug\01.FourFactors.pdb

@@ -1,6 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\02.TheFootbalStatistician\bin\Debug\02.TheFootbalStatistician.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\02.TheFootbalStatistician\bin\Debug\02.TheFootbalStatistician.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\02.TheFootbalStatistician\bin\Debug\02.TheFootbalStatistician.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\02.TheFootbalStatistician\obj\Debug\02.TheFootbalStatistician.csprojResolveAssemblyReference.cache
-c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\02.TheFootbalStatistician\obj\Debug\02.TheFootbalStatistician.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam-30August2015\02.TheFootbalStatistician\obj\Debug\02.TheFootbalStatistician.pdb

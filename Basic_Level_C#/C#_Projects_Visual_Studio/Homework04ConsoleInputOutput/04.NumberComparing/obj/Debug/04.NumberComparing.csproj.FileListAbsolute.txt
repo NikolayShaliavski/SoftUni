@@ -1,5 +1,0 @@
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\04.NumberComparing\bin\Debug\04.NumberComparing.exe.config
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\04.NumberComparing\bin\Debug\04.NumberComparing.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\04.NumberComparing\bin\Debug\04.NumberComparing.pdb
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\04.NumberComparing\obj\Debug\04.NumberComparing.exe
-C:\Users\HP\Documents\Visual Studio 2015\Projects\Homework04ConsoleInputOutput\04.NumberComparing\obj\Debug\04.NumberComparing.pdb

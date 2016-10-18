@@ -1,6 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\07.Combinatorics\bin\Debug\07.Combinatorics.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\07.Combinatorics\bin\Debug\07.Combinatorics.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\07.Combinatorics\bin\Debug\07.Combinatorics.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\07.Combinatorics\obj\Debug\07.Combinatorics.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\07.Combinatorics\obj\Debug\07.Combinatorics.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework04-Loops\07.Combinatorics\obj\Debug\07.Combinatorics.csprojResolveAssemblyReference.cache

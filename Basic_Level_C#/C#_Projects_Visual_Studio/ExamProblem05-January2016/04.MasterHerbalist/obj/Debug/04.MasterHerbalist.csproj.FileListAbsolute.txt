@@ -1,6 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\04.MasterHerbalist\bin\Debug\04.MasterHerbalist.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\04.MasterHerbalist\bin\Debug\04.MasterHerbalist.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\04.MasterHerbalist\bin\Debug\04.MasterHerbalist.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\04.MasterHerbalist\obj\Debug\04.MasterHerbalist.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\04.MasterHerbalist\obj\Debug\04.MasterHerbalist.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblem05-January2016\04.MasterHerbalist\obj\Debug\04.MasterHerbalist.pdb

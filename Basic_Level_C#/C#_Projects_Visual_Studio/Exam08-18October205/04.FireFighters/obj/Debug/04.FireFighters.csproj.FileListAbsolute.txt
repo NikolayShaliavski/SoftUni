@@ -1,6 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\04.FireFighters\bin\Debug\04.FireFighters.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\04.FireFighters\bin\Debug\04.FireFighters.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\04.FireFighters\bin\Debug\04.FireFighters.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\04.FireFighters\obj\Debug\04.FireFighters.csprojResolveAssemblyReference.cache
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\04.FireFighters\obj\Debug\04.FireFighters.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\04.FireFighters\obj\Debug\04.FireFighters.pdb

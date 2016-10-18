@@ -1,6 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\02.GrandTheftExamo\bin\Debug\02.GrandTheftExamo.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\02.GrandTheftExamo\bin\Debug\02.GrandTheftExamo.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\02.GrandTheftExamo\bin\Debug\02.GrandTheftExamo.pdb
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\02.GrandTheftExamo\obj\Debug\02.GrandTheftExamo.csprojResolveAssemblyReference.cache
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\02.GrandTheftExamo\obj\Debug\02.GrandTheftExamo.exe
-c:\users\nick\documents\visual studio 2015\Projects\Exam08-18October205\02.GrandTheftExamo\obj\Debug\02.GrandTheftExamo.pdb

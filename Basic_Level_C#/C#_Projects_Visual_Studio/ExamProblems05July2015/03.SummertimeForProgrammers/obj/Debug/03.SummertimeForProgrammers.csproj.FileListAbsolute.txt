@@ -1,5 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\03.SummertimeForProgrammers\bin\Debug\03.SummertimeForProgrammers.exe.config
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\03.SummertimeForProgrammers\bin\Debug\03.SummertimeForProgrammers.exe
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\03.SummertimeForProgrammers\bin\Debug\03.SummertimeForProgrammers.pdb
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\03.SummertimeForProgrammers\obj\Debug\03.SummertimeForProgrammers.exe
-c:\users\nick\documents\visual studio 2015\Projects\ExamProblems05July2015\03.SummertimeForProgrammers\obj\Debug\03.SummertimeForProgrammers.pdb

@@ -1,6 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\03.ProgrammerDNA\bin\Debug\03.ProgrammerDNA.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\03.ProgrammerDNA\bin\Debug\03.ProgrammerDNA.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\03.ProgrammerDNA\bin\Debug\03.ProgrammerDNA.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\03.ProgrammerDNA\obj\Debug\03.ProgrammerDNA.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\03.ProgrammerDNA\obj\Debug\03.ProgrammerDNA.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\ExamProblems06-14 April 2014\03.ProgrammerDNA\obj\Debug\03.ProgrammerDNA.pdb

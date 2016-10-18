@@ -1,6 +1,0 @@
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\15.ExtracctUrlFromText\bin\Debug\15.ExtracctUrlFromText.exe.config
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\15.ExtracctUrlFromText\bin\Debug\15.ExtracctUrlFromText.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\15.ExtracctUrlFromText\bin\Debug\15.ExtracctUrlFromText.pdb
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\15.ExtracctUrlFromText\obj\Debug\15.ExtracctUrlFromText.csprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\15.ExtracctUrlFromText\obj\Debug\15.ExtracctUrlFromText.exe
-C:\Users\Nick\Documents\Visual Studio 2015\Projects\Homework05-CSharpAdvanced\15.ExtracctUrlFromText\obj\Debug\15.ExtracctUrlFromText.pdb

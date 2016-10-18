@@ -1,6 +1,0 @@
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\15.ASCIITable\bin\Debug\15.ASCIITable.exe.config
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\15.ASCIITable\bin\Debug\15.ASCIITable.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\15.ASCIITable\bin\Debug\15.ASCIITable.pdb
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\15.ASCIITable\obj\Debug\15.ASCIITable.csprojResolveAssemblyReference.cache
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\15.ASCIITable\obj\Debug\15.ASCIITable.exe
-c:\users\hp\documents\visual studio 2015\Projects\Homework03PrimitiveDataTypes\15.ASCIITable\obj\Debug\15.ASCIITable.pdb
