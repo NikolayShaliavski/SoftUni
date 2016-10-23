@@ -16,7 +16,7 @@ public class Connector {
         connectionProps.put("user", username);
         connectionProps.put("password", password);
         connection = DriverManager.getConnection(("jdbc:" + driver + "://" +
-        host + ":" + port + "/" + dbName), connectionProps);
+        host + ":" + port + "/" + dbName + "?useSSL=false"), connectionProps);
     }
 
     public static Connection getConnection() {

@@ -64,4 +64,15 @@ public class User {
     public void setRegistrationDate(Date registrationDate) {
         this.registrationDate = registrationDate;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Id: " + this.getId()).append(System.lineSeparator());
+        sb.append("Name: " + this.getName()).append(System.lineSeparator());
+        sb.append("Age: " + this.getAge()).append(System.lineSeparator());
+        sb.append("Registration Date: " + this.getRegistrationDate());
+
+        return sb.toString();
+    }
 }

@@ -109,23 +109,77 @@ public class EntityManager implements DBContext {
     }
 
     @Override
-    public <E> Iterable<E> find(Class<E> table) {
-        return null;
+    public <E> List<E> find(Class<E> table) throws IllegalAccessException, SQLException, InstantiationException {
+        return this.find(table, null);
     }
 
     @Override
-    public <E> Iterable<E> find(Class<E> table, String where) {
-        return null;
+    public <E> List<E> find(Class<E> table, String where) throws IllegalAccessException, InstantiationException, SQLException {
+        String tableName = this.getTableName(table);
+        String sqlSelect = "SELECT * FROM " + tableName +" WHERE 1=1";
+        if(where != null){
+            sqlSelect += " AND " + where;
+        }
+
+        List<E> entities = new ArrayList<>();
+
+        ResultSet rs = connection.prepareStatement(sqlSelect).executeQuery();
+        while (rs.next()){
+            E entity = table.newInstance();
+            this.fillValues(entity,rs);
+            entities.add(entity);
+        }
+
+        return Collections.unmodifiableList(entities);
+    }
+
+    private <E> void fillValues (E entity, ResultSet rs) throws SQLException, IllegalAccessException {
+        Field[] fields = entity.getClass().getDeclaredFields();
+        for (Field field : fields) {
+            field.setAccessible(true);
+            String fieldName = this.getFieldName(field);
+            Object value = Mapper.getFieldValue(field, fieldName, rs);
+            field.set(entity, value);
+        }
     }
 
     @Override
-    public <E> E findFirst(Class<E> table) {
-        return null;
+    public <E> E findFirst(Class<E> table) throws IllegalAccessException, SQLException, InstantiationException {
+        return this.findFirst(table, null);
     }
 
     @Override
-    public <E> E findFirst(Class<E> table, String where) {
-        return null;
+    public <E> E findFirst(Class<E> table, String where) throws IllegalAccessException, InstantiationException, SQLException {
+        String tableName = this.getTableName(table);
+        String sqlSelect = "SELECT * FROM " + tableName +" WHERE 1=1";
+        if(where != null){
+            sqlSelect += " AND " + where;
+        }
+
+        ResultSet rs = connection.prepareStatement(sqlSelect).executeQuery();
+        rs.first();
+
+        E entity = table.newInstance();
+
+        this.fillValues(entity,rs);
+
+        return entity;
+    }
+
+    static class Mapper{
+        public static Object getFieldValue(Field field,String fieldName, ResultSet rs) throws SQLException {
+            if(field.getType() == Integer.class || field.getType() == int.class){
+                return rs.getInt(fieldName);
+            } else if(field.getType() == Long.class || field.getType() == long.class) {
+                return rs.getLong(fieldName);
+            }else if(field.getType() == String.class) {
+                return rs.getString(fieldName);
+            }else if(field.getType() == Date.class) {
+                return rs.getDate(fieldName);
+            }
+
+            return null;
+        }
     }
 
     private <E> String getTableName(Class<E> entity) {

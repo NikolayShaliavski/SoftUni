@@ -1,20 +1,25 @@
 import connection.DatabaseConnection;
-import models.User;
-import orm.EntityManager;
+        import models.User;
+        import orm.EntityManager;
 
-import java.sql.SQLException;
-import java.util.Date;
+        import java.sql.SQLException;
+        import java.util.Date;
+import java.util.List;
 
-/**
- * Created by teodo on 20/10/2016.
- */
 public class DemoORM {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InstantiationException {
         try {
             EntityManager em = new EntityManager(DatabaseConnection.getConnection());
-            User student = new User("Ivan2", 23, new Date());
-            student.setId(1);
-            em.persist(student);
+            User user = new User("Ivan2", 23, new Date());
+            user.setId(1);
+            em.persist(user);
+            User userFind = em.findFirst(User.class);
+            System.out.println(userFind.toString());
+
+            List<User> users = em.find(User.class);
+            for (User userFromList : users) {
+                System.out.println(userFromList.toString());
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
