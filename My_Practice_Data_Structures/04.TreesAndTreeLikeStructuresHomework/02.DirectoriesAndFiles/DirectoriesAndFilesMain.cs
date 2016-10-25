@@ -4,15 +4,50 @@ using System.Linq;
 
 class DirectoriesAndFilesMain
 {
+    private static bool hasFoundSubfolder;
+    private static long sumFiles = 0;
+
     static void Main(string[] args)
     {
-        DirectoryInfo rootDir = new DirectoryInfo("D:\\Movies");
+        DirectoryInfo rootDir = new DirectoryInfo("C:\\Windows");
         string dirName = rootDir.Name;
         Folder rootFolder = new Folder(dirName);
 
         TraverseDirectories(rootDir, rootFolder);
 
-        TraverseFolders(rootFolder, null, 0);
+        string subfolderName = "AppPatch";
+        
+        SumOfFilesInSubfolder(rootFolder, subfolderName);
+        Console.WriteLine("Sum of files in subtree: {0}", sumFiles);
+        //TraverseFolders(rootFolder, null, 0);
+    }
+
+    private static void SumOfFilesInSubfolder(Folder folder, string subfolderName)
+    {
+        if (folder.Name == subfolderName)
+        {
+            hasFoundSubfolder = true;
+        }
+        if (hasFoundSubfolder)
+        {
+            if (folder.Files != null)
+            {
+                sumFiles += folder.Files.Select(f => f.Size).Sum();
+            }
+        }
+        if (folder.Folders != null)
+        {
+            foreach (var f in folder.Folders)
+            {
+                SumOfFilesInSubfolder(f, subfolderName);
+            }
+        }
+        
+        if (folder.Name == subfolderName)
+        {
+            hasFoundSubfolder = false;
+        }
+        
     }
 
     private static void TraverseFolders(Folder folder, File file, int indent)
