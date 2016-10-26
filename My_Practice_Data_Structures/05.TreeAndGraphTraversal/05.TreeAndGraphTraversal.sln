@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.FindTheRoot", "01.FindTheRoot\01.FindTheRoot.csproj", "{22C12419-FCE5-48E5-977D-D150E86221AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.RoundDance", "02.RoundDance\02.RoundDance.csproj", "{3E5FDBDF-732F-42DB-BB58-4605B9EDB4C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.RideTheHorse", "03.RideTheHorse\03.RideTheHorse.csproj", "{A53E6225-D001-4BF7-9212-EA287104D6DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22C12419-FCE5-48E5-977D-D150E86221AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C12419-FCE5-48E5-977D-D150E86221AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C12419-FCE5-48E5-977D-D150E86221AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C12419-FCE5-48E5-977D-D150E86221AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E5FDBDF-732F-42DB-BB58-4605B9EDB4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E5FDBDF-732F-42DB-BB58-4605B9EDB4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E5FDBDF-732F-42DB-BB58-4605B9EDB4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E5FDBDF-732F-42DB-BB58-4605B9EDB4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53E6225-D001-4BF7-9212-EA287104D6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53E6225-D001-4BF7-9212-EA287104D6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53E6225-D001-4BF7-9212-EA287104D6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53E6225-D001-4BF7-9212-EA287104D6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
