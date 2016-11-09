@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.RoundDance", "02.RoundDa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.RideTheHorse", "03.RideTheHorse\03.RideTheHorse.csproj", "{A53E6225-D001-4BF7-9212-EA287104D6DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.LongestPathInTree", "04.LongestPathInTree\04.LongestPathInTree.csproj", "{9FAD0CAE-4043-4399-A585-73E58D903FF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Sorting", "05.Sorting\05.Sorting.csproj", "{A4718011-B298-4DA5-840D-9D464DE8DB5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{A53E6225-D001-4BF7-9212-EA287104D6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A53E6225-D001-4BF7-9212-EA287104D6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A53E6225-D001-4BF7-9212-EA287104D6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FAD0CAE-4043-4399-A585-73E58D903FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FAD0CAE-4043-4399-A585-73E58D903FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FAD0CAE-4043-4399-A585-73E58D903FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FAD0CAE-4043-4399-A585-73E58D903FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4718011-B298-4DA5-840D-9D464DE8DB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4718011-B298-4DA5-840D-9D464DE8DB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4718011-B298-4DA5-840D-9D464DE8DB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4718011-B298-4DA5-840D-9D464DE8DB5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

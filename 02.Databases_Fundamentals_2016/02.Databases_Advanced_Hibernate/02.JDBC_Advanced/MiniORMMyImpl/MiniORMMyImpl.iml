@@ -14,11 +14,17 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.39-bin.jar!/" />
+          <root url="file://C:/Program Files (x86)/MySQL/Connector.J 5.1" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://C:/Program Files (x86)/MySQL/Connector.J 5.1" />
+          <root url="file://C:/Program Files (x86)/MySQL/Connector.J 5.1/src" />
+        </SOURCES>
+        <jarDirectory url="file://C:/Program Files (x86)/MySQL/Connector.J 5.1" recursive="false" />
+        <jarDirectory url="file://C:/Program Files (x86)/MySQL/Connector.J 5.1" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="ColorSettingsTemplate" level="project" />
   </component>
 </module>
