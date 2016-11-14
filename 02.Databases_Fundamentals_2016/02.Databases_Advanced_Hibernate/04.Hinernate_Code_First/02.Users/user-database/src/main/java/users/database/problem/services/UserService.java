@@ -4,5 +4,5 @@ import users.database.problem.entities.User;
 
 public interface UserService {
 
-    void registerUser(User user);
+    void register(User user);
 }

@@ -1,12 +1,9 @@
 package users.database.problem.terminal;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import users.database.problem.entities.Town;
 import users.database.problem.entities.User;
-import users.database.problem.services.TownService;
-import users.database.problem.services.UserService;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -14,11 +11,11 @@ import java.util.GregorianCalendar;
 @Component
 public class Terminal implements CommandLineRunner {
 
-    @Autowired
-    private UserService userService;
-
-    @Autowired
-    private TownService townService;
+//    @Autowired
+//    private UserService userService;
+//
+//    @Autowired
+//    private TownService townService;
 
     @Override
     public void run(String... strings) throws Exception {
@@ -54,8 +51,8 @@ public class Terminal implements CommandLineRunner {
         pesho.setTown(townTwo);
         townTwo.setUser(pesho);
 
-        this.userService.registerUser(gosho);
-        this.userService.registerUser(pesho);
+//        this.userService.registerUser(gosho);
+//        this.userService.registerUser(pesho);
 
         /*
         We can register only users or towns, because of using

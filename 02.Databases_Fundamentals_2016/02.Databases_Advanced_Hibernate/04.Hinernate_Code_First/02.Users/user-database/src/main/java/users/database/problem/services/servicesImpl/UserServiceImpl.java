@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     @Override
-    public void registerUser(User user) {
+    public void register(User user) {
         this.userRepository.saveAndFlush(user);
     }
 }

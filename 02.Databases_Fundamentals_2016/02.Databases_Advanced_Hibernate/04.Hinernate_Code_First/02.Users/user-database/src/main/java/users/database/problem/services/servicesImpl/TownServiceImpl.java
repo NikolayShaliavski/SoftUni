@@ -13,7 +13,7 @@ public class TownServiceImpl implements TownService {
     private TownRepository townRepository;
 
     @Override
-    public void registerTown(Town town) {
+    public void register(Town town) {
         this.townRepository.saveAndFlush(town);
     }
 }

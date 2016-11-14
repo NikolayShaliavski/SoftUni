@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="repository.build.lib-1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../00.RepositoryBuilder/RepositoryBuilderExtended/target/repository.build.lib-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
