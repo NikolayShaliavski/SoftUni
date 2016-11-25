@@ -64,7 +64,7 @@ class RideTheHorse
             Console.WriteLine(board[row, column]);
         }
 
-        //PrintBoard();
+        PrintBoard();
     }
 
     private static void PrintBoard()

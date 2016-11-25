@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<author>
+    <firstname>Randy</firstname>
+    <lastname>Morales</lastname>
+    <books>
+        <book>
+            <title>Moab Is My Washpot </title>
+        </book>
+        <book>
+            <title>Mother Night </title>
+        </book>
+    </books>
+</author>

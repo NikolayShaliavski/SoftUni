@@ -1,0 +1,98 @@
+{
+  "authorId": 4,
+  "firstName": "George",
+  "lastName": "Powell",
+  "books": [
+    {
+      "bookId": 114,
+      "title": "The Mirror Crack\u0027d from Side to Side ",
+      "editonType": "GOLD",
+      "ageRestriction": "MINOR",
+      "price": 38.05,
+      "copies": 2046,
+      "releaseDate": "Mar 15, 2006 12:00:00 AM",
+      "category": {
+        "categoryId": 1,
+        "name": "Thriller"
+      }
+    },
+    {
+      "bookId": 15,
+      "title": "Arms and the Man ",
+      "editonType": "NORMAL",
+      "ageRestriction": "MINOR",
+      "price": 24.40,
+      "copies": 2408,
+      "releaseDate": "Jan 24, 2001 12:00:00 AM",
+      "category": {
+        "categoryId": 4,
+        "name": "Science Fiction"
+      }
+    },
+    {
+      "bookId": 153,
+      "title": "The Soldier\u0027s Art ",
+      "editonType": "NORMAL",
+      "ageRestriction": "ADULT",
+      "price": 22.54,
+      "copies": 1556,
+      "releaseDate": "Dec 18, 1991 12:00:00 AM",
+      "category": {
+        "categoryId": 5,
+        "name": "Romance"
+      }
+    },
+    {
+      "bookId": 29,
+      "title": "By Grand Central Station I Sat Down and Wept ",
+      "editonType": "GOLD",
+      "ageRestriction": "MINOR",
+      "price": 14.15,
+      "copies": 28396,
+      "releaseDate": "Oct 28, 2010 12:00:00 AM",
+      "category": {
+        "categoryId": 4,
+        "name": "Science Fiction"
+      }
+    },
+    {
+      "bookId": 168,
+      "title": "That Hideous Strength ",
+      "editonType": "GOLD",
+      "ageRestriction": "TEEN",
+      "price": 48.63,
+      "copies": 13597,
+      "releaseDate": "Sep 11, 1993 12:00:00 AM",
+      "category": {
+        "categoryId": 7,
+        "name": "Crime"
+      }
+    },
+    {
+      "bookId": 106,
+      "title": "Look Homeward ",
+      "editonType": "GOLD",
+      "ageRestriction": "TEEN",
+      "price": 14.95,
+      "copies": 4721,
+      "releaseDate": "Jun 22, 2014 12:00:00 AM",
+      "category": {
+        "categoryId": 1,
+        "name": "Thriller"
+      }
+    },
+    {
+      "bookId": 112,
+      "title": "The Mermaids Singing ",
+      "editonType": "PROMO",
+      "ageRestriction": "ADULT",
+      "price": 39.11,
+      "copies": 3582,
+      "releaseDate": "Jun 27, 2004 12:00:00 AM",
+      "category": {
+        "categoryId": 3,
+        "name": "Mystery"
+      }
+    }
+  ]
+}

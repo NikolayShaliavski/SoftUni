@@ -11,7 +11,8 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity(name = "shampoos")
+@Entity
+@Table(name = "shampoos")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "shampoo_type", discriminatorType = DiscriminatorType.STRING)
 public abstract class BasicShampoo implements Shampoo {

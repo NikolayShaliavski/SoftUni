@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<author id="6">
+    <firstname>Randy</firstname>
+    <lastname>Morales</lastname>
+    <books>
+        <book book-id="34">
+            <title>A Confederacy of Dunces </title>
+            <edition-type>PROMO</edition-type>
+            <age-restriction>MINOR</age-restriction>
+            <price>40.23</price>
+            <copies>29606</copies>
+            <release-date>1993-06-18T00:00:00+03:00</release-date>
+            <category category-id="2">
+                <name>Fiction</name>
+            </category>
+        </book>
+        <book book-id="163">
+            <title>A Swiftly Tilting Planet </title>
+            <edition-type>PROMO</edition-type>
+            <age-restriction>TEEN</age-restriction>
+            <price>15.55</price>
+            <copies>1727</copies>
+            <release-date>2003-02-09T00:00:00+02:00</release-date>
+            <category category-id="3">
+                <name>Mystery</name>
+            </category>
+        </book>
+        <book book-id="105">
+            <title>Little Hands Clapping </title>
+            <edition-type>NORMAL</edition-type>
+            <age-restriction>ADULT</age-restriction>
+            <price>18.74</price>
+            <copies>27401</copies>
+            <release-date>2003-02-05T00:00:00+02:00</release-date>
+            <category category-id="3">
+                <name>Mystery</name>
+            </category>
+        </book>
+        <book book-id="131">
+            <title>Number the Stars </title>
+            <edition-type>NORMAL</edition-type>
+            <age-restriction>TEEN</age-restriction>
+            <price>23.06</price>
+            <copies>324</copies>
+            <release-date>2009-04-05T00:00:00+03:00</release-date>
+            <category category-id="5">
+                <name>Romance</name>
+            </category>
+        </book>
+        <book book-id="191">
+            <title>The Way Through the Woods </title>
+            <edition-type>NORMAL</edition-type>
+            <age-restriction>MINOR</age-restriction>
+            <price>42.61</price>
+            <copies>23466</copies>
+            <release-date>2000-08-10T00:00:00+03:00</release-date>
+            <category category-id="7">
+                <name>Crime</name>
+            </category>
+        </book>
+        <book book-id="59">
+            <title>Fear and Trembling </title>
+            <edition-type>PROMO</edition-type>
+            <age-restriction>MINOR</age-restriction>
+            <price>44.09</price>
+            <copies>2790</copies>
+            <release-date>2013-04-22T00:00:00+03:00</release-date>
+            <category category-id="3">
+                <name>Mystery</name>
+            </category>
+        </book>
+        <book book-id="165">
+            <title>Tender Is the Night </title>
+            <edition-type>GOLD</edition-type>
+            <age-restriction>MINOR</age-restriction>
+            <price>37.34</price>
+            <copies>11647</copies>
+            <release-date>1994-03-13T00:00:00+02:00</release-date>
+            <category category-id="3">
+                <name>Mystery</name>
+            </category>
+        </book>
+    </books>
+</author>

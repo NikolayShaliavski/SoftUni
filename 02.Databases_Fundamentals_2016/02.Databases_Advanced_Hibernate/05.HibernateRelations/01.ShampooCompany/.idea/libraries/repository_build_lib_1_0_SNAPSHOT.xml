@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="repository.build.lib-1.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../00.RepositoryBuilder/RepositoryBuilderExtended/jar/repository.build.lib-1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../RepositoryBuilderExtended/RepositoryBuilderExtended/jar/repository.build.lib-1.0-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
