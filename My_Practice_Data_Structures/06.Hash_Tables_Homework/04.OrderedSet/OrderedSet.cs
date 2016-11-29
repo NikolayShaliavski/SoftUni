@@ -41,110 +41,227 @@ namespace _04.OrderedSet
 
         public bool Remove(T element)
         {
-            TreeNode<T> nodeToRemove = this.FindNodeToRemove(this.Root, element);
+            var nodeToRemove = this.FindNodeToRemove(this.Root, element);
             if (nodeToRemove == null)
             {
                 return false;
             }
-
             var parent = nodeToRemove.Parent;
             var leftChild = nodeToRemove.LeftChild;
             var rightChild = nodeToRemove.RightChild;
-            if (parent == null)
+            if (parent == null && leftChild == null && rightChild == null)
             {
-                if (rightChild != null)
-                {
-                    this.Root = rightChild;
-                    rightChild.Parent = null;
-                    if (leftChild != null)
-                    {
-                        var leftLeaf = rightChild;
-                        while (leftLeaf.LeftChild != null)
-                        {
-                            leftLeaf = leftLeaf.LeftChild;
-                        }
-                        if (leftLeaf != null)
-                        {
-                            leftChild.Parent = leftLeaf;
-                            leftLeaf.LeftChild = leftChild;
-                        }
-                    }
-                }
-                else if (leftChild != null)
-                {
-                    this.Root = leftChild;
-                    leftChild.Parent = null;
-                }
-                else
-                {
-                    this.Root = null;
-                }
+                this.Root = null;
                 this.Count--;
                 return true;
             }
-            if (parent != null && parent.LeftChild != null && nodeToRemove.Equals(parent.LeftChild))
+            TreeNode<T> leaf = null;
+            if (leftChild != null)
             {
-                if (rightChild != null)
+                leaf = this.FindLeftLeaf(leftChild);
+                if (!leaf.Parent.Equals(nodeToRemove))
                 {
-                    parent.LeftChild = rightChild;
-                    rightChild.Parent = parent;
-                    if (leftChild != null)
+                    leaf.Parent.RightChild = leaf.LeftChild;
+                    if (leaf.LeftChild != null)
                     {
-                        var leftLeaf = rightChild;
-                        while (leftLeaf.LeftChild != null)
-                        {
-                            leftLeaf = leftLeaf.LeftChild;
-                        }
-                        if (leftLeaf != null)
-                        {
-                            leftChild.Parent = leftLeaf;
-                            leftLeaf.LeftChild = leftChild;
-                        }
+                        leaf.LeftChild.Parent = leaf.Parent;
                     }
                 }
-                else if (leftChild != null)
+                
+               
+            }
+            else if (rightChild != null)
+            {
+                leaf = this.FindRightLeaf(rightChild);
+                if (!leaf.Parent.Equals(nodeToRemove))
                 {
-                    parent.LeftChild = leftChild;
-                    leftChild.Parent = parent;
+                    leaf.Parent.LeftChild = leaf.RightChild;
+                    if (leaf.RightChild != null)
+                    {
+                        leaf.RightChild.Parent = leaf.Parent;
+                    }
                 }
-                else
+                
+            }
+            //if ((leaf == null || leaf.Equals(leftChild)) && rightChild != null)
+            //{
+            //    leaf = this.FindRightLeaf(rightChild);
+            //    leaf.Parent.LeftChild = null;
+            //}
+            if (leaf != null)
+            {
+                leaf.Parent = parent;
+                if (parent == null)
                 {
-                    parent.LeftChild = null;
+                    this.Root = leaf;
+                }
+                if (leftChild != null && !leaf.Equals(leftChild))
+                {
+                    leaf.LeftChild = leftChild;
+                }
+                if (rightChild != null && !leaf.Equals(rightChild))
+                {
+                    leaf.RightChild = rightChild;
+                }                
+
+                if (leftChild != null)
+                {
+                    leftChild.Parent = leaf;
+                }
+                if (rightChild !=null)
+                {
+                    rightChild.Parent = leaf;
+                }
+
+                this.Root.Parent = null;
+            }
+            if (parent != null && parent.LeftChild != null && nodeToRemove.Equals(parent.LeftChild))
+            {
+                parent.LeftChild = leaf;
+                if (leaf != null)
+                {
+                    leaf.Parent = parent;
                 }
             }
             else if (parent != null && parent.RightChild != null && nodeToRemove.Equals(parent.RightChild))
             {
-                if (rightChild != null)
+                parent.RightChild = leaf;
+                if (leaf != null)
                 {
-                    parent.RightChild = rightChild;
-                    rightChild.Parent = parent;
-                    if (leftChild != null)
-                    {
-                        var leftLeaf = rightChild;
-                        while (leftLeaf.LeftChild != null)
-                        {
-                            leftLeaf = leftLeaf.LeftChild;
-                        }
-                        if (leftLeaf != null)
-                        {
-                            leftChild.Parent = leftLeaf;
-                            leftLeaf.LeftChild = leftChild;
-                        }
-                    }
-                }
-                else if (leftChild != null)
-                {
-                    parent.RightChild = leftChild;
-                    leftChild.Parent = parent;
-                }
-                else
-                {
-                    parent.RightChild = null;
-                }
+                    leaf.Parent = parent;
+                }     
             }
+            nodeToRemove = null;
             this.Count--;
             return true;
         }
+
+        private TreeNode<T> FindRightLeaf(TreeNode<T> node)
+        {
+            TreeNode<T> leaf = node;
+            while (leaf.LeftChild != null)
+            {
+                leaf = leaf.LeftChild;
+            }
+            return leaf;
+        }
+
+        private TreeNode<T> FindLeftLeaf(TreeNode<T> node)
+        {
+            TreeNode<T> leaf = node;
+            while (leaf.RightChild != null)
+            {
+                leaf = leaf.RightChild;
+            }
+            return leaf;
+        }
+
+        //public bool Remove(T element)
+        //{
+        //    TreeNode<T> nodeToRemove = this.FindNodeToRemove(this.Root, element);
+        //    if (nodeToRemove == null)
+        //    {
+        //        return false;
+        //    }
+
+        //    var parent = nodeToRemove.Parent;
+        //    var leftChild = nodeToRemove.LeftChild;
+        //    var rightChild = nodeToRemove.RightChild;
+        //    if (parent == null)
+        //    {
+        //        if (rightChild != null)
+        //        {
+        //            this.Root = rightChild;
+        //            rightChild.Parent = null;
+        //            if (leftChild != null)
+        //            {
+        //                var leftLeaf = rightChild;
+        //                while (leftLeaf.LeftChild != null)
+        //                {
+        //                    leftLeaf = leftLeaf.LeftChild;
+        //                }
+        //                if (leftLeaf != null)
+        //                {
+        //                    leftChild.Parent = leftLeaf;
+        //                    leftLeaf.LeftChild = leftChild;
+        //                }
+        //            }
+        //        }
+        //        else if (leftChild != null)
+        //        {
+        //            this.Root = leftChild;
+        //            leftChild.Parent = null;
+        //        }
+        //        else
+        //        {
+        //            this.Root = null;
+        //        }
+        //        this.Count--;
+        //        return true;
+        //    }
+        //    if (parent != null && parent.LeftChild != null && nodeToRemove.Equals(parent.LeftChild))
+        //    {
+        //        if (rightChild != null)
+        //        {
+        //            parent.LeftChild = rightChild;
+        //            rightChild.Parent = parent;
+        //            if (leftChild != null)
+        //            {
+        //                var leftLeaf = rightChild;
+        //                while (leftLeaf.LeftChild != null)
+        //                {
+        //                    leftLeaf = leftLeaf.LeftChild;
+        //                }
+        //                if (leftLeaf != null)
+        //                {
+        //                    leftChild.Parent = leftLeaf;
+        //                    leftLeaf.LeftChild = leftChild;
+        //                }
+        //            }
+        //        }
+        //        else if (leftChild != null)
+        //        {
+        //            parent.LeftChild = leftChild;
+        //            leftChild.Parent = parent;
+        //        }
+        //        else
+        //        {
+        //            parent.LeftChild = null;
+        //        }
+        //    }
+        //    else if (parent != null && parent.RightChild != null && nodeToRemove.Equals(parent.RightChild))
+        //    {
+        //        if (rightChild != null)
+        //        {
+        //            parent.RightChild = rightChild;
+        //            rightChild.Parent = parent;
+        //            if (leftChild != null)
+        //            {
+        //                var leftLeaf = rightChild;
+        //                while (leftLeaf.LeftChild != null)
+        //                {
+        //                    leftLeaf = leftLeaf.LeftChild;
+        //                }
+        //                if (leftLeaf != null)
+        //                {
+        //                    leftChild.Parent = leftLeaf;
+        //                    leftLeaf.LeftChild = leftChild;
+        //                }
+        //            }
+        //        }
+        //        else if (leftChild != null)
+        //        {
+        //            parent.RightChild = leftChild;
+        //            leftChild.Parent = parent;
+        //        }
+        //        else
+        //        {
+        //            parent.RightChild = null;
+        //        }
+        //    }
+        //    this.Count--;
+        //    return true;
+        //}
 
         private TreeNode<T> FindNodeToRemove(TreeNode<T> node, T element)
         {
