@@ -8,8 +8,8 @@ import java.io.*;
 public class FileWriter implements Writer {
 
     @Override
-    public void write(String fileName, String content) throws IOException {
-        try (OutputStream os = new FileOutputStream(fileName);
+    public void write(String content, String... fileName) throws IOException {
+        try (OutputStream os = new FileOutputStream(fileName[0]);
              BufferedWriter bfw = new BufferedWriter(new OutputStreamWriter(os))
         ) {
             bfw.write(String.valueOf(content));
