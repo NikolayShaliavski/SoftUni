@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.*;
 
-@Component
+@Component(value = "FileWriter")
 public class FileWriter implements Writer {
 
     @Override

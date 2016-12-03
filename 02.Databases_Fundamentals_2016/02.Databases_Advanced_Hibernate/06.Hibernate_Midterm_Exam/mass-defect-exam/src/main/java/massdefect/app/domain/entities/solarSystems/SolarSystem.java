@@ -1,10 +1,12 @@
 package massdefect.app.domain.entities.solarSystems;
 
-import com.google.gson.annotations.Expose;
+import massdefect.app.domain.entities.stars.Star;
 import org.springframework.beans.factory.annotation.Required;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "solar_systems")
@@ -18,7 +20,11 @@ public class SolarSystem implements Serializable {
     @Column(name = "name", nullable = false)
     private String name;
 
+    @OneToMany(mappedBy = "solarSystem")
+    private Set<Star> stars;
+
     public SolarSystem() {
+        this.setStars(new HashSet<>());
     }
 
     public Long getId() {
@@ -39,5 +45,13 @@ public class SolarSystem implements Serializable {
             throw new IllegalArgumentException("Error: Invalid data.");
         }
         this.name = name;
+    }
+
+    public Set<Star> getStars() {
+        return this.stars;
+    }
+
+    public void setStars(Set<Star> stars) {
+        this.stars = stars;
     }
 }

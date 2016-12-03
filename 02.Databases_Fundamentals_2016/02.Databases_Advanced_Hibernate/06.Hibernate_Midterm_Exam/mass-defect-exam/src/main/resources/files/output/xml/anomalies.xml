@@ -3,8 +3,8 @@
     <anomaly id="1" origin-planet="Voyager-10" teleport-planet="Kepler-1">
         <victims>
             <victim name="Antra Foul"/>
-            <victim name="Baron Newhousen"/>
             <victim name="Vox Populi"/>
+            <victim name="Baron Newhousen"/>
         </victims>
     </anomaly>
     <anomaly id="2" origin-planet="Alpha-N20" teleport-planet="Kepler-3">
@@ -69,10 +69,10 @@
     </anomaly>
     <anomaly id="14" origin-planet="Kepler-1" teleport-planet="Alpha-N20">
         <victims>
+            <victim name="Vox Populi"/>
             <victim name="Eifell Sync"/>
             <victim name="Dante"/>
             <victim name="Viria Destr"/>
-            <victim name="Vox Populi"/>
             <victim name="Pokolri Paputo"/>
         </victims>
     </anomaly>
@@ -96,9 +96,9 @@
     <anomaly id="18" origin-planet="Indigo-3" teleport-planet="Kepler-1">
         <victims>
             <victim name="Moria Bane"/>
+            <victim name="Vox Populi"/>
             <victim name="Eifell Sync"/>
             <victim name="Ixel Bane"/>
-            <victim name="Vox Populi"/>
         </victims>
     </anomaly>
     <anomaly id="19" origin-planet="Voyager-11" teleport-planet="Indigo-3">

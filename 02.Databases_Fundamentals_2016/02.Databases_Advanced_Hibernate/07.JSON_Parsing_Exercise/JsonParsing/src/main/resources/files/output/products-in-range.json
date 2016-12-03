@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Parsley",
+    "price": 519.06,
+    "seller": "Anna Clark"
+  },
+  {
+    "name": "equaline",
+    "price": 520.45,
+    "seller": "null Mitchell"
+  },
+  {
+    "name": "TERSI",
+    "price": 554.91,
+    "seller": "Fred Barnes"
+  },
+  {
+    "name": "AIR",
+    "price": 581.69,
+    "seller": "Nicole Martinez"
+  },
+  {
+    "name": "Diastat",
+    "price": 614.14,
+    "seller": "null Harrison"
+  },
+  {
+    "name": "Amitiza",
+    "price": 666.58,
+    "seller": "Jonathan Rodriguez"
+  },
+  {
+    "name": "ENBREL",
+    "price": 673.97,
+    "seller": "Clarence Fowler"
+  },
+  {
+    "name": "PRIMAXIN",
+    "price": 686.66,
+    "seller": "null Schmidt"
+  },
+  {
+    "name": "Prostate",
+    "price": 716.05,
+    "seller": "null Peterson"
+  },
+  {
+    "name": "Pleo Lat",
+    "price": 720.08,
+    "seller": "Billy Parker"
+  },
+  {
+    "name": "Naproxen",
+    "price": 807.22,
+    "seller": "Anna Clark"
+  },
+  {
+    "name": "LV-FX",
+    "price": 820.87,
+    "seller": "Sarah Day"
+  },
+  {
+    "name": "ESIKA",
+    "price": 879.37,
+    "seller": "Sandra Riley"
+  },
+  {
+    "name": "EPZICOM",
+    "price": 895.65,
+    "seller": "null Schmidt"
+  },
+  {
+    "name": "Aspirin",
+    "price": 925.45,
+    "seller": "null Schmidt"
+  }
+]

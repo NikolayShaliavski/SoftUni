@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder;
 import massdefect.app.io.readers.Reader;
 import massdefect.app.io.writers.Writer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -18,7 +19,8 @@ public class JSONParserImpl implements JSONParser {
     private Reader fileReader;
 
     @Autowired
-    private Writer writer;
+    @Qualifier(value = "FileWriter")
+    private Writer fileWriter;
 
     public JSONParserImpl() {
         this.setGson(new GsonBuilder().setPrettyPrinting().create());
@@ -35,14 +37,14 @@ public class JSONParserImpl implements JSONParser {
     @Override
     public <T> T readFromJSON(Class<T> classes, String file) throws IOException {
         String fileData = this.fileReader.read(file);
-        T object = this.gson.fromJson(fileData, classes);
+        T object = this.getGson().fromJson(fileData, classes);
 
         return object;
     }
 
     @Override
-    public <T> void writeToJSON(T object, String file) throws IOException {
+    public <T> void writeToJSON(T object, String fileName) throws IOException {
         String json = this.getGson().toJson(object);
-        this.writer.write(file, json);
+        this.fileWriter.write(json, fileName);
     }
 }

@@ -3,14 +3,16 @@ package massdefect.app.io;
 import massdefect.app.domain.dto.exportDto.json.AnomalyExportJsonDto;
 import massdefect.app.domain.dto.exportDto.json.PersonExportJsonDto;
 import massdefect.app.domain.dto.exportDto.json.PlanetExportJsonDto;
-import massdefect.app.domain.dto.importDto.json.*;
 import massdefect.app.domain.dto.exportDto.xml.AnomaliesExportXmlDto;
+import massdefect.app.domain.dto.importDto.json.*;
 import massdefect.app.domain.dto.importDto.xml.AnomaliesImportXmlDto;
 import massdefect.app.domain.dto.importDto.xml.AnomalyWithVictimImportXmlDto;
 import massdefect.app.io.dataParsers.jsonParsers.JSONParser;
 import massdefect.app.io.dataParsers.xmlParsers.XmlParser;
+import massdefect.app.io.writers.Writer;
 import massdefect.app.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -28,6 +30,10 @@ public class Terminal implements CommandLineRunner {
     private PersonService personService;
     private JSONParser jsonParser;
     private XmlParser xmlParser;
+
+    @Autowired
+    @Qualifier(value = "ConsoleWriter")
+    private Writer consoleWriter;
 
     @Autowired
     public Terminal(SolarSystemService solarSystemService,
@@ -48,11 +54,11 @@ public class Terminal implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        this.importDataToDatabase();
+        //this.importDataToDatabase();
         //this.exportDataFromDatabase();
     }
 
-    private void importDataToDatabase() throws JAXBException {
+    private void importDataToDatabase() throws JAXBException, IOException {
         try {
             this.importSolarSystems();
             this.importStars();
@@ -64,61 +70,61 @@ public class Terminal implements CommandLineRunner {
             this.importNewAnomalies();
 
         } catch (IOException ioex) {
-            System.out.println(ioex.getMessage());
+            this.consoleWriter.write(ioex.getMessage());
         }
     }
 
-    private void exportDataFromDatabase() {
-        //this.exportPlanetsWithoutTeleports();
-        //this.exportPersonsNoVictims();
-        //this.exportAnomalyAffectedMostPeople();
+    private void exportDataFromDatabase() throws IOException {
+        this.exportPlanetsWithoutTeleports();
+        this.exportPersonsNoVictims();
+        this.exportAnomalyAffectedMostPeople();
         this.exportAllAnomaliesToXml();
     }
 
-    private void exportAllAnomaliesToXml() {
+    private void exportAllAnomaliesToXml() throws IOException {
         AnomaliesExportXmlDto allAnomaliesDtos =
                 this.anomalyService.exportAllAnomalies();
         try {
             this.xmlParser.writeToXml(allAnomaliesDtos,
                     "src/main/resources/files/output/xml/anomalies.xml");
         } catch (JAXBException e) {
-            e.printStackTrace();
+            this.consoleWriter.write(e.getMessage());
         }
     }
 
-    private void exportAnomalyAffectedMostPeople() {
+    private void exportAnomalyAffectedMostPeople() throws IOException {
         AnomalyExportJsonDto anomalyToExport =
                 this.anomalyService.exportAnomalyAffectedMostPeople();
         try {
             this.jsonParser.writeToJSON(anomalyToExport,
                     "src/main/resources/files/output/json/anomaly.json");
         } catch (IOException e) {
-            e.printStackTrace();
+            this.consoleWriter.write(e.getMessage());
         }
     }
 
-    private void exportPersonsNoVictims() {
+    private void exportPersonsNoVictims() throws IOException {
         List<PersonExportJsonDto> exportedPersons = this.personService.exportPersonsNoVictims();
         try {
             this.jsonParser.writeToJSON(exportedPersons,
                     "src/main/resources/files/output/json/people.json");
         } catch (IOException e) {
-            e.printStackTrace();
+            this.consoleWriter.write(e.getMessage());
         }
     }
 
-    private void exportPlanetsWithoutTeleports() {
+    private void exportPlanetsWithoutTeleports() throws IOException {
         List<PlanetExportJsonDto> exportedPlanets =
                 this.planetService.findPlanetsWithoutTeleports();
         try {
             this.jsonParser.writeToJSON(exportedPlanets,
                     "src/main/resources/files/output/json/planets.json");
         } catch (IOException e) {
-            e.printStackTrace();
+            this.consoleWriter.write(e.getMessage());
         }
     }
 
-    private void importNewAnomalies() throws JAXBException {
+    private void importNewAnomalies() throws JAXBException, IOException {
         AnomaliesImportXmlDto newAnomalies = this.xmlParser.readFromXml(AnomaliesImportXmlDto.class,
                 "src/main/resources/files/input/xml/new-anomalies.xml");
         List<AnomalyWithVictimImportXmlDto> anomalies = newAnomalies.getAnomalies();
@@ -126,7 +132,7 @@ public class Terminal implements CommandLineRunner {
             try {
                 this.anomalyService.saveNewAnomalyWithVictims(anomaly);
             } catch (IllegalArgumentException ilex) {
-                System.out.println(ilex.getMessage());
+                this.consoleWriter.write(ilex.getMessage());
             }
         }
     }
@@ -145,9 +151,9 @@ public class Terminal implements CommandLineRunner {
         for (AnomalyImportJsonDto anomalyImportJsonDto : anomalyImportJsonDtos) {
             try {
                 this.anomalyService.saveAnomaly(anomalyImportJsonDto);
-                System.out.println("Successfully imported anomaly.");
+                this.consoleWriter.write("Successfully imported anomaly.");
             } catch (IllegalArgumentException ilex) {
-                System.out.println(ilex.getMessage());
+                this.consoleWriter.write(ilex.getMessage());
             }
         }
     }
@@ -158,11 +164,11 @@ public class Terminal implements CommandLineRunner {
         for (PersonImportJsonDto personImportJsonDto : personImportJsonDtos) {
             try {
                 this.personService.savePerson(personImportJsonDto);
-                System.out.println(
+                this.consoleWriter.write(
                         String.format("Successfully imported Person %s.",
                                 personImportJsonDto.getName()));
             } catch (IllegalArgumentException ilex) {
-                System.out.println(ilex.getMessage());
+                this.consoleWriter.write(ilex.getMessage());
             }
         }
     }
@@ -173,11 +179,11 @@ public class Terminal implements CommandLineRunner {
         for (PlanetImportJsonDto planetImportJsonDto : planetImportJsonDtos) {
             try {
                 this.planetService.savePlanet(planetImportJsonDto);
-                System.out.println(
+                this.consoleWriter.write(
                         String.format("Successfully imported Planet %s.",
                                 planetImportJsonDto.getName()));
             } catch (IllegalArgumentException ilex) {
-                System.out.println(ilex.getMessage());
+                this.consoleWriter.write(ilex.getMessage());
             }
         }
     }
@@ -188,11 +194,11 @@ public class Terminal implements CommandLineRunner {
         for (StarImportJsonDto starImportJsonDto : starImportJsonDtos) {
             try {
                 this.starService.saveStar(starImportJsonDto);
-                System.out.println(
+                this.consoleWriter.write(
                         String.format("Successfully imported Star %s.",
                                 starImportJsonDto.getName()));
             } catch (IllegalArgumentException ilex) {
-                System.out.println(ilex.getMessage());
+                this.consoleWriter.write(ilex.getMessage());
             }
         }
     }
@@ -204,11 +210,11 @@ public class Terminal implements CommandLineRunner {
         for (SolarSystemImportJsonDto solarSystemDto : solarSystemDtos) {
             try {
                 this.solarSystemService.saveSolarSystem(solarSystemDto);
-                System.out.println(
+                this.consoleWriter.write(
                         String.format("Successfully imported Solar System %s.",
                                 solarSystemDto.getName()));
             } catch (IllegalArgumentException ilex) {
-                System.out.println(ilex.getMessage());
+                this.consoleWriter.write(ilex.getMessage());
             }
         }
     }
