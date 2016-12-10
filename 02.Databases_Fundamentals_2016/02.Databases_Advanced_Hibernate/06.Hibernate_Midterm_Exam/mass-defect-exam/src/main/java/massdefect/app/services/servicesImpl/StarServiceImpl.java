@@ -17,6 +17,7 @@ public class StarServiceImpl implements StarService {
     @Autowired
     private StarRepository starRepository;
 
+    //hold here repositories, not services
     @Autowired
     private SolarSystemService solarSystemService;
 

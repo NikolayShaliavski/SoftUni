@@ -23,7 +23,9 @@ public class JSONParserImpl implements JSONParser {
     private Writer fileWriter;
 
     public JSONParserImpl() {
-        this.setGson(new GsonBuilder().setPrettyPrinting().create());
+        this.setGson(new GsonBuilder().
+                //excludeFieldsWithoutExposeAnnotation().
+                setPrettyPrinting().create());
     }
 
     public Gson getGson() {

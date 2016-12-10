@@ -23,6 +23,7 @@ public class PlanetServiceImpl implements PlanetService {
     @Autowired
     private PlanetRepository planetRepository;
 
+    //hold here repositories, not services
     @Autowired
     private SolarSystemService solarSystemService;
 

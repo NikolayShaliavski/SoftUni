@@ -55,10 +55,10 @@ public class Terminal implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
         //this.importDataToDatabase();
-        //this.exportDataFromDatabase();
+        this.exportDataFromDatabase();
     }
 
-    private void importDataToDatabase() throws JAXBException, IOException {
+    private void importDataToDatabase() {
         try {
             this.importSolarSystems();
             this.importStars();
@@ -70,15 +70,33 @@ public class Terminal implements CommandLineRunner {
             this.importNewAnomalies();
 
         } catch (IOException ioex) {
-            this.consoleWriter.write(ioex.getMessage());
+            try {
+                this.consoleWriter.write(ioex.getMessage());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } catch (JAXBException jabEx) {
+            try {
+                this.consoleWriter.write(jabEx.getMessage());
+            } catch (IOException ioex) {
+                jabEx.printStackTrace();
+            }
         }
     }
 
-    private void exportDataFromDatabase() throws IOException {
-        this.exportPlanetsWithoutTeleports();
-        this.exportPersonsNoVictims();
-        this.exportAnomalyAffectedMostPeople();
-        this.exportAllAnomaliesToXml();
+    private void exportDataFromDatabase() {
+        try {
+            this.exportPlanetsWithoutTeleports();
+            //this.exportPersonsNoVictims();
+            //this.exportAnomalyAffectedMostPeople();
+            //this.exportAllAnomaliesToXml();
+        } catch (IOException ioex) {
+            try {
+                this.consoleWriter.write(ioex.getMessage());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void exportAllAnomaliesToXml() throws IOException {

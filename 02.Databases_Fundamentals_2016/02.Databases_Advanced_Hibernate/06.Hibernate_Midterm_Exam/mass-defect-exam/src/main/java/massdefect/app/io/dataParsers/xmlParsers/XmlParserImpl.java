@@ -12,6 +12,7 @@ import java.io.File;
 public class XmlParserImpl implements XmlParser {
 
     @Override
+    @SuppressWarnings("unchecked")
     public <T> T readFromXml(Class<T> classes, String fileName) throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(classes);
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();

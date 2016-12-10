@@ -14,6 +14,6 @@ public interface PlanetRepository extends JpaRepository<Planet,Long> {
 
     @Query(value = "SELECT pl FROM Anomaly AS a " +
             "RIGHT OUTER JOIN a.originPlanet AS pl " +
-            "WHERE a.originPlanet = NULL")
+            "WHERE a.originPlanet IS NULL")
     List<Planet> findPlanetsWithoutTeleports();
 }

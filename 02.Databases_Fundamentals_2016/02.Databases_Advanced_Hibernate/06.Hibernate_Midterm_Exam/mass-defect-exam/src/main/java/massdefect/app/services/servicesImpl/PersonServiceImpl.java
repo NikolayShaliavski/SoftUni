@@ -22,6 +22,7 @@ public class PersonServiceImpl implements PersonService {
     @Autowired
     private PersonRepository personRepository;
 
+    //hold here repositories, not services
     @Autowired
     private PlanetService planetService;
 

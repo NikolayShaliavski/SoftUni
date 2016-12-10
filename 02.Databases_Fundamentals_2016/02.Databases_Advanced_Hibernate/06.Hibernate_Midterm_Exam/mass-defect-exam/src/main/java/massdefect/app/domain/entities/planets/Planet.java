@@ -43,7 +43,6 @@ public class Planet implements Serializable {
         return this.name;
     }
 
-    @Required
     public void setName(String name) {
         if (name == null) {
             throw new IllegalArgumentException("Error: Invalid data.");

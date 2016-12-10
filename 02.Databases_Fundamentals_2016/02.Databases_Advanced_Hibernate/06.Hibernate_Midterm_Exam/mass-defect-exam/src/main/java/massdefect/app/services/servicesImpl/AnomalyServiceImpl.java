@@ -29,6 +29,7 @@ public class AnomalyServiceImpl implements AnomalyService {
     @Autowired
     private AnomalyRepository anomalyRepository;
 
+    //hold here repositories, not services
     @Autowired
     private PlanetService planetService;
 
