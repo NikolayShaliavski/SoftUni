@@ -1,0 +1,26 @@
+[
+  {
+    "FirstName": "Jin",
+    "LastName": "Nevitt",
+    "CameraMake": "Canon",
+    "LensesCount": 3
+  },
+  {
+    "FirstName": "Freeda",
+    "LastName": "Casimir",
+    "CameraMake": "Canon",
+    "LensesCount": 1
+  },
+  {
+    "FirstName": "Leontine",
+    "LastName": "Breitenbach",
+    "CameraMake": "Canon",
+    "LensesCount": 1
+  },
+  {
+    "FirstName": "Alberto",
+    "LastName": "Korda",
+    "CameraMake": "Canon",
+    "LensesCount": 1
+  }
+]

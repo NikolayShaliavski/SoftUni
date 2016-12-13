@@ -4,29 +4,38 @@ using Wintellect.PowerCollections;
 
 public class PersonCollection : IPersonCollection
 {
-    private Dictionary<string, Person> peopleByEmail;
+    private Dictionary<string, Person> peopleByEmail = 
+        new Dictionary<string,Person>();
 
-    private Dictionary<string, SortedSet<Person>> peopleByEmailDomain;
+    private Dictionary<string, SortedSet<Person>> peopleByEmailDomain =
+        new Dictionary<string,SortedSet<Person>>();
 
-    private Dictionary<string, SortedSet<Person>> peopleByNameAndTown;
+    private Dictionary<string, SortedSet<Person>> peopleByNameAndTown = 
+        new Dictionary<string,SortedSet<Person>>();
 
-    private OrderedDictionary<int, SortedSet<Person>> peopleByAge;
+    private OrderedDictionary<int, SortedSet<Person>> peopleByAge = 
+        new OrderedDictionary<int,SortedSet<Person>>();
 
-    private Dictionary<string, OrderedDictionary<int, SortedSet<Person>>> peopleByTownAndAge;
+    private Dictionary<string, OrderedDictionary<int, SortedSet<Person>>> peopleByTownAndAge =
+        new Dictionary<string,OrderedDictionary<int,SortedSet<Person>>>();
 
-    public PersonCollection()
-    {
-        this.peopleByEmail = new Dictionary<string, Person>();
-        this.peopleByEmailDomain = new Dictionary<string, SortedSet<Person>>();
-        this.peopleByNameAndTown = new Dictionary<string, SortedSet<Person>>();
-        this.peopleByAge = new OrderedDictionary<int, SortedSet<Person>>();
-        this.peopleByTownAndAge = new Dictionary<string, OrderedDictionary<int, SortedSet<Person>>>();
-    }
+    //public PersonCollection()
+    //{
+    //    this.peopleByEmail = new Dictionary<string, Person>();
+    //    this.peopleByEmailDomain = new Dictionary<string, SortedSet<Person>>();
+    //    this.peopleByNameAndTown = new Dictionary<string, SortedSet<Person>>();
+    //    this.peopleByAge = new OrderedDictionary<int, SortedSet<Person>>();
+    //    this.peopleByTownAndAge = new Dictionary<string, OrderedDictionary<int, SortedSet<Person>>>();
+    //}
 
     public bool AddPerson(string email, string name, int age, string town)
     {
-        var person = this.FindPerson(email);
-        if (person != null)
+        //var person = this.FindPerson(email);
+        //if (person != null)
+        //{
+        //    return false;
+        //}
+        if (this.peopleByEmail.ContainsKey(email))
         {
             return false;
         }
