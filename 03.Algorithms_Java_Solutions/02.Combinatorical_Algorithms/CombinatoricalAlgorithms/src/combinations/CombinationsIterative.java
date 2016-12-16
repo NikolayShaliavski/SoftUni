@@ -1,48 +1,46 @@
 package combinations;
 
-import java.util.Arrays;
-
 /**
  * Combinations iterative solution
  */
 public class CombinationsIterative {
 
+    private static int[] elements = {1, 2, 3};;
+
     public static void main(String[] args) {
-        int[] elements = {1, 2, 3, 4, 5};
-        int k = 3;
+
+        int k = 2;
 
         int[] indexes = new int[k];
-        int[] combination = new int[k];
 
         for (int i = 0; i < k; i++) {
             indexes[i] = i;
-            combination[i] = elements[i];
         }
 
         while (true) {
-            print(combination);
+            print(indexes);
             int index = k - 1;
-            int lastElement = elements.length - 1;
+            int lastIndex = elements.length - 1;
 
             /**
-             * If we have reached max possible value for that index we go left
-             * Because this is combination every leftmost value must be lower than previous
-             * Variable lastElement is used for that check
+             * If we have reached max possible index for that index position we go left
+             * Because this is combination every leftmost index must be lower than previous
+             * Variable lastIndex is used for that check
              */
-            while (index >= 0 && combination[index] == elements[lastElement]) {
+            while (index >= 0 && indexes[index] == lastIndex) {
                 index--;
-                lastElement--;
+                lastIndex--;
             }
 
             if (index < 0) {
                 break;
             }
 
-            indexes[index]++;
             /**
-             * Set next value from elements to the combination
+             * Obtain next index in indexes[] ->
+             * this is index of next value in combination from elements[]
              */
-            combination[index] = elements[indexes[index]];
+            indexes[index]++;
 
             for (int i = index + 1; i < k; i++) {
                 /**
@@ -50,14 +48,15 @@ public class CombinationsIterative {
                  * Because we generate combinations
                  */
                 indexes[i] = indexes[i - 1] + 1;
-                combination[i] = elements[indexes[i]];
             }
         }
     }
 
-    private static void print(int[] combination) {
+    private static void print(int[] indexes) {
         System.out.print("( ");
-        Arrays.stream(combination).forEach(element -> System.out.print(element + " "));
+        for (int i = 0; i < indexes.length; i++) {
+            System.out.print(elements[indexes[i]] + " ");
+        }
         System.out.println(")");
     }
 }

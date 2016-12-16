@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class VariationsWithRepetition {
 
-    private static int[] elements = {1, 2, 3, 4, 5};
+    private static int[] elements = {1, 2, 3};
     private static int k;
 
     public static void main(String[] args) {
-        k = 3;
+        k = 2;
         int[] variation = new int[k];
 
         generateVariations(variation, 0);

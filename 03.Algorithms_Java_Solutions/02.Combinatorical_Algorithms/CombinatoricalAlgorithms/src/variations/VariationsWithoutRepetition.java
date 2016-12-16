@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class VariationsWithoutRepetition {
 
-    private static int[] elements = {1, 2, 3};
+    private static int[] elements = {1, 2, 3, 4};
     private static int k;
 
     /**
