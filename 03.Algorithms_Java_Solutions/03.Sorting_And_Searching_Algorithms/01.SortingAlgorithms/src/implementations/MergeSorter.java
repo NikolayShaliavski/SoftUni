@@ -22,7 +22,7 @@ public class MergeSorter implements Sorter {
          * Partition array always in the middle
          * which guarantees n * log(n) complexity in all cases
          */
-        int mid = start + (end - start) / 2;
+        int mid = (end + start) / 2;
 
         this.mergeSort(arr, start, mid);
         this.mergeSort(arr, mid + 1, end);

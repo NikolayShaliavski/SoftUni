@@ -23,11 +23,6 @@ public class VariationsMemoization {
     private static int[] elements = {1, 2, 2, 2};
     private static int k;
 
-    /**
-     * HashSet to store repeating elements -> memoization
-     */
-    private static Set<Integer> memo;
-
     public static void main(String[] args) {
         k = 4;
         int[] variation = new int[k];
@@ -40,17 +35,18 @@ public class VariationsMemoization {
             return;
         }
         /**
-         * In every stack frame we create new HashSet for that recursive call
-         * where we will store repeating elements
+         * HashSet to store repeating elements -> memoization
+         * Create here new Set every time, don't use static variable and set it every frame
+         * to new HashSet, because results aren't correct
          */
-        memo = new HashSet<>();
+        Set<Integer> memo = new HashSet<>();
         for (int i = index; i < elements.length; i++) {
             /**
              * Call recursion and perform all another actions
              * if this is new element
              */
-            if (!memo.contains(elements[index])) {
-                memo.add(elements[index]);
+            if (!memo.contains(elements[i])) {
+                memo.add(elements[i]);
 
                 variation[index] = elements[i];
                 swap(index, i);
