@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{05B98452-E394-47D9-94A3-C36B0BEFA88D}</ProjectGuid>
+    <ProjectGuid>{760AD042-272B-4280-987D-3489AFAD2044}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Knapsack_Problem</RootNamespace>
@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Item.cs" />
     <Compile Include="Knapsack.cs" />
   </ItemGroup>
   <ItemGroup>

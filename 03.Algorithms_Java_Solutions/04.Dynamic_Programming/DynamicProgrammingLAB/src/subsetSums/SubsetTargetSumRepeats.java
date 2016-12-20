@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
  * Given set of integers -> find one sum == targetSum.
  * If there are several combinations of numbers we recover only one.
  * Repeats of numbers are allowed here
- * Uses boolean matrix to mark which sum (from 0 to targetSum + 1) is possible
+ * Uses boolean array to mark which sum (from 0 to targetSum + 1) is possible
  */
 public class SubsetTargetSumRepeats {
 
