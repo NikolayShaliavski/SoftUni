@@ -13,33 +13,22 @@ public class DividingPresents {
         int[] presents =
                 Arrays.stream(bf.readLine().split("[\\,]")).mapToInt(Integer::parseInt).toArray();
 
-        Map<Integer, Integer> possibleSums = findPossibleSums(presents);
+
         //find half sum for all presents
         int sumAllPresents = Arrays.stream(presents).sum();
-        int halfSum = sumAllPresents / 2;
+        int median = sumAllPresents / 2;
 
-        int alanSum = 0;
+        Map<Integer, Integer> possibleSums = findPossibleSums(presents, median);
+
+        int alanSum = Integer.MIN_VALUE;
         int bobSum = 0;
 
-        if (possibleSums.containsKey(halfSum)) {
-            alanSum = halfSum;
-        } else {
-            //we put halfSum into TreeMap and it will be placed between two sums with smallest difference
-            possibleSums.put(halfSum, 0);
-            List<Integer> sumsList = new ArrayList<>();
-            for (Integer sum : possibleSums.keySet()) {
-                sumsList.add(sum);
-            }
-            possibleSums.remove(halfSum);//remove it because we don't need it more
-
-            for (int i = 0; i < sumsList.size(); i++) {
-                if (sumsList.get(i) == halfSum && i > 0 && i < sumsList.size() - 1) {
-                    alanSum = sumsList.get(i - 1);
-                    //bobSum = sumsList.get(i + 1);
-                    break;
-                }
+        for (Integer sum : possibleSums.keySet()) {
+            if (sum > alanSum) {
+                alanSum = sum;
             }
         }
+
         bobSum = sumAllPresents - alanSum;
 
         List<Integer> alanPresents = findAlanPresents(possibleSums, alanSum);
@@ -66,15 +55,20 @@ public class DividingPresents {
         return alanPresents;
     }
 
-    private static Map<Integer, Integer> findPossibleSums(int[] presents) {
-        Map<Integer, Integer> possibleSums = new TreeMap<>();
+    /**
+     * Generates all possible sums <= targetSum, which is half sum for all presents
+     * We don't need all other sums > targetSum
+     */
+    private static Map<Integer, Integer> findPossibleSums(int[] presents, int targetSum) {
+
+        Map<Integer, Integer> possibleSums = new HashMap<>();
         possibleSums.put(0, 0);
 
         for (int i = 0; i < presents.length; i++) {
             Map<Integer, Integer> newSums = new HashMap<>();
             for (Integer sum : possibleSums.keySet()) {
                 int newSum = sum + presents[i];
-                if (!possibleSums.containsKey(newSum)) {
+                if (!possibleSums.containsKey(newSum) && newSum <= targetSum) {
                     newSums.put(newSum, presents[i]);
                 }
 
