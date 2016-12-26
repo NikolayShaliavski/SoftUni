@@ -36,7 +36,8 @@ public class TopSortDfs {
         if (!visited.contains(vertex)) {
             visited.add(vertex);
             //add vertex to cycleSet to watch
-            //if there is a cycle in graph (child has edge to his parent)
+            //if there is a cycle in graph
+            //(child has edge to one of parent vertices)
             cycleVertexes.add(vertex);
 
             for (String child : graph.get(vertex)) {

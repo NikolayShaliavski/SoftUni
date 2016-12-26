@@ -9,15 +9,18 @@ import java.util.Arrays;
  */
 public class Permutations {
 
-    private static int[] elements = {1, 2, 3, 4, 5};
+    private static int[] elements = {1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3};//{1, 2, 3, 4, 5};
+    private static int counter = 0;
 
     public static void main(String[] args) {
         generatePermutation(0);
+        System.out.println(counter);
     }
 
     private static void generatePermutation(int startIndex) {
         if (startIndex >= elements.length) {
-            printPermutation();
+            counter++;
+            //printPermutation();
             return;
         }
 

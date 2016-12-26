@@ -8,8 +8,8 @@ public class VariationsWithoutRepetition {
     private static int k;
 
     /**
-     * Here we use boolean array to save if we have use current element
-     * Array is with length == elements.length -> (for every of elements)
+     * Here we use boolean array to save if we have used current element
+     * Array is with length == elements.length -> (for each of elements)
      */
     private static boolean[] used;
 

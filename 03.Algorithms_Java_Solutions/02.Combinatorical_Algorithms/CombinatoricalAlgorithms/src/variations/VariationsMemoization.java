@@ -20,18 +20,23 @@ import java.util.Set;
  */
 public class VariationsMemoization {
 
-    private static int[] elements = {1, 2, 2, 2};
+    private static int[] elements = {1, 2, 2, 2, 3, 3, 3, 3};//{1, 2, 2, 2};
     private static int k;
+    private static int counter;
 
     public static void main(String[] args) {
-        k = 4;
+        k = 8;
+        counter = 0;
         int[] variation = new int[k];
         generateVariation(variation, 0);
+
+        System.out.println(counter);
     }
 
     private static void generateVariation(int[] variation, int index) {
         if (index >= k) {
-            printVariation(variation);
+            //printVariation(variation);
+            counter++;
             return;
         }
         /**

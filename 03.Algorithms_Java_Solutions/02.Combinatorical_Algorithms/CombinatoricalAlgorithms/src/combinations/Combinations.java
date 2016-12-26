@@ -9,18 +9,22 @@ public class Combinations {
 
     private static int[] elements = {1, 2, 3, 4, 5};
     private static int k;
+    private static int counter = 0;
 
     public static void main(String[] args) {
         k = 3;
         int[] combination = new int[k];
 
         generateCombination(combination, 0, 0);
+
+        System.out.println(counter);
     }
 
     private static void generateCombination(int[] combination, int start, int index) {
 
         if (index >= combination.length) {
             print(combination);
+            counter++;
             return;
         }
         for (int i = start; i < elements.length; i++) {
