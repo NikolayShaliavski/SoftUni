@@ -19,10 +19,10 @@ public class DijkstraPriorityQueue {
         initGraph();
 
         findAndPrintShortestPath(0, 9);
-        findAndPrintShortestPath(0, 2);
-        findAndPrintShortestPath(0, 10);
-        findAndPrintShortestPath(0, 11);
-        findAndPrintShortestPath(0, 1);
+//        findAndPrintShortestPath(0, 2);
+//        findAndPrintShortestPath(0, 10);
+//        findAndPrintShortestPath(0, 11);
+//        findAndPrintShortestPath(0, 1);
     }
 
     private static void findAndPrintShortestPath(int source, int destination) {
@@ -59,6 +59,7 @@ public class DijkstraPriorityQueue {
         for (int i = 0; i < prev.length; i++) {
             prev[i] = -1;
         }
+        //dijkstra doesn't need used[]
         boolean[] used = new boolean[n];
         PriorityQueue<Node> priorityQueue = new PriorityQueue<>();
 
@@ -79,15 +80,21 @@ public class DijkstraPriorityQueue {
             for (Edge edge : graph.get(currentNode.getId())) {
 
                 Node edgeNode = nodes.get(edge.getDestination());
-                if (!used[edgeNode.getId()]) {
-                    used[edgeNode.getId()] = true;
-                    priorityQueue.add(edgeNode);
-                }
+//                if (!used[edgeNode.getId()]) {
+//                    used[edgeNode.getId()] = true;
+//                    priorityQueue.add(edgeNode);
+//                }
 
                 double newDistance = currentNode.getDistanceFromStart() + edge.getDistance();
                 if (newDistance < edgeNode.getDistanceFromStart()) {
                     edgeNode.setDistanceFromStart(newDistance);
                     prev[edgeNode.getId()] = currentNode.getId();
+
+                    //we add edge to priorityQueue if it wasn't visited yet
+                    //dijkstra guarantees that if node has been visited distance
+                    //to it is already calculated and it's optimal
+                    priorityQueue.add(edgeNode);
+
                     priorityQueue.decreaseKey(edgeNode);
                 }
             }

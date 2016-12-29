@@ -47,21 +47,18 @@
                 }
             }
 
-            for (int i = 0; i < verticeCount - 1; i++)
+            foreach (Edge edge in edges)
             {
-                foreach (Edge edge in edges)
+                if (distance[edge.Start] + edge.Distance < distance[edge.End])
                 {
-                    if (distance[edge.Start] + edge.Distance < distance[edge.End])
-                    {
-                        throw new ArgumentException(
-                            string.Format("A negative weight cycle exists at edge ({0}, {1})",
-                                edge.Start, edge.End
-                                ));
-                    }
+                    throw new ArgumentException(
+                        string.Format("A negative weight cycle exists at edge ({0}, {1})",
+                            edge.Start, edge.End
+                            ));
                 }
             }
 
-            return (int) distance[destination];
+            return (int)distance[destination];
         }
     }
 }

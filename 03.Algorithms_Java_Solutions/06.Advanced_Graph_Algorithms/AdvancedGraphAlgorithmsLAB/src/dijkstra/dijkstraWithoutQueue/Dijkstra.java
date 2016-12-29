@@ -31,7 +31,7 @@ public class Dijkstra {
 
     public static void main(String[] args) {
 
-        findAndPrintShortestPath(0, 9);
+        findAndPrintShortestPath(9, 0);
     }
 
     private static void findAndPrintShortestPath(int source, int destination) {

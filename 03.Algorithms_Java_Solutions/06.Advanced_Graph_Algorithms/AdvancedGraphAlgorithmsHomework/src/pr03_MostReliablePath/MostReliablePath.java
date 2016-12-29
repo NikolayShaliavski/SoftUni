@@ -1,4 +1,4 @@
-package pr02_MostReliablePath;
+package pr03_MostReliablePath;
 
 import java.io.BufferedReader;
 import java.io.IOException;

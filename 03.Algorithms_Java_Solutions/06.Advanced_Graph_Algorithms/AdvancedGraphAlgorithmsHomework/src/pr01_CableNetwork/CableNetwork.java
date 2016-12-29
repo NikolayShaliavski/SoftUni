@@ -69,6 +69,9 @@ public class CableNetwork {
                 int weight = Integer.valueOf(edge[2]);
                 priorityQueue.add(new Edge(source, destination, weight));
             } else {
+                //graph is undirected so
+                //edges are from source -> destination
+                //and from destination -> source
                 connectedNodes.add(source);
                 connectedNodes.add(destination);
             }
