@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Time complexity: O(|E| * log* |E|)
+ */
 public class Kruskal {
 
     public static void main(String[] args) {

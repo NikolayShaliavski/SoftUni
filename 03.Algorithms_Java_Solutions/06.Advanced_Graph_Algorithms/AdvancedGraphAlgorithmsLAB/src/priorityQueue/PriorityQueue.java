@@ -81,6 +81,7 @@ public class PriorityQueue<T extends Comparable<T>> {
     }
 
     private void heapifyUp(int i) {
+        //index of parent node
         int parent = (i - 1) /2;
 
         while (i > 0 && this.heap.get(i).compareTo(this.heap.get(parent)) < 0) {

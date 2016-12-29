@@ -52,7 +52,7 @@ namespace Dijkstra
                 {nodes[11],new Dictionary<Node,int>(){ {nodes[1], 6}, {nodes[2], 9}, {nodes[4], 11}, {nodes[5], 33}, {nodes[7], 20}}}
             };
 
-            PrintPath(graph,nodes, 0, 9);
+            PrintPath(graph, nodes, 0, 9);
             PrintPath(graph, nodes, 0, 2);
             PrintPath(graph, nodes, 0, 10);
             PrintPath(graph, nodes, 0, 11);

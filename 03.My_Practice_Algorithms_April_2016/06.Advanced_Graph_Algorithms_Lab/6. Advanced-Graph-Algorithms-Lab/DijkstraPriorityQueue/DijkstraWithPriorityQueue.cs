@@ -11,6 +11,11 @@
             bool[] visited = new bool[graph.Count];
             PriorityQueue<Node> priorityQueue = new PriorityQueue<Node>();
 
+            foreach (var pair in graph)
+            {
+                pair.Key.DistanceFromStart = double.PositiveInfinity;
+            }
+
             sourceNode.DistanceFromStart = 0;
             priorityQueue.Enqueue(sourceNode);
 

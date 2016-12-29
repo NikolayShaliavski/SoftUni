@@ -95,12 +95,12 @@ public class DijkstraWithoutQueue
             { 0,  6,  9,  0, 11, 33,  0, 20,  0,  0,  0,  0 }, // 11
         };
 
-        FindAndPrintShortestPath(graph, 0, 9);
-        FindAndPrintShortestPath(graph, 0, 2);
-        FindAndPrintShortestPath(graph, 0, 10);
-        FindAndPrintShortestPath(graph, 0, 11);
-        FindAndPrintShortestPath(graph, 0, 1);
-        FindAndPrintShortestPath(graph, 0, 0);
+        //FindAndPrintShortestPath(graph, 0, 9);
+        //FindAndPrintShortestPath(graph, 0, 2);
+        //FindAndPrintShortestPath(graph, 0, 10);
+        //FindAndPrintShortestPath(graph, 0, 11);
+        FindAndPrintShortestPath(graph, 10, 3);
+        //FindAndPrintShortestPath(graph, 0, 0);
     }
 
     static void FindAndPrintShortestPath(

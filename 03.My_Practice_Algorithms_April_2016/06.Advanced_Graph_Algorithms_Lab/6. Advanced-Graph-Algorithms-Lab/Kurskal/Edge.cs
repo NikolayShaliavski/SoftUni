@@ -25,7 +25,8 @@
 
         public override string ToString()
         {
-            return $"({this.StartNode} {this.EndNode}) -> {this.Weight}";
+            return string.Format("({0}-{1}) -> {2}", 
+                this.StartNode, this.EndNode, this.Weight);
         }
     }
 }

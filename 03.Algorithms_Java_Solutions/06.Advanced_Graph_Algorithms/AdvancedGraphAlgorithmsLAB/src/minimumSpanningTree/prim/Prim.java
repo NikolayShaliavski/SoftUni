@@ -4,6 +4,10 @@ import priorityQueue.PriorityQueue;
 
 import java.util.*;
 
+/**
+ * Prim algorithm with priority queue
+ * Time complexity: O(|E| * log |E|)
+ */
 public class Prim {
 
 //    private static List<Edge> edges =
