@@ -52,7 +52,7 @@ public class SubsetAllTargetSums {
              * If we call recursion with i + 1
              * we generate all subsets without repetition
              */
-            findTargetSum(set, i, targetSum);
+            findTargetSum(set, i + 1, targetSum);
             subset.remove(subset.size() - 1);
         }
     }
