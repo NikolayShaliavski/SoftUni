@@ -3,6 +3,9 @@ package pr09_FastAndFurious;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class FastAndFurious {
@@ -12,7 +15,7 @@ public class FastAndFurious {
     static Map<String, List<Record>> records;
     static Set<String> bustedCars;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ParseException {
 
         readInput();
         bustedCars = new TreeSet<>();
@@ -26,10 +29,12 @@ public class FastAndFurious {
                 Record source = carRecords.get(i);
                 Record destination = carRecords.get(i + 1);
 
-                Double travelTime = findTravelTime(source, destination);
+                Double travelTime = findTravelTime(source.time, destination.time);
                 Double allowedTime = findAllowedTime(source.town, destination.town);
 
-                if (allowedTime != Double.MAX_VALUE && travelTime < allowedTime) {
+                if (allowedTime != Double.MAX_VALUE &&
+                        travelTime > 0.0 &&
+                        travelTime < allowedTime) {
                     bustedCars.add(car);
                     break;
                 }
@@ -38,6 +43,19 @@ public class FastAndFurious {
         for (String busted : bustedCars) {
             System.out.println(busted);
         }
+    }
+
+    /**
+     * Subtracting two times using java.util.Date class
+     * @param sourceTime
+     * @param destinationTime
+     * @return difference between destination and source times
+     */
+    private static Double findTravelTime(Date sourceTime, Date destinationTime) {
+        Double diff =
+                (destinationTime.getTime() - sourceTime.getTime()) / (double) (60 * 60 * 1000);
+
+        return diff;
     }
 
     private static Double findAllowedTime(String source, String destination) {
@@ -52,7 +70,7 @@ public class FastAndFurious {
 
         while (townPriorities.size() > 0) {
             Town currTown = townPriorities.poll();
-            
+
             if (currTown.name.equals(destination)) {
                 break;
             }
@@ -70,32 +88,38 @@ public class FastAndFurious {
         return towns.get(destination).timeFromStart;
     }
 
-    private static Double findTravelTime(Record source, Record destination) {
-        Integer hours = destination.hours - source.hours;
-        Double minutes;
-        if (destination.minutes >= source.minutes) {
-            minutes = (double) destination.minutes - source.minutes;
-        } else {
-            hours--;
-            minutes = (double) destination.minutes;
-            minutes += 60 - source.minutes;
-        }
+    /**
+     * Manually subtracting two times
+     * @throws IOException
+     * @throws ParseException
+     * @return difference between destination and source time
+     */
+//    private static Double findTravelTime(Record source, Record destination) {
+//        Integer hours = destination.hours - source.hours;
+//        Double minutes;
+//        if (destination.minutes >= source.minutes) {
+//            minutes = (double) destination.minutes - source.minutes;
+//        } else {
+//            hours--;
+//            minutes = (double) destination.minutes;
+//            minutes += 60 - source.minutes;
+//        }
+//
+//        Double seconds;
+//        if (destination.seconds >= source.seconds) {
+//            seconds = (double) destination.seconds - source.seconds;
+//        } else {
+//            minutes--;
+//            seconds = (double) destination.seconds;
+//            seconds += 60 - source.seconds;
+//        }
+//        seconds /= 3600;
+//        minutes /= 60;
+//        minutes += seconds;
+//        return hours + minutes;
+//    }
 
-        Double seconds;
-        if (destination.seconds >= source.seconds) {
-            seconds = (double) destination.seconds - source.seconds;
-        } else {
-            minutes--;
-            seconds = (double) destination.seconds;
-            seconds += 60 - source.seconds;
-        }
-        seconds /= 3600;
-        minutes /= 60;
-        minutes += seconds;
-        return hours + minutes;
-    }
-
-    private static void readInput() throws IOException {
+    private static void readInput() throws IOException, ParseException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         towns = new HashMap<>();
         edges = new HashMap<>();
@@ -131,15 +155,18 @@ public class FastAndFurious {
             edges.get(secondTown.name).add(firstEdge);
             line = bf.readLine();
         }
+
+        DateFormat sdf = new SimpleDateFormat("HH:mm:ss");
         line = bf.readLine();
         while (!line.equals("End")) {
             String[] tokens = line.split("[\\s]+");
             String townName = tokens[0];
             String car = tokens[1];
-            String[] timeTokens = tokens[2].split("\\:");
-            Integer[] parsedTime = parseTime(timeTokens);
+            String timeTokens = tokens[2];
 
-            Record record = new Record(townName, parsedTime[0], parsedTime[1], parsedTime[2]);
+            Date time = sdf.parse(timeTokens);
+
+            Record record = new Record(townName, time);
             if (!records.containsKey(car)) {
                 records.put(car, new ArrayList<>());
             }
@@ -148,49 +175,54 @@ public class FastAndFurious {
         }
     }
 
-    private static Integer[] parseTime(String[] timeTokens) {
-        Integer[] time = new Integer[timeTokens.length];
-
-        for (int i = 0; i < timeTokens.length; i++) {
-            String timeToken = timeTokens[i];
-            Integer parsed;
-            if (timeToken.equals("00")) {
-                parsed = 0;
-            } else if (timeToken.startsWith("0")) {
-                parsed = Integer.parseInt(timeToken.charAt(1) + "");
-            } else {
-                parsed = Integer.parseInt(timeToken);
-            }
-            time[i] = parsed;
-        }
-        return time;
-    }
+    /**
+     * Manually parsing time from String
+     * @return Integer array containing hours, minutes and seconds
+     */
+//    private static Integer[] parseTime(String[] timeTokens) {
+//        Integer[] time = new Integer[timeTokens.length];
+//
+//        for (int i = 0; i < timeTokens.length; i++) {
+//            String timeToken = timeTokens[i];
+//            Integer parsed;
+//            if (timeToken.equals("00")) {
+//                parsed = 0;
+//            } else if (timeToken.startsWith("0")) {
+//                parsed = Integer.parseInt(timeToken.charAt(1) + "");
+//            } else {
+//                parsed = Integer.parseInt(timeToken);
+//            }
+//            time[i] = parsed;
+//        }
+//        return time;
+//    }
 }
 
 class Record implements Comparable<Record> {
 
     String town;
-    Integer hours;
-    Integer minutes;
-    Integer seconds;
+    Date time;
+//    Integer hours;
+//    Integer minutes;
+//    Integer seconds;
 
-    public Record(String town, Integer hours, Integer minutes, Integer seconds) {
+    public Record(String town, Date time) {
         this.town = town;
-        this.hours = hours;
-        this.minutes = minutes;
-        this.seconds = seconds;
+        this.time = time;
     }
 
     @Override
     public int compareTo(Record other) {
-        int result = this.hours.compareTo(other.hours);
-        if (result == 0) {
-            result = this.minutes.compareTo(other.minutes);
-        }
-        if (result == 0) {
-            result = this.seconds.compareTo(other.seconds);
-        }
-        return result;
+//        int result = this.hours.compareTo(other.hours);
+//        if (result == 0) {
+//            result = this.minutes.compareTo(other.minutes);
+//        }
+//        if (result == 0) {
+//            result = this.seconds.compareTo(other.seconds);
+//        }
+//        return result;
+
+        return this.time.compareTo(other.time);
     }
 }
 
