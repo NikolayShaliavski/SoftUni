@@ -1,10 +1,10 @@
-package pr01;
+package pr01_SumTo13;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Problem01 {
+public class SumToThirteen {
 
     static int[] nums;
 

@@ -1,10 +1,10 @@
-package pr04;
+package pr04_Snake;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Problem04 {
+public class SnakeProblem {
 
     static BufferedReader bf;
     static int n;
@@ -39,16 +39,6 @@ public class Problem04 {
             }
         }
         System.out.println("Points collected: " + points);
-//        String[] tokens = line.split("[\\s]+");
-//        steps = Integer.valueOf(tokens[2]);
-//        boolean moveSuccess = moveSnake(direction, steps);
-//
-//        if (!moveSuccess) {
-//            System.out.println("Points collected: " + points);
-//            System.out.println("The snake dies.");
-//        } else {
-//            System.out.println("Points collected: " + points);
-//        }
     }
 
     private static boolean moveSnake(String direction, int steps) {
@@ -63,7 +53,6 @@ public class Problem04 {
                         }
                     }
                 }
-                //snake.x += steps;
                 break;
             case "up":
                 for (int i = 0; i < steps; i++) {
@@ -75,7 +64,6 @@ public class Problem04 {
                         }
                     }
                 }
-                //snake.x -= steps;
                 break;
             case "forward":
                 for (int i = 0; i < steps; i++) {
@@ -87,7 +75,6 @@ public class Problem04 {
                         }
                     }
                 }
-                //snake.y -= steps;
                 break;
             case "backward":
                 for (int i = 0; i < steps; i++) {
@@ -99,7 +86,6 @@ public class Problem04 {
                         }
                     }
                 }
-                //snake.y += steps;
                 break;
             case "left":
                 for (int i = 0; i < steps; i++) {
@@ -111,7 +97,6 @@ public class Problem04 {
                         }
                     }
                 }
-                //snake.z -= steps;
                 break;
             case "right":
                 for (int i = 0; i < steps; i++) {
@@ -123,15 +108,10 @@ public class Problem04 {
                         }
                     }
                 }
-                //snake.z += steps;
                 break;
         }
 
         if (isInside()) {
-//            if (cube[snake.x][snake.y][snake.z] == 'a') {
-//                cube[snake.x][snake.y][snake.z] = 'o';
-//                points++;
-//            }
             return true;
         }
         return false;

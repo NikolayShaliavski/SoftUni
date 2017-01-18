@@ -1,4 +1,4 @@
-package pr03;
+package pr03_DuplicatedLetters;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Problem03 {
+public class DuplicatedLetters {
 
     static String line;
     static char[] letters;
