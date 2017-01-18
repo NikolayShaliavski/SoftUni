@@ -1,0 +1,8 @@
+package com.weddings_planner.io.parsers.fileParsers;
+
+public interface Parser {
+
+	<T> T read(Class<T> classes, String file);
+
+	<T> void write(T object, String file);
+}

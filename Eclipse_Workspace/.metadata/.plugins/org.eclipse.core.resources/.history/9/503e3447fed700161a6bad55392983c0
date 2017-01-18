@@ -1,0 +1,13 @@
+package com.weddings_planner.io.readers;
+
+import java.io.*;
+
+import javassist.expr.NewArray;
+
+public class MyFileReader implements Reader {
+
+	public String read(String filePath) {
+		MyFileReader in = new MyFileReader(filePath);
+		return null;
+	}
+}

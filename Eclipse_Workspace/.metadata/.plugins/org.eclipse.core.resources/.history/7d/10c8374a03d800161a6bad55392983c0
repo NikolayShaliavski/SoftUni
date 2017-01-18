@@ -1,0 +1,14 @@
+package com.weddings_planner.engine;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Terminal implements CommandLineRunner {
+
+	public void run(String... arg0) throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+}

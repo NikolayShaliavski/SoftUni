@@ -1,0 +1,5 @@
+package com.weddings_planner.validation.validators;
+
+public class EmailValidator {
+
+}

@@ -17,7 +17,7 @@ public class FileReader implements Reader {
         try(InputStream is = getClass().getResourceAsStream(filePath);
             BufferedReader bfr = new BufferedReader(new InputStreamReader(is))) {
 
-            String line = null;
+            String line;
             while ((line = bfr.readLine()) != null) {
                 content.append(line);
             }

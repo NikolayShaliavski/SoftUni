@@ -1,0 +1,39 @@
+package com.weddings_planner.entities;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "weddings")
+public class Wedding {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	@OneToOne
+	@Column(name = "bride", nullable = false)
+	private Person bride;
+
+	@OneToOne
+	@Column(name = "bridegroom", nullable = false)
+	private Person bridegroom;
+	
+	@Column(name = "date", nullable = false)
+	private Date date;
+	
+	@Column(name = "agency")
+	
+	@ManyToOne
+	@JoinColumn(name = "agency", referencedColumnName = "id", nullable = false)
+	private Agency agency;
+}

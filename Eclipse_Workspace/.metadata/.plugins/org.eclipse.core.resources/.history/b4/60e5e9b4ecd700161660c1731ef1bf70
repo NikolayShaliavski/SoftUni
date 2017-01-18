@@ -1,0 +1,16 @@
+package com.weddings_planner.entities;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "invitations")
+public class Invitation implements Serializable {
+
+	private Long id;
+
+	private Wedding wedding;
+
+}

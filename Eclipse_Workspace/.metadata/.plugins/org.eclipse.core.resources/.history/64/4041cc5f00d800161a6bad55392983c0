@@ -1,0 +1,5 @@
+package com.weddings_planner.io.parsers.modelParsers;
+
+public class ModelParser {
+
+}

@@ -1,0 +1,26 @@
+table.outer {
+	border: 1pt;
+}
+table.outer td {
+	height: 100pt;
+	width: 100pt;
+	
+}
+button.button {
+	cursor: pointer;
+	background-color: #F0E68C;
+	font-family: "Comic Sans", cursive;
+	font-size: 20pt;
+	width: 100%;
+	height: 100%;
+}
+table.inner td {
+	height: 45pt;
+	width: 100pt;
+}
+.small-button {
+	font-size: 15pt;
+}
+.left-aligned {
+	text-align: right;
+}
