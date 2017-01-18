@@ -1,8 +1,0 @@
-package com.weddings_planner.io.readers;
-
-import java.io.FileNotFoundException;
-
-public interface Reader {
-
-	String read(String filePath) throws FileNotFoundException;
-}

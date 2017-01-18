@@ -1,6 +1,0 @@
-package com.weddings_planner.io.readers;
-
-public interface Reader {
-
-	String read(String filePath);
-}

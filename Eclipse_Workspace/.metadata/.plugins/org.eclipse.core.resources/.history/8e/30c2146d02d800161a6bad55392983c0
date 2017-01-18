@@ -1,8 +1,0 @@
-package com.weddings_planner.services;
-
-import com.weddings_planner.entities.Agency;
-
-public interface AgencyService {
-
-	void save(Agency agency);
-}

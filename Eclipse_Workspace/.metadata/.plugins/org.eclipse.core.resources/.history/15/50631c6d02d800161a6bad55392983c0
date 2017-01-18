@@ -1,9 +1,0 @@
-package com.weddings_planner.services;
-
-import com.weddings_planner.dtos.AgenciesImportDto;
-import com.weddings_planner.entities.Agency;
-
-public interface AgencyService {
-
-	void save(AgenciesImportDto agencyDto);
-}

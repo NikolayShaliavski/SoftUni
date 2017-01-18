@@ -1,5 +1,0 @@
-package com.weddings_planner.validation.annotations;
-
-public @interface Email {
-
-}
