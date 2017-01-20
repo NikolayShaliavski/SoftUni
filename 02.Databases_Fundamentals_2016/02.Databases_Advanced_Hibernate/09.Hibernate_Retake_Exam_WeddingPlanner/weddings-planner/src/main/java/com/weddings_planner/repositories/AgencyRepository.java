@@ -6,4 +6,6 @@ import com.weddings_planner.entities.Agency;
 
 @Repository
 public interface AgencyRepository extends JpaRepository<Agency,Long> {
+	
+	Agency findOneByName(String name);
 }

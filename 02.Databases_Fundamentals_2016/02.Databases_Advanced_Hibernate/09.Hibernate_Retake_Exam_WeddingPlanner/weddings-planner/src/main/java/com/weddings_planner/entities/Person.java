@@ -1,6 +1,9 @@
 package com.weddings_planner.entities;
 
 import java.io.Serializable;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -15,12 +18,14 @@ import javax.persistence.Transient;
 import javax.validation.constraints.Size;
 
 import com.weddings_planner.enums.Gender;
-import com.weddings_planner.validation.annotations.Email;
 
 @Entity
 @Table(name = "persons")
 public class Person implements Serializable {
 
+//	private static final DateFormat DATE_FORMAT = 
+//			new SimpleDateFormat("YYYY-MM-DD'T'HH:mm:ss");
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -30,7 +35,7 @@ public class Person implements Serializable {
 	private String firstName;
 
 	@Column(name = "middle_name_initial", nullable = false)
-	private Character middleNameInitial;
+	private String middleInitial;
 
 	@Column(name = "last_name", nullable = false)
 	@Size(min = 2)
@@ -43,8 +48,8 @@ public class Person implements Serializable {
 	@Enumerated(value = EnumType.STRING)
 	private Gender gender;
 
-	@Column(name = "birthdate")
-	private Date birthdate;
+	@Column(name = "birthday")
+	private Date birthday;
 
 	@Transient
 	private Integer age;
@@ -53,7 +58,6 @@ public class Person implements Serializable {
 	private String phone;
 
 	@Column(name = "email")
-	@Email
 	private String email;
 
 	public Person() {
@@ -75,12 +79,12 @@ public class Person implements Serializable {
 		this.firstName = firstName;
 	}
 
-	public Character getMiddleNameInitial() {
-		return middleNameInitial;
+	public String getMiddleInitial() {
+		return middleInitial;
 	}
 
-	public void setMiddleNameInitial(Character middleNameInitial) {
-		this.middleNameInitial = middleNameInitial;
+	public void setMiddleInitial(String middleNameInitial) {
+		this.middleInitial = middleNameInitial;
 	}
 
 	public String getLastName() {
@@ -95,8 +99,9 @@ public class Person implements Serializable {
 		return fullName;
 	}
 
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
+	public void setFullName() {
+		this.fullName = 
+				this.getFirstName() + " " + this.getMiddleInitial() + " " + this.getLastName();
 	}
 
 	public Gender getGender() {
@@ -107,12 +112,12 @@ public class Person implements Serializable {
 		this.gender = gender;
 	}
 
-	public Date getBirthdate() {
-		return birthdate;
+	public Date getBirthday() {
+		return birthday;
 	}
 
-	public void setBirthdate(Date birthdate) {
-		this.birthdate = birthdate;
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
 	}
 
 	public Integer getAge() {
