@@ -29,9 +29,10 @@ public class QuickSorter implements Sorter {
 
         /**
          * If we use Lomuto partitioning
-         * Call left recursion with pivot + 1(exclusive pivot)
+         * Call left recursion with pivot - 1(exclusive)
          * If we use Hoare partitioning
          * Call left recursion with pivot (inclusive)
+         * Right recursive call is always with lo == pivot + 1(exclusive)
          */
         this.quickSort(arr, lo, pivot);
         this.quickSort(arr, pivot + 1, hi);
