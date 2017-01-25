@@ -20,7 +20,7 @@ public class Permutations {
     private static void generatePermutation(int startIndex) {
         if (startIndex >= elements.length) {
             counter++;
-            //printPermutation();
+            printPermutation();
             return;
         }
 
@@ -35,7 +35,7 @@ public class Permutations {
             generatePermutation(startIndex + 1);
             /**
              * Return elements to their origin places
-             * before recursive call
+             * in post-action
              */
             swap(startIndex, i);
         }

@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * Given a set of integers -> find all possible sums
  * can be generated with these numbers(only sums without recovery).
- * We store sums in a HashSett
+ * We store sums in a HashSet
  */
 public class SubsetAllSums {
 
