@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+}
+.pre-tag {
+    background-color: #f94f80;
+}
+.image {
+    width: 50%;
+    height: 30%;
+}
+.footer {
+    text-align: center;
+}
+.emphasize {
+    font-style: italic;
+    font-weight: bold;
+}
+#about-us ul {
+    list-style: none;
+}

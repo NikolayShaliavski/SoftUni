@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Calculator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+		<script>
+			var expression = '';
+
+			function calculate(buttonId) {
+				var displayField = document.getElementById("input-area");
+				var button = document.getElementById(buttonId).value;
+
+				if (buttonId != 'equals' && buttonId != 'clear') {
+					if (displayField.value == 'Wrong Expression') {
+						displayField.value = '';
+					}
+					if (expression == '0' && buttonId != '.') {
+						expression = '';
+					}
+					expression += button;
+					displayField.value = expression;
+				} else if (buttonId == 'clear') {
+					expression = '';
+					displayField.value = expression;
+				} else if (buttonId == 'equals') {
+					try {
+						displayField.value = eval(expression);
+						expression = displayField.value;
+					} catch (e) {
+						expression = '';
+						displayField.value = 'Wrong Expression';
+					}
+				}
+			}
+		</script>
+		<style>
+/*			* {
+				border: 1px solid black;
+			}*/
+			button {
+				width: 80%;
+				height: 60%;
+				margin: 5%;
+			}
+			.col-xs-3 {
+				text-align: center;
+			}
+			.jumbotron {
+				margin: 3%
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-xs-6">
+						<input class="form-control input-lg" id="input-area" type="text">
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-danger btn-lg" id="clear" onclick="calculate(this.id)" value="clear">Clear</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-success btn-lg" id="equals" onclick="calculate(this.id)" value="=">=</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-3">
+						<button class="btn btn-info btn-lg" id="7" onclick="calculate(this.id)" value="7">7</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-info btn-lg" id="8" onclick="calculate(this.id)" value="8">8</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-info btn-lg" id="9" onclick="calculate(this.id)" value="9">9</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-primary btn-lg" id="*" onclick="calculate(this.id)" value="*">X</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-3">
+						<button class="btn btn-info btn-lg" id="4" onclick="calculate(this.id)" value="4">4</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-info btn-lg" id="5" onclick="calculate(this.id)" value="5">5</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-info btn-lg" id="6" onclick="calculate(this.id)" value="6">6</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-primary btn-lg" id="/" onclick="calculate(this.id)" value="/">/</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-3">
+						<button class="btn btn-info btn-lg" id="1" onclick="calculate(this.id)" value="1">1</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-info btn-lg" id="2" onclick="calculate(this.id)" value="2">2</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-info btn-lg" id="3" onclick="calculate(this.id)" value="3">3</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-primary btn-lg" id="+" onclick="calculate(this.id)" value="+">+</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-3">
+						<button class="btn btn-primary btn-lg" id="%" onclick="calculate(this.id)" value="%">%</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-info btn-lg" id="0" onclick="calculate(this.id)" value="0">0</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-primary btn-lg" id="." onclick="calculate(this.id)" value=".">.</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-primary btn-lg" id="-" onclick="calculate(this.id)" value="-">-</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

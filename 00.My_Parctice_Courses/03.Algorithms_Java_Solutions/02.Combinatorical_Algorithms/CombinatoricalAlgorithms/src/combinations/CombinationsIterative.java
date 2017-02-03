@@ -5,7 +5,7 @@ package combinations;
  */
 public class CombinationsIterative {
 
-    private static int[] elements = {1, 2, 3};;
+    private static int[] elements = {1, 2, 3, 4};;
 
     public static void main(String[] args) {
 
