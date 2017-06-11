@@ -1,0 +1,19 @@
+body {
+	background-color: #f0f4c3; 
+}
+h1 {
+	color: white;
+	text-align: center;
+	text-shadow: 3px 2px black;
+}
+.navbar {
+	background-color: #ef9a9a;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+}
+.container-fluid a {
+	color: black;
+}

@@ -38,11 +38,14 @@
 
                             <div class="card-footer">
                                 <c:if test="${loggedUser.role == \"ADMIN\"}">
-                                    <a class="card-button btn btn-warning" name="edit" href="/edit-game">Edit</a>
-                                    <a class="card-button btn btn-danger" name="delete" href="/delete-game">Delete</a>
+                                    <a class="card-button btn btn-warning" name="edit" href="/edit-game/${game.id}">Edit</a>
+                                    <a class="card-button btn btn-danger" name="delete" href="/delete-game/${game.id}">Delete</a>
                                 </c:if>
                                 <a class="card-button btn btn-outline-primary" name="info" href="/game-details/${game.id}">Info</a>
-                                <c:if test="${loggedUser.role == \"USER\"}">
+
+                                <c:if test="${loggedUser.role == \"USER\" &&
+                                !loggedUser.containsGame(game.id) &&
+                                !loggedUser.containsGameInCart(game.id)}">
                                     <a class="card-button btn btn-primary" name="buy" href="/buy/${game.id}">Buy</a>
                                 </c:if>
                             </div>

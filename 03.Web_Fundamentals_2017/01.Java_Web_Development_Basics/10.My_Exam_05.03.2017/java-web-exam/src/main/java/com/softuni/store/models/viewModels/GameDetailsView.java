@@ -4,6 +4,8 @@ import java.util.Date;
 
 public class GameDetailsView {
 
+    private Long id;
+
     private String title;
 
     private Double size;
@@ -62,5 +64,13 @@ public class GameDetailsView {
 
     public void setReleaseDate(Date releaseDate) {
         this.releaseDate = releaseDate;
+    }
+
+    public Long getId() {
+        return this.id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

@@ -70,8 +70,8 @@
                         <td>${game.size} GB</td>
                         <td>${game.price} &euro;</td>
                         <td>
-                            <a href="/edit-game" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="/delete-game" class="btn btn-danger btn-sm">Delete</a>
+                            <a href="/edit-game/${game.id}" class="btn btn-warning btn-sm">Edit</a>
+                            <a href="/delete-game/${game.id}" class="btn btn-danger btn-sm">Delete</a>
                         </td>
                     </tr>
                 </c:forEach>

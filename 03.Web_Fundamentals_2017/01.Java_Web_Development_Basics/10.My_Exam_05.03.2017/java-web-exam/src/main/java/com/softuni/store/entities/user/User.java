@@ -31,13 +31,13 @@ public class User implements Serializable {
     @JoinTable(name = "users_games",
             joinColumns = @JoinColumn(name = "user"),
             inverseJoinColumns = @JoinColumn(name = "game"))
-    private List<Game> games;
+    private Set<Game> games;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "carts",
             joinColumns = @JoinColumn(name = "user"),
             inverseJoinColumns = @JoinColumn(name = "game"))
-    private List<Game> cart;
+    private Set<Game> cart;
 
     public User() {
     }
@@ -82,19 +82,19 @@ public class User implements Serializable {
         this.role = role;
     }
 
-    public List<Game> getGames() {
+    public Set<Game> getGames() {
         return this.games;
     }
 
-    public void setGames(List<Game> games) {
+    public void setGames(Set<Game> games) {
         this.games = games;
     }
 
-    public List<Game> getCart() {
+    public Set<Game> getCart() {
         return this.cart;
     }
 
-    public void setCart(List<Game> cart) {
+    public void setCart(Set<Game> cart) {
         this.cart = cart;
     }
 }

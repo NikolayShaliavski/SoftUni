@@ -5,6 +5,12 @@
     <title>Game Store</title>
     <meta charset="UTF-8">
     <link href="${pageContext.request.contextPath}/static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script>
+        function refreshPage(){
+            window.location.reload();
+
+        }
+    </script>
 </head>
 <body>
 <c:set var="loggedUser" value="${sessionScope.loggedUser}"></c:set>
@@ -44,7 +50,7 @@
                 <div class="list-group">
                     <c:forEach items="${games}" var="game">
                         <div class="list-group-item">
-                            <a class="btn btn-outline-danger btn-lg" href="/cart/remove/${game.id}">X</a>
+                            <a class="btn btn-outline-danger btn-lg" href="/cart/${game.id}">X</a>
                             <div class="media col-3">
                                 <figure class="pull-left">
                                     <a href="/game-details/${game.id}">

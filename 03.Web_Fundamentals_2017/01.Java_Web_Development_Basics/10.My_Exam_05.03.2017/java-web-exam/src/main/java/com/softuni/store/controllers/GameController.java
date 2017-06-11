@@ -8,10 +8,11 @@ import com.mvcFramework.annotations.request.PostMapping;
 import com.mvcFramework.models.Model;
 import com.softuni.store.models.bindingModels.GameAddModel;
 import com.softuni.store.models.viewModels.GameAdminView;
-import com.softuni.store.models.viewModels.GameCartView;
 import com.softuni.store.models.viewModels.GameDetailsView;
+import com.softuni.store.models.viewModels.GameView;
 import com.softuni.store.models.viewModels.LoggedUserView;
 import com.softuni.store.services.GameService;
+import com.softuni.store.services.UserService;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -20,9 +21,7 @@ import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Stateless
 @Controller
@@ -30,6 +29,9 @@ public class GameController {
 
     @Inject
     private GameService gameService;
+
+    @Inject
+    private UserService userService;
 
     @GetMapping("/game-details/{id}")
     public String getGameInfo(@PathVariable("id") Long id, Model model) {
@@ -86,18 +88,34 @@ public class GameController {
     @GetMapping("/buy/{id}")
     public String buyGame(@PathVariable("id") Long id, HttpSession session) {
         LoggedUserView loggedUser = (LoggedUserView) session.getAttribute("loggedUser");
-        GameCartView game = this.gameService.getGameCartViewById(id);
+        GameView game = this.gameService.getGameCartViewById(id);
         loggedUser.getCart().add(game);
 
         return "redirect:/";
     }
 
-    @GetMapping("/cart/remove/{id}")
-    public String removeGame(@PathVariable("id") Long id, HttpSession session) {
+    @GetMapping("/cart/{id}")
+    public String removeGame(@PathVariable("id") Long id, HttpSession session, Model model) {
         LoggedUserView loggedUser = (LoggedUserView) session.getAttribute("loggedUser");
-        GameCartView gameToRemove = loggedUser.getCart().
+        GameView gameToRemove = loggedUser.getCart().
                 stream().filter(game -> game.getId() == id).findFirst().orElse(null);
-        loggedUser.getCart().remove(gameToRemove);
+        if (gameToRemove != null) {
+            loggedUser.getCart().remove(gameToRemove);
+            this.userService.removeFromCart(gameToRemove, loggedUser.getId());
+        }
+        session.setAttribute("loggedUser", loggedUser);
+        model.addAttribute("games", loggedUser.getCart());
+        return "redirect:/cart";
+    }
+
+    @PostMapping("/cart")
+    public String orderGame(HttpSession session) {
+        LoggedUserView loggedUser = (LoggedUserView) session.getAttribute("loggedUser");
+        if (loggedUser.getCart() != null && loggedUser.getCart().size() > 0) {
+            this.userService.orderGames(loggedUser);
+        }
+        loggedUser.getGames().addAll(loggedUser.getCart());
+        loggedUser.setCart(new LinkedHashSet<>());
         return "redirect:/cart";
     }
 }

@@ -44,6 +44,11 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
+    public User findById(Long id) {
+        return this.entityManager.find(User.class, id);
+    }
+
+    @Override
     public Long getUsersCount() {
         Query query = this.entityManager.createQuery("SELECT COUNT(u) FROM User AS u");
         Long count = (Long) query.getSingleResult();

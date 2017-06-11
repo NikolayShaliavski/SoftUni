@@ -26,6 +26,14 @@ public class GameRepositoryImpl implements GameRepository {
     }
 
     @Override
+    public void delete(Long id) {
+        Query query = this.entityManager.createQuery("DELETE FROM Game AS g " +
+                "WHERE g.id = :id");
+        query.setParameter("id", id);
+        query.executeUpdate();
+    }
+
+    @Override
     public Game findById(Long id) {
         return this.entityManager.find(Game.class, id);
     }
@@ -40,7 +48,7 @@ public class GameRepositoryImpl implements GameRepository {
     @Override
     public List<Game> getUserOwnedGames(Long id) {
         Query query = this.entityManager.createQuery("SELECT g FROM Game AS g " +
-                "JOIN g.users AS u " +
+                "JOIN g.owners AS u " +
                 "WHERE u.id = :id");
         query.setParameter("id", id);
         return query.getResultList();

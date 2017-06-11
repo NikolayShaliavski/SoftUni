@@ -10,6 +10,8 @@ public interface GameRepository {
 
     void edit(Game game);
 
+    void delete(Long id);
+
     Game findById(Long id);
 
     List<Game> getAllGames();

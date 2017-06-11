@@ -2,7 +2,7 @@ package com.softuni.store.models.viewModels;
 
 import com.softuni.store.entities.user.Role;
 
-import java.util.List;
+import java.util.Set;
 
 public class LoggedUserView {
 
@@ -12,7 +12,9 @@ public class LoggedUserView {
 
     private Role role;
 
-    private List<GameCartView> cart;
+    private Set<GameView> games;
+
+    private Set<GameView> cart;
 
     public Long getId() {
         return this.id;
@@ -38,11 +40,28 @@ public class LoggedUserView {
         this.role = role;
     }
 
-    public List<GameCartView> getCart() {
+    public Set<GameView> getGames() {
+        return games;
+    }
+
+    public void setGames(Set<GameView> games) {
+        this.games = games;
+    }
+
+    public Set<GameView> getCart() {
         return this.cart;
     }
 
-    public void setCart(List<GameCartView> cart) {
+    public void setCart(Set<GameView> cart) {
         this.cart = cart;
+    }
+
+    public boolean containsGame(Long id) {
+        return this.games.stream().anyMatch(game -> game.getId().equals(id));
+    }
+
+    public boolean containsGameInCart(Long id) {
+        return this.cart != null &&
+                this.cart.stream().anyMatch(game -> game.getId().equals(id));
     }
 }

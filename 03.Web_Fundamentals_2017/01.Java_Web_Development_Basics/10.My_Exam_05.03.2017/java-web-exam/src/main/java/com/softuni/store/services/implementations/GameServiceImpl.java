@@ -4,8 +4,8 @@ import com.softuni.store.entities.game.Game;
 import com.softuni.store.models.bindingModels.GameAddModel;
 import com.softuni.store.models.bindingModels.GameEditModel;
 import com.softuni.store.models.viewModels.GameAdminView;
-import com.softuni.store.models.viewModels.GameCartView;
-import com.softuni.store.models.viewModels.GameHomeView;
+import com.softuni.store.models.viewModels.GameEditView;
+import com.softuni.store.models.viewModels.GameView;
 import com.softuni.store.models.viewModels.GameDetailsView;
 import com.softuni.store.repositories.GameRepository;
 import com.softuni.store.services.GameService;
@@ -17,9 +17,7 @@ import javax.inject.Inject;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Stateless
 public class GameServiceImpl implements GameService{
@@ -40,15 +38,29 @@ public class GameServiceImpl implements GameService{
                 skip(source.getReleaseDate(), destination.getReleaseDate());
             }
         };
-        Game game = this.modelParser.convert(gameAddModel, Game.class, propertyMap);
+        Game game = this.modelParser.convert(gameAddModel, GameAddModel.class, Game.class, propertyMap);
         game.setReleaseDate(date);
         this.gameRepository.create(game);
     }
 
     @Override
-    public void edit(GameEditModel gameEditModel) {
-        Game game = this.modelParser.convert(gameEditModel, Game.class);
+    public void edit(GameEditModel gameEditModel) throws ParseException {
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = df.parse(gameEditModel.getReleaseDate());
+        PropertyMap<GameEditModel, Game> propertyMap = new PropertyMap<GameEditModel, Game>() {
+            @Override
+            protected void configure() {
+                skip(source.getReleaseDate(), destination.getReleaseDate());
+            }
+        };
+        Game game = this.modelParser.convert(gameEditModel, GameEditModel.class, Game.class, propertyMap);
+        game.setReleaseDate(date);
         this.gameRepository.edit(game);
+    }
+
+    @Override
+    public void delete(Long id) {
+        this.gameRepository.delete(id);
     }
 
     @Override
@@ -71,35 +83,50 @@ public class GameServiceImpl implements GameService{
     }
 
     @Override
-    public List<GameHomeView> getAllGames() {
+    public Set<GameView> getAllGames() {
         List<Game> allGames = this.gameRepository.getAllGames();
-        List<GameHomeView> allGameHomeViews = new ArrayList<>();
+        Set<GameView> allGameViews = new LinkedHashSet<>();
 
         for (Game game : allGames) {
-            GameHomeView view = this.modelParser.convert(game, GameHomeView.class);
-            view.setDescription(game.getDescription().substring(0, 300));
-            allGameHomeViews.add(view);
+            GameView view = this.modelParser.convert(game, GameView.class);
+            String gameDescription = game.getDescription();
+            if (gameDescription.length() > 300) {
+                view.setDescription(game.getDescription().substring(0, 300) + " ...");
+            } else {
+                view.setDescription(game.getDescription());
+            }
+            allGameViews.add(view);
         }
-        return allGameHomeViews;
+        return allGameViews;
     }
 
     @Override
-    public List<GameHomeView> getUserOwnedGames(Long id) {
-        List<Game> allGames = this.gameRepository.getUserOwnedGames(id);
-        List<GameHomeView> allGameHomeViews = new ArrayList<>();
-
-        for (Game game : allGames) {
-            GameHomeView view = this.modelParser.convert(game, GameHomeView.class);
-            view.setDescription(game.getDescription().substring(0, 300));
-            allGameHomeViews.add(view);
-        }
-        return allGameHomeViews;
-    }
-
-    @Override
-    public GameCartView getGameCartViewById(Long id) {
+    public GameView getGameCartViewById(Long id) {
         Game game = this.gameRepository.findById(id);
-        GameCartView gameView = this.modelParser.convert(game, GameCartView.class);
+        GameView gameView = this.modelParser.convert(game, GameView.class);
+        String description = gameView.getDescription();
+        if (description != null && description.length() > 300) {
+            gameView.setDescription(description.substring(0, 300) + " ...");
+        }
+        return gameView;
+    }
+
+    @Override
+    public GameEditView getGameEditView(Long id) {
+        Game game = this.gameRepository.findById(id);
+        GameEditView gameView = null;
+        if (game != null) {
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+            String date = df.format(game.getReleaseDate());
+            PropertyMap<Game, GameEditView> propertyMap = new PropertyMap<Game, GameEditView>() {
+                @Override
+                protected void configure() {
+                    skip(source.getReleaseDate(), destination.getReleaseDate());
+                }
+            };
+            gameView = this.modelParser.convert(game, Game.class, GameEditView.class, propertyMap);
+            gameView.setReleaseDate(date);
+        }
         return gameView;
     }
 }

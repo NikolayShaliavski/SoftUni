@@ -35,7 +35,7 @@
 ////            String uri = ((HttpServletRequest) req).getRequestURI();
 ////            int uriLastElementIndex = uri.lastIndexOf('=');
 ////            String filterType = uri.substring(uriLastElementIndex);
-////            List<GameHomeView> games;
+////            List<GameView> games;
 ////            if (filterType.equalsIgnoreCase("All")) {
 ////                games = this.gameService.getAllGames();
 ////            } else if (filterType.equalsIgnoreCase("Owned")) {

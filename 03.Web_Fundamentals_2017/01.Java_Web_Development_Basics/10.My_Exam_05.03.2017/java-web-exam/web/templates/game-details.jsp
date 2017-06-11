@@ -82,11 +82,11 @@
                 </p>
                 <button class="btn btn-outline-primary" onclick="history.back()">Back</button>
                 <c:if test="${loggedUser.role == \"ADMIN\"}">
-                    <a class="btn btn-warning" href="/edit">Edit</a>
-                    <a class="btn btn-danger" href="/delete">Delete</a>
+                    <a class="btn btn-warning" href="/edit-game/${gameView.id}">Edit</a>
+                    <a class="btn btn-danger" href="/delete-game/${gameView.id}">Delete</a>
                 </c:if>
                 <c:if test="${loggedUser.role == \"USER\"}">
-                    <a class="btn btn-primary" href="/buy/${game.id}">Buy</a>
+                    <a class="btn btn-primary" href="/buy/${gameView.id}">Buy</a>
                 </c:if>
                 <br/>
                 <br/>
