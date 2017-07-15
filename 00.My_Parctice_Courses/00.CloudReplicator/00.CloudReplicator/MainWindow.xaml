@@ -96,7 +96,7 @@
                     HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="ConnectingAnimationText" Text="Connecting to" FontSize="30" Foreground="Black"
                         TextWrapping="Wrap"/>
-            <StackPanel Name="ConnectingDots" Orientation="Horizontal" Margin="5, 5, 0, 0">
+            <StackPanel Name="ConnectingDots" Orientation="Horizontal" Margin="10, 5, 0, 0">
                 <Ellipse Name="ConnectingDot1" Width="20" Height="20" Fill="LightCoral" Margin="0, 0, 5, 0" Opacity="0"/>
                 <Ellipse Name="ConnectingDot2" Width="20" Height="20" Fill="LightCoral" Margin="0, 0, 5, 0" Opacity="0"/>
                 <Ellipse Name="ConnectingDot3" Width="20" Height="20" Fill="LightCoral" Margin="0, 0, 0, 0" Opacity="0"/>
@@ -130,11 +130,11 @@
                     Click="Browse_Click"/>
             <StackPanel x:Name="UploadingAnimation" Orientation="Horizontal" Visibility="Collapsed" Grid.ColumnSpan="3" Grid.Row="3"
                         HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock x:Name="UploadingAnimationText" Text="Uploading items" FontSize="20" Foreground="Black" TextWrapping="Wrap" Margin="0, 0, 20, 0"/>
-                <StackPanel Name="UploadingAnimationDots" Orientation="Horizontal" Margin="0, 0, 0, 0" HorizontalAlignment="Right" VerticalAlignment="Center">
-                    <Ellipse Name="dotProgress1" Width="10" Height="10" Fill="Black" Margin="0, 0, 5, 0" Opacity="0"/>
-                    <Ellipse Name="dotProgress2" Width="10" Height="10" Fill="Black" Margin="0, 0, 5, 0" Opacity="0"/>
-                    <Ellipse Name="dotProgress3" Width="10" Height="10" Fill="Black" Margin="0, 0, 0, 0" Opacity="0"/>
+                <TextBlock x:Name="UploadingAnimationText" Text="Uploading items" FontSize="20" Foreground="Black" TextWrapping="Wrap" Margin="0, 0, 10, 0"/>
+                <StackPanel Name="UploadingAnimationDots" Orientation="Horizontal" Margin="0, 5, 0, 0" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Ellipse Name="dotProgress1" Width="10" Height="10" Fill="LightCoral" Margin="0, 0, 5, 0" Opacity="0"/>
+                    <Ellipse Name="dotProgress2" Width="10" Height="10" Fill="LightCoral" Margin="0, 0, 5, 0" Opacity="0"/>
+                    <Ellipse Name="dotProgress3" Width="10" Height="10" Fill="LightCoral" Margin="0, 0, 0, 0" Opacity="0"/>
                 </StackPanel>
             </StackPanel>
             <TextBlock x:Name="UploadReport" Visibility="Collapsed" Grid.ColumnSpan="3" Grid.Row="3"

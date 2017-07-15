@@ -24,7 +24,7 @@ namespace CloudReplicator
                 this.BrowsedPath.Text = browse.SelectedPath;
             }
         }
-        private async void Upload_Click(object sender, RoutedEventArgs e)
+        private void Upload_Click(object sender, RoutedEventArgs e)
         {
             bool hasErrors = false;
             ListViewItem volume = this.VolumesList.SelectedItem as ListViewItem;
@@ -46,28 +46,35 @@ namespace CloudReplicator
 
             string volumeName = volume.Content as string;
             string path = this.BrowsedPath.Text;
-            this.UploadingAnimation.Visibility = Visibility.Visible;
-            Storyboard uploadingAnimation = this.TryFindResource("UploadingAnimation") as Storyboard;
-            uploadingAnimation.Begin();
             
-            try
+            Task.Run(() => this.UploadObjects(volumeName, path));
+        }
+        private async void UploadObjects(string volumeName, string path)
+        {
+            Storyboard uploadingAnimation = null;
+            this.Dispatcher.Invoke(() =>
             {
-                await this.UploadObjects(volumeName, path);
+                this.folders = 0;
+                this.files = 0;
+                this.Upload.IsEnabled = false;
+                this.Disconnect.IsEnabled = false;
+                this.Browse.IsEnabled = false;
+                this.UploadReport.Visibility = Visibility.Collapsed;
+                this.UploadingAnimation.Visibility = Visibility.Visible;
+                uploadingAnimation = this.TryFindResource("UploadingAnimation") as Storyboard;
+                uploadingAnimation.Begin();
+            });
+            await this.Replicate(volumeName, Constants.RootParentId, path);
+            this.Dispatcher.Invoke(() =>
+            {
                 this.UploadReport.Text = string.Format("Total uploaded: Folders: {0}, Files: {1}", this.folders, this.files);
                 uploadingAnimation.Stop();
                 this.UploadingAnimation.Visibility = Visibility.Collapsed;
                 this.UploadReport.Visibility = Visibility.Visible;
-            }
-            catch (Exception ex)
-            {
-                uploadingAnimation.Stop();
-                this.UploadReport.Visibility = Visibility.Collapsed;
-                this.UploadingAnimation.Visibility = Visibility.Collapsed;
-            }
-        }
-        private async Task UploadObjects(string volumeName, string path)
-        {
-            await this.Replicate(volumeName, Constants.RootParentId, path);
+                this.Upload.IsEnabled = true;
+                this.Disconnect.IsEnabled = true;
+                this.Browse.IsEnabled = true;
+            });
         }
         private async Task Replicate(string volumeName, string parentId, string path)
         {

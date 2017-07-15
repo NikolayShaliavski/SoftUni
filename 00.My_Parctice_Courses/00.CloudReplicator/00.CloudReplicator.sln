@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.CloudReplicator", "00.CloudReplicator\00.CloudReplicator.csproj", "{56632C62-250A-4713-B492-4E85BE0B6E6B}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CloudReplicatorInstaller", "CloudReplicatorInstaller\CloudReplicatorInstaller.vdproj", "{2E6C612C-DD8A-4F9E-B7D9-AF404F5718F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{56632C62-250A-4713-B492-4E85BE0B6E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56632C62-250A-4713-B492-4E85BE0B6E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56632C62-250A-4713-B492-4E85BE0B6E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E6C612C-DD8A-4F9E-B7D9-AF404F5718F1}.Debug|Any CPU.ActiveCfg = Debug
+		{2E6C612C-DD8A-4F9E-B7D9-AF404F5718F1}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
