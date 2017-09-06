@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RecursiveArraySum", "01.RecursiveArraySum\01.RecursiveArraySum.csproj", "{80321F94-6102-4B71-A498-B78174A0FB35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.RecursiveFigurePrinting", "02.RecursiveFigurePrinting\02.RecursiveFigurePrinting.csproj", "{7EE24C96-D355-4D7B-9169-A5CA9316F341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.VectorGenerator", "03.VectorGenerator\03.VectorGenerator.csproj", "{1889FDFA-1178-4077-AEC7-FC2B0108AFF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.EightQueenPuzzle", "04.EightQueenPuzzle\04.EightQueenPuzzle.csproj", "{AC623FC0-8BF4-4232-B49A-C2EF15FFF986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80321F94-6102-4B71-A498-B78174A0FB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80321F94-6102-4B71-A498-B78174A0FB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80321F94-6102-4B71-A498-B78174A0FB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80321F94-6102-4B71-A498-B78174A0FB35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE24C96-D355-4D7B-9169-A5CA9316F341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE24C96-D355-4D7B-9169-A5CA9316F341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE24C96-D355-4D7B-9169-A5CA9316F341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE24C96-D355-4D7B-9169-A5CA9316F341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1889FDFA-1178-4077-AEC7-FC2B0108AFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1889FDFA-1178-4077-AEC7-FC2B0108AFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1889FDFA-1178-4077-AEC7-FC2B0108AFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1889FDFA-1178-4077-AEC7-FC2B0108AFF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC623FC0-8BF4-4232-B49A-C2EF15FFF986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC623FC0-8BF4-4232-B49A-C2EF15FFF986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC623FC0-8BF4-4232-B49A-C2EF15FFF986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC623FC0-8BF4-4232-B49A-C2EF15FFF986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

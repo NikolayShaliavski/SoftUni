@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>JS script</title>
+		<script>
+			function calculateDistance() {
+
+				var coords = document.getElementById('args').value.split(" ");
+				var distance;
+				if (coords.length != 4) {
+					distance = 'Wrong number of coordinates.';
+				} else {
+				    var x1 = Number(coords[0]);
+				    var y1 = Number(coords[1]);
+				    var x2 = Number(coords[2]);
+				    var y2 = Number(coords[3]);
+
+				    var pointOne = {
+				        x: x1,
+				        y : y1
+				    };
+				    var pointTwo = {
+				        x: x2,
+				        y: y2
+				    };
+
+				    var xDist = pointOne.x - pointTwo.x;
+				    var yDist = pointOne.y - pointTwo.y;
+
+				    distance = Math.sqrt(xDist * xDist + yDist * yDist);
+				}
+			    document.getElementById('result').innerHTML = 'Distance = ' + distance;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Calculate distance between two points in 2D plane</h1>
+		<input type="text" id="args">
+		<button type="button" onclick="calculateDistance()">Calculate</button>
+		<p id="result"></p>
+	</body>
+</html>
