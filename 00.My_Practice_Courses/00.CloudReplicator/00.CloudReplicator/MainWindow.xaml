@@ -141,9 +141,10 @@
                         HorizontalAlignment="Center" VerticalAlignment="Center" Text="Total uploaded: Folders: 3, Files: 6" FontSize="20" Foreground="Black"
                        TextWrapping="Wrap" Margin="0, 0, 20, 0"/>
             <StackPanel x:Name="Buttons" Orientation="Horizontal" Grid.ColumnSpan="3" Grid.Row="4" HorizontalAlignment="Right" Margin="0, 0, 5, 5">
+                <CheckBox x:Name="UploadContent" Content="Upload only content" Margin="0, 63, 20, 0" IsChecked="True"/>
                 <Button x:Name="Upload" Content="Upload" Click="Upload_Click" Width="100" Height="30" VerticalAlignment="Bottom"/>
                 <Button x:Name="Disconnect" Content="Disconnect" Click="Disconnect_Click" Width="100" Height="30" VerticalAlignment="Bottom"/>
             </StackPanel>
         </Grid>
-    </Grid> 
+    </Grid>
 </Window>

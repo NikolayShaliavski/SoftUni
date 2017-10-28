@@ -1,4 +1,5 @@
-﻿using CloudReplicator.CloudClients;
+﻿using _00.CloudReplicator.CloudClients;
+using CloudReplicator.CloudClients;
 using CloudReplicator.Common;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
-using System.Windows.Media.Effects;
 
 namespace CloudReplicator
 {
@@ -93,7 +93,7 @@ namespace CloudReplicator
         private async void CreateConnection()
         {
             Storyboard connectingAnimation = this.TryFindResource("ConnectingAnimation") as Storyboard;
-            this.ConnectingAnimationText.Text = "Connecting to" + this.cloudType;
+            this.ConnectingAnimationText.Text = "Connecting to " + this.cloudType;
             connectingAnimation.Begin();
             this.ConnectPanel.Visibility = Visibility.Collapsed;
             this.ConnectingAnimation.Visibility = Visibility.Visible;
@@ -104,10 +104,13 @@ namespace CloudReplicator
                 {
                     case Constants.CloudTypeAzure:
                         this.client = new AzureClient(this.accountName, this.accountKey);
-                        this.Volumes.Text = "Containers";
+                        this.Volumes.Text = "Containers:";
+                        this.ConnectedTo.Text = "Connected to Azure";
                         break;
                     case Constants.CloudTypeS3:
-                        this.Volumes.Text = "Buckets";
+                        this.client = new AmazonClient(this.serviceUrl, this.accessKey, this.secretKey);
+                        this.Volumes.Text = "Buckets:";
+                        this.ConnectedTo.Text = "Connected to Amazon S3";
                         break;
                 }
                 List<string> volumes = await this.client.GetVolumes();
@@ -150,6 +153,7 @@ namespace CloudReplicator
                     break;
                 case Constants.CloudTypeS3:
                     this.ClearCredentialFields();
+                    this.SetDefaultAmazonCredentials();
                     this.AzureCredentials.Visibility = Visibility.Collapsed;
                     this.S3Credentials.Visibility = Visibility.Visible;
                     break;
@@ -217,6 +221,12 @@ namespace CloudReplicator
         {
             this.AccountName.Text = "devstoreaccount1";
             this.AccountKey.Text = "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==";
+        }
+        private void SetDefaultAmazonCredentials()
+        {
+            this.ServiceUrl.Text = "http://10.200.9.161";
+            this.AccessKey.Text = "JhfajFKIctmkD630O8PK";
+            this.SecretKey.Text = "BIbxjj6wLOspw3p0zmkHfBupBCd8kOWgIMaFe4nL";
         }
     }
 }

@@ -46,10 +46,11 @@ namespace CloudReplicator
 
             string volumeName = volume.Content as string;
             string path = this.BrowsedPath.Text;
-            
-            Task.Run(() => this.UploadObjects(volumeName, path));
+            bool uploadContentOnly = this.UploadContent.IsChecked.Value;
+
+            Task.Run(() => this.UploadObjects(volumeName, path, uploadContentOnly));
         }
-        private async void UploadObjects(string volumeName, string path)
+        private async void UploadObjects(string volumeName, string path, bool uploadContentOnly)
         {
             Storyboard uploadingAnimation = null;
             this.Dispatcher.Invoke(() =>
@@ -64,7 +65,18 @@ namespace CloudReplicator
                 uploadingAnimation = this.TryFindResource("UploadingAnimation") as Storyboard;
                 uploadingAnimation.Begin();
             });
-            await this.Replicate(volumeName, Constants.RootParentId, path);
+            if (uploadContentOnly)
+            {
+                string[] content = Directory.GetFileSystemEntries(path, "*", SearchOption.TopDirectoryOnly);
+                foreach (var subPath in content)
+                {
+                    await this.Replicate(volumeName, Constants.RootParentId, subPath);
+                }
+            }
+            else
+            {
+                await this.Replicate(volumeName, Constants.RootParentId, path);
+            }
             this.Dispatcher.Invoke(() =>
             {
                 this.UploadReport.Text = string.Format("Total uploaded: Folders: {0}, Files: {1}", this.folders, this.files);
