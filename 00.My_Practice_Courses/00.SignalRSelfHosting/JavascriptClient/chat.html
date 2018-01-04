@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SignalR Simple Chat</title>
+    <style type="text/css">
+        .container {
+            background-color: #99CCFF;
+            border: thick solid #808080;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+    <link href="css/let-it-snow.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="message" />
+        <input type="button" id="sendmessage" value="Send" />
+        <input type="hidden" id="displayname" />
+        <ul id="discussion"></ul>
+    </div>
+    <script src="scripts/jquery-1.6.4.min.js"></script>
+    <script src="scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="scripts/let-it-snow.min.js"></script>
+    <script src="http://192.168.0.102:8080/signalr/hubs"></script>
+
+    <script type="text/javascript">
+        $(function () {
+        //Set the hubs URL for the connection
+            $.connection.hub.url = "http://192.168.0.102:8080/signalr";
+
+            // Declare a proxy to reference the hub.
+            var chat = $.connection.myHub;
+
+            // Create a function that the hub can call to broadcast messages.
+            chat.client.addMessage = function (name, message) {
+                // Html encode display name and message.
+                var encodedName = $('<div />').text(name).html();
+                var encodedMsg = $('<div />').text(message).html();
+                // Add the message to the page.
+                $('#discussion').append('<li><strong>' + encodedName
+                    + '</strong>:&nbsp;&nbsp;' + encodedMsg + '</li>');
+            };
+            chat.client.delete = function () {
+                $('#discussion').empty();
+            };
+            //chat.client.snow = function () {
+            //    $.letItSnow('#discussion', {
+            //        stickyFlakes: 'lis-flake--js',
+            //        makeFlakes: true, sticky: true
+            //    });
+            //};
+            
+            $.letItSnow('.container', {
+                stickyFlakes: 'lis-flake--js',
+                makeFlakes: true, sticky: true
+            });
+            // Get the user name and store it to prepend to messages.
+            var user = prompt('Enter your name:', '');
+            $('#displayname').val(user);
+            // Set initial focus to message input box.
+            $('#message').focus();
+            // Start the connection.
+            $.connection.hub.qs = { 'username': user };
+            $.connection.hub.start().done(function () {
+                $('#sendmessage').click(function () {
+                    // Call the Send method on the hub.
+                    chat.server.send($('#displayname').val(), $('#message').val());
+                    // Clear text box and reset focus for next comment.
+                    $('#message').val('').focus();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.SignalRSelfHosting", "00.SignalRSelfHosting\00.SignalRSelfHosting.csproj", "{764FBE92-B72E-4C6D-A8BA-D38A64F8938F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavascriptClient", "JavascriptClient\JavascriptClient.csproj", "{9F0D3391-DF09-471C-AE5B-A48B84330618}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{764FBE92-B72E-4C6D-A8BA-D38A64F8938F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764FBE92-B72E-4C6D-A8BA-D38A64F8938F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764FBE92-B72E-4C6D-A8BA-D38A64F8938F}.Debug|x64.ActiveCfg = Debug|x64
+		{764FBE92-B72E-4C6D-A8BA-D38A64F8938F}.Debug|x64.Build.0 = Debug|x64
+		{764FBE92-B72E-4C6D-A8BA-D38A64F8938F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764FBE92-B72E-4C6D-A8BA-D38A64F8938F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764FBE92-B72E-4C6D-A8BA-D38A64F8938F}.Release|x64.ActiveCfg = Release|x64
+		{764FBE92-B72E-4C6D-A8BA-D38A64F8938F}.Release|x64.Build.0 = Release|x64
+		{9F0D3391-DF09-471C-AE5B-A48B84330618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0D3391-DF09-471C-AE5B-A48B84330618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0D3391-DF09-471C-AE5B-A48B84330618}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9F0D3391-DF09-471C-AE5B-A48B84330618}.Debug|x64.Build.0 = Debug|Any CPU
+		{9F0D3391-DF09-471C-AE5B-A48B84330618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0D3391-DF09-471C-AE5B-A48B84330618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F0D3391-DF09-471C-AE5B-A48B84330618}.Release|x64.ActiveCfg = Release|Any CPU
+		{9F0D3391-DF09-471C-AE5B-A48B84330618}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
