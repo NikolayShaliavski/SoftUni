@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1523050848 source:e:\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\08.oop_and_code_organization_exercise\01.linkedlist\list.cpp
+	<string>
+	<sstream>
+	<iostream>
+	"List.h"
+
+1523052685 e:\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\08.oop_and_code_organization_exercise\01.linkedlist\list.h
+	<string>
+
+1523052546 source:e:\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\08.oop_and_code_organization_exercise\01.linkedlist\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"List.h"
+

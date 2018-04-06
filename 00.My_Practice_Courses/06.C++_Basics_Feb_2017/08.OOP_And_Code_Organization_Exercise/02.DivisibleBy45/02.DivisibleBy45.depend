@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1523058756 source:e:\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\08.oop_and_code_organization_exercise\02.divisibleby45\main.cpp
+	<iostream>
+	"BigInt.h"
+
+1492121730 e:\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\08.oop_and_code_organization_exercise\02.divisibleby45\bigint.h
+	<string>
+	<sstream>
+	<cmath>
+
