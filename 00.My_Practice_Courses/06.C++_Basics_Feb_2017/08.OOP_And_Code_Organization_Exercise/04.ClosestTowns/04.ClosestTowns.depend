@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1523312608 source:e:\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\08.oop_and_code_organization_exercise\04.closesttowns\main.cpp
+	<iostream>
+	<float.h>
+	"City.h"
+	"Vector2D.h"
+
+1523311898 e:\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\08.oop_and_code_organization_exercise\04.closesttowns\city.h
+	<string>
+	"Vector2D.h"
+
+1491782394 e:\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\08.oop_and_code_organization_exercise\04.closesttowns\vector2d.h
+	<cmath>
+
