@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1524552414 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\01.hotwater\hotwater\pipe.cpp
+	"Pipe.h"
+	<iostream>
+
+1524552190 d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\01.hotwater\hotwater\pipe.h
+
+1524552285 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\01.hotwater\hotwater\main.cpp
+	<iostream>
+	<sstream>
+	<vector>
+	"Pipe.h"
+
