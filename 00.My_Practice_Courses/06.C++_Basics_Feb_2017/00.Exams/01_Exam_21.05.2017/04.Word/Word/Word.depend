@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1524659395 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\04.word\word\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"Initialization.h"
+	"CommandInterface.h"
+
+1524666015 d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\04.word\word\initialization.h
+	"CommandInterface.h"
+	<memory>
+	<string>
+
+1524661044 d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\04.word\word\commandinterface.h
+	<map>
+	<memory>
+	<string>
+	<vector>
+	<sstream>
+	<iostream>
+	"TextTransform.h"
+
+1495261592 d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\04.word\word\texttransform.h
+	<string>
+
