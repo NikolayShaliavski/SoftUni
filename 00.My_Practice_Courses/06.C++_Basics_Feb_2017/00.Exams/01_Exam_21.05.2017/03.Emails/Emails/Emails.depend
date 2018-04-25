@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1524651741 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\03.emails\emails\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	"Inbox.h"
+
+1524653567 d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\03.emails\emails\inbox.h
+	<string>
+	<sstream>
+	<vector>
+	<set>
+
+1524653811 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\03.emails\emails\inbox.cpp
+	"Inbox.h"
+	<iostream>
+	<string>
+	<sstream>
+	<set>
+
