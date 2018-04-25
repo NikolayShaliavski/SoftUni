@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1495166570 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\02.range\range\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	"Range.h"
+
+1495168512 d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\01_exam_21.05.2017\02.range\range\range.h
+	<string>
+	<sstream>
+	<stdexcept>
+
