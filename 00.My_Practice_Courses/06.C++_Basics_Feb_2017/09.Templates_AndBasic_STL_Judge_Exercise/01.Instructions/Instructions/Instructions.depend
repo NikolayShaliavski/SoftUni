@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1525079049 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\09.templates_andbasic_stl_judge_exercise\01.instructions\instructions\main.cpp
+	<iostream>
+	<sstream>
+	<string>
+	"ComputeMachine.h"
+
+1525079416 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\09.templates_andbasic_stl_judge_exercise\01.instructions\instructions\computemachine.cpp
+	<iostream>
+	<string>
+	"ComputeMachine.h"
+
+1525078930 d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\09.templates_andbasic_stl_judge_exercise\01.instructions\instructions\computemachine.h
+	<string>
+
