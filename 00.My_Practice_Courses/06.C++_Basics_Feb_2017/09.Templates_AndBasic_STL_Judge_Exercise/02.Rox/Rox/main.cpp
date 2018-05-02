@@ -38,6 +38,28 @@ int main() {
     return 0;
 }
 
+/* solution with XOR character operation found in forum
+#define DNA_LENGTH 6
+#define DOT 46
+using namespace std;
+int main()
+{
+    char ch, result[DNA_LENGTH]{ 0 };
+    size_t currIndex = 0;
+    while ((ch = getchar()) != DOT)
+    {
+        result[currIndex++] ^= ch;
+        if (currIndex == DNA_LENGTH - 1) {
+            currIndex = 0;
+            cout << result << endl;
+        }
+
+    }
+
+    cout << "Answer: " << result << endl;
+
+    return 0;
+}*/
 /*
 int main() {
     std::string line;
@@ -67,5 +89,4 @@ int main() {
     }
     delete[] dnaNumbers;
     return 0;
-}
-*/
+}*/
