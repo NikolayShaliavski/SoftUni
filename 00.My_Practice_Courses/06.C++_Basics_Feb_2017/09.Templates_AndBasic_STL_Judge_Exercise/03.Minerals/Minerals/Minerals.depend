@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1525703248 source:e:\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\09.templates_andbasic_stl_judge_exercise\03.minerals\minerals\main.cpp
+	<iostream>
+	<queue>
+	<cmath>
+
