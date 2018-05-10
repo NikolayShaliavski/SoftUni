@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1525935901 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\09.templates_andbasic_stl_judge_exercise\04.visitors\visitors\main.cpp
+	<iostream>
+
+1525946654 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\09.templates_andbasic_stl_judge_exercise\04.visitors\visitors\visitor.cpp
+	<string>
+	"Visitor.h"
+
+1525946587 d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\09.templates_andbasic_stl_judge_exercise\04.visitors\visitors\visitor.h
+	<string>
+
