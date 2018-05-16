@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1526459580 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\02.exam_28.05.2017\02.indexedset\indexedset\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<sstream>
+	"IndexedSet.h"
+
+1495963444 d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\02.exam_28.05.2017\02.indexedset\indexedset\indexedset.h
+	<cstdlib>
+	<set>
+
+1526461240 source:d:\nick-workspace\demo-projects\github\softuni\00.my_practice_courses\06.c++_basics_feb_2017\00.exams\02.exam_28.05.2017\02.indexedset\indexedset\indexedset.cpp
+	<iostream>
+	<cstdlib>
+	<set>
+	"IndexedSet.h"
+
