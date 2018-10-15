@@ -11,7 +11,7 @@ namespace StudentSystemData.DatabaseContext
 
         public DbSet<Homework> Homeworks { get; set; }
 
-        public DbSet<Resource> Recources { get; set; }
+        public DbSet<Resource> Resources { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
