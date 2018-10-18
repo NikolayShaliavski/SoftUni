@@ -13,6 +13,8 @@ namespace StudentSystemData.DatabaseContext
 
         public DbSet<Resource> Resources { get; set; }
 
+        public DbSet<License> Licenses { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             #region Students -> Courses many-to-many
@@ -56,6 +58,13 @@ namespace StudentSystemData.DatabaseContext
                 .HasOne(h => h.Student)
                 .WithMany(s => s.Homeworks)
                 .HasForeignKey(h => h.StudentId);
+
+            // Resource -> Licenses one-to-many relation
+            builder
+                .Entity<License>()
+                .HasOne(l => l.Resource)
+                .WithMany(r => r.Licenses)
+                .HasForeignKey(l => l.ResourceId);
 
             base.OnModelCreating(builder);
         }

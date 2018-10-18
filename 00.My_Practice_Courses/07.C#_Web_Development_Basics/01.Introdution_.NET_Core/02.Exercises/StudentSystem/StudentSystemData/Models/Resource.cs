@@ -1,4 +1,5 @@
 ﻿using StudentSystemData.Models.Enums;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace StudentSystemData.Models
@@ -18,5 +19,7 @@ namespace StudentSystemData.Models
         public int CourseId { get; set; }
 
         public Course Course { get; set; }
+
+        public List<License> Licenses { get; set; } = new List<License>();
     }
 }

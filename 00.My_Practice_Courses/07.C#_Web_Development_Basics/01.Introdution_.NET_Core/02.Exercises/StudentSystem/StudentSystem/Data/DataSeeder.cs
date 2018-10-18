@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using StudentSystemData.DatabaseContext;
+﻿using StudentSystemData.DatabaseContext;
 using StudentSystemData.Models;
 using StudentSystemData.Models.Enums;
 using System;
@@ -133,6 +132,29 @@ namespace StudentSystem.Data
                     db.Homeworks.Add(homework);
                 }
             }
+            db.SaveChanges();
+        }
+
+        public void AddLicenses(StudentSystemDbContext db)
+        {
+            // Obtain all Resources in database
+            var resourceIds = db.Resources
+                .Select(r => r.Id)
+                .ToList();
+
+            for (int i = 1; i <= 100; i++)
+            {
+                int resourceId = resourceIds[Random.Next(0, resourceIds.Count)];
+
+                License lic = new License
+                {
+                    Name = $"License_{i}",
+                    ResourceId = resourceId
+                };
+
+                db.Licenses.Add(lic);
+            }
+
             db.SaveChanges();
         }
     }
