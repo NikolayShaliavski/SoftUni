@@ -9,86 +9,56 @@ namespace StudentSystem.Data
 {
     public class DataSeeder
     {
-        private static readonly Random random = new Random();
+        private static readonly Random Random = new Random();
 
         private string[] names = new string[] { "Nikolay", "Maria", "Ivan", "Atanas", "Desislava",
                                             "Nikolay2", "Maria2", "Ivan2", "Atanas2", "Desislava2"};
 
         public void AddCoursesAndResources(StudentSystemDbContext db)
         {
-            // Resources
-            Resource cSharpPresentation = new Resource()
-            {
-                Name = "C# Introduction to .NET Core presentation",
-                ResourceType = ResourceType.Presentation,
-                Url = "https://Introduction_to_.NET_Core/presentation"
-            };
-            Resource cSharpVideo = new Resource()
-            {
-                Name = "C# Introduction to .NET Core video",
-                ResourceType = ResourceType.Video,
-                Url = "https://Introduction_to_.NET_Core/video"
-            };
-            Resource cSharpLab = new Resource()
-            {
-                Name = "C# Introduction to .NET Core Lab exercise",
-                ResourceType = ResourceType.Document,
-                Url = "https://Introduction_to_.NET_Core/lab"
-            };
-            db.Resources.Add(cSharpPresentation);
-            db.Resources.Add(cSharpVideo);
-            db.Resources.Add(cSharpLab);
-
-            Resource javaPresentation = new Resource()
-            {
-                Name = "Java Web Fundamentals Introduction presentation",
-                ResourceType = ResourceType.Presentation,
-                Url = "https://Java_Web_Fundamentals/presentation"
-            };
-            Resource javaVideo = new Resource()
-            {
-                Name = "Java Web Fundamentals Introduction video",
-                ResourceType = ResourceType.Video,
-                Url = "https://Java_Web_Fundamentals/video"
-            };
-            Resource javaLab = new Resource()
-            {
-                Name = "Java Web Fundamentals Introduction Lab exercise",
-                ResourceType = ResourceType.Document,
-                Url = "https://Java_Web_Fundamentals/lab"
-            };
-            db.Resources.Add(javaPresentation);
-            db.Resources.Add(javaVideo);
-            db.Resources.Add(javaLab);
-
             // Courses
-            for (int i = 1; i <= 2; i++)
+            for (int i = 1; i <= 10; i++)
             {
-                Course cSharpCourse = new Course()
+                int monthsToEnd = i;
+                if (i % 2 == 0)
                 {
-                    Name = "C# Web-" + i,
+                    monthsToEnd *= -1;
+                }
+                Course course = new Course()
+                {
+                    Name = "Course_" + i,
                     StartDate = DateTime.Now.AddMonths(-i),
-                    EndDate = DateTime.Now.AddMonths(1 - i).AddDays(1),
+                    EndDate = DateTime.Now.AddMonths(monthsToEnd).AddDays(30),
                     Price = 120.00m + (i * 25),
-                    Description = "C# Web Development course"
+                    Description = $"Course_{i}_decsription"
                 };
-                cSharpCourse.Resources.Add(cSharpPresentation);
-                cSharpCourse.Resources.Add(cSharpVideo);
-                cSharpCourse.Resources.Add(cSharpLab);
-                db.Courses.Add(cSharpCourse);
-
-                Course javaCourse = new Course()
+                // Resources
+                int resourcesCount = Random.Next(3, 6);
+                for (int j = 1; j <= resourcesCount; j++)
                 {
-                    Name = "Java Web-" + i,
-                    StartDate = DateTime.Now.AddMonths(-i),
-                    EndDate = DateTime.Now.AddDays(1 - i).AddDays(15),
-                    Price = 135.00m + (i * 25),
-                    Description = "Java Web Development course"
-                };
-                javaCourse.Resources.Add(javaPresentation);
-                javaCourse.Resources.Add(javaVideo);
-                javaCourse.Resources.Add(javaLab);
-                db.Courses.Add(javaCourse);
+                    ResourceType type = ResourceType.Other;
+                    if (j % 4 == 0)
+                    {
+                        type = ResourceType.Video;
+                    }
+                    else if (j % 3 == 0)
+                    {
+                        type = ResourceType.Presentation;
+                    }
+                    else if (j % 2 == 0)
+                    {
+                        type = ResourceType.Document;
+                    }
+                    Resource res = new Resource
+                    {
+                        Name = $"Resource_{j}_Course_{i}",
+                        ResourceType = type,
+                        Url = $"Resource_{j}_URL",
+                        Course = course
+                    };
+                    db.Resources.Add(res);
+                }
+                db.Courses.Add(course);
             }
             db.SaveChanges();
         }
@@ -104,10 +74,10 @@ namespace StudentSystem.Data
                     Birthday = DateTime.Now.AddYears(-(20 + i)),
                     PhoneNumber = "0888 00 00 0" + i
                 };
-                int coursesEnrolled = random.Next(1, 5);
+                int coursesEnrolled = Random.Next(1, 5);
                 for (int j = 0; j < coursesEnrolled; j++)
                 {
-                    int courseId = random.Next(1, 5);
+                    int courseId = Random.Next(1, 11);
                     // Student already enrolled in this course
                     if (student.StudentCourses.Any(sc => sc.CourseId == courseId))
                     {
@@ -134,7 +104,7 @@ namespace StudentSystem.Data
                     })
                     .FirstOrDefault();
 
-                int homeworksCount = random.Next(2, 6);
+                int homeworksCount = Random.Next(2, 6);
                 for (int j = 1; j <= homeworksCount; j++)
                 {
                     ContentType type;
@@ -157,7 +127,7 @@ namespace StudentSystem.Data
                         StudentId = studentId,
                         SubmissionDate = DateTime.Now.AddDays(- i)
                     };
-                    StudentCourse sc = student.StudentCourses[random.Next(0, student.StudentCourses.Count)];
+                    StudentCourse sc = student.StudentCourses[Random.Next(0, student.StudentCourses.Count)];
                     homework.CourseId = sc.CourseId;
 
                     db.Homeworks.Add(homework);
