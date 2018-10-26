@@ -36,5 +36,7 @@ namespace SocialNetworkData.Models
         public List<FriendShip> FromFriends { get; set; } = new List<FriendShip>();
 
         public List<FriendShip> ToFriends { get; set; } = new List<FriendShip>();
+
+        public List<Album> Albums { get; set; } = new List<Album>();
     }
 }

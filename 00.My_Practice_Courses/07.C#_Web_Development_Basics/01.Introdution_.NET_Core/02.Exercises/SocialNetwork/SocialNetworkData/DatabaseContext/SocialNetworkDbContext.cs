@@ -4,6 +4,7 @@ using SocialNetworkData.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Drawing;
 using System.Linq;
 
 namespace SocialNetworkData.DatabaseContext
@@ -13,6 +14,10 @@ namespace SocialNetworkData.DatabaseContext
         public DbSet<User> Users { get; set; }
 
         public DbSet<FriendShip> FriendShips { get; set; }
+
+        public DbSet<Album> ALbums { get; set; }
+
+        public DbSet<Picture> Pictures { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -26,18 +31,44 @@ namespace SocialNetworkData.DatabaseContext
                 .WithOne(f => f.FromUser)
                 .HasForeignKey(f => f.FromUserId);
 
-
             builder
                 .Entity<User>()
                 .HasMany(u => u.ToFriends)
                 .WithOne(f => f.ToUser)
                 .HasForeignKey(f => f.ToUserId);
 
-            
+            builder
+                .Entity<Album>()
+                .Property(a => a.BackgroundColor)
+                .HasConversion(
+                    c => c.ToString(),
+                    c => (KnownColor)Enum.Parse(typeof(KnownColor), c));
+
+            builder
+                .Entity<AlbumPicture>()
+                .HasKey(ap => new { ap.AlbumId, ap.PictureId });
+
+            builder
+                .Entity<Album>()
+                .HasMany(a => a.Pictures)
+                .WithOne(ap => ap.Album)
+                .HasForeignKey(ap => ap.AlbumId);
+
+            builder
+                .Entity<Picture>()
+                .HasMany(p => p.Albums)
+                .WithOne(ap => ap.Picture)
+                .HasForeignKey(ap => ap.PictureId);
+
+            builder
+                .Entity<Album>()
+                .HasOne(a => a.Owner)
+                .WithMany(u => u.Albums)
+                .HasForeignKey(a => a.UserId);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer("Server=.;Database=SocialNetwork;Integrated Security=True;");
+            builder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=SocialNetwork;Integrated Security=True;");
             base.OnConfiguring(builder);
         }
 

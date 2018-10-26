@@ -12,17 +12,78 @@ namespace SocialNetwork
         {
             using (SocialNetworkDbContext db = new SocialNetworkDbContext())
             {
-                db.Database.Migrate();
-                Console.WriteLine("Database ready...");
+                //db.Database.Migrate();
+                //Console.WriteLine("Database ready...");
 
-                DataSeeder seeder = new DataSeeder();
-                //seeder.AddUsers(db, 20);
+                //DataSeeder seeder = new DataSeeder();
+                //seeder.AddUsers(db, 50);
                 //seeder.AddUserFriends(db);
-                //seeder.DeleteUsers(db, 10);
+                //seeder.DeleteUsers(db, 25);
+                //seeder.AddPictures(db, 200);
+                //seeder.AddAlbums(db, 100);
+                //seeder.PutPicturesInAlbums(db);
 
-                ListUsersWithCountOfFriends(db);
 
-                ListActiveUserswithMoreThan15Friends(db);
+
+                //ListUsersWithCountOfFriends(db);
+                //ListActiveUserswithMoreThan15Friends(db);
+                //ListAlbumsWithOwnerAndpicturesCount(db);
+                ListPicturesInMoreThanOneAlbums(db);
+            }
+        }
+
+        private static void ListPicturesInMoreThanOneAlbums(SocialNetworkDbContext db)
+        {
+            var pictures = db.Pictures
+                .Where(p => p.Albums.Count > 2)
+                .Select(p => new
+                {
+                    p.Title,
+                    OwnerNames = db.Users
+                        .Where(u => u.Albums
+                            .Any(a => p.Albums
+                                .Any(ap => ap.AlbumId == a.Id)))
+                        .Select(u => u.Name)
+                        .ToList(),
+                    AlbumNames = db.ALbums
+                        .Where(a => p.Albums
+                            .Any(ap => ap.AlbumId == a.Id))
+                        .Select(a => a.Name)
+                        .ToList()
+                })
+                .ToList();
+
+            foreach (var pic in pictures)
+            {
+                Console.WriteLine($"{pic.Title}");
+                Console.WriteLine("Albums:");
+                foreach (var album in pic.AlbumNames)
+                {
+                    Console.WriteLine($"--- {album}");
+                }
+                Console.WriteLine("Album owners:");
+                foreach (var owner in pic.OwnerNames)
+                {
+                    Console.WriteLine($"--- {owner}");
+                }
+            }
+        }
+        private static void ListAlbumsWithOwnerAndpicturesCount(SocialNetworkDbContext db)
+        {
+            var albums = db.ALbums
+                .Select(a => new
+                {
+                    a.Name,
+                    Owner = a.Owner.Name,
+                    PicturesCount = a.Pictures.Count
+                })
+                .OrderByDescending(a => a.PicturesCount)
+                .ThenBy(a => a.Owner)
+                .ToList();
+
+            foreach (var album in albums)
+            {
+                Console.WriteLine($"{album.Name} - {album.Owner} - {album.PicturesCount}");
             }
         }
         private static void ListActiveUserswithMoreThan15Friends(SocialNetworkDbContext db)
