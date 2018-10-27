@@ -1,4 +1,5 @@
 ﻿using SocialNetworkData.DatabaseContext;
+using SocialNetworkData.Helpers;
 using SocialNetworkData.Models;
 using System;
 using System.Drawing;
@@ -113,6 +114,41 @@ namespace SocialNetwork
                         continue;
                     }
                     album.Pictures.Add(new AlbumPicture { AlbumId = album.Id, PictureId = picId });
+                }
+            }
+            db.SaveChanges();
+        }
+        public void AddTags(SocialNetworkDbContext db, int count)
+        {
+            for (int i = 1; i <= count; i++)
+            {
+                string tagValue = TagTransformer.Transform($"my- cool - album   -tag_  {i}");
+                Tag tag = new Tag
+                {
+                    TagValue = tagValue
+                };
+
+                db.Tags.Add(tag);
+                db.SaveChanges();
+            }
+        }
+        public void AddTagsToALbums(SocialNetworkDbContext db)
+        {
+            var albumIds = db.ALbums
+                .Select(a => a.Id)
+                .ToList();
+            foreach (var tag in db.Tags)
+            {
+                int albumsCount = Random.Next(5, albumIds.Count);
+                for (int j = 0; j < albumsCount; j++)
+                {
+                    int albumId = albumIds[Random.Next(0, albumIds.Count)];
+                    if (tag.ALbums.Any(a => a.ALbumId == albumId))
+                    {
+                        j--;
+                        continue;
+                    }
+                    tag.ALbums.Add(new AlbumTag { ALbumId = albumId, TagId = tag.Id });
                 }
             }
             db.SaveChanges();

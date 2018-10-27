@@ -19,6 +19,8 @@ namespace SocialNetworkData.DatabaseContext
 
         public DbSet<Picture> Pictures { get; set; }
 
+        public DbSet<Tag> Tags { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder
@@ -65,6 +67,22 @@ namespace SocialNetworkData.DatabaseContext
                 .HasOne(a => a.Owner)
                 .WithMany(u => u.Albums)
                 .HasForeignKey(a => a.UserId);
+
+            builder
+                .Entity<AlbumTag>()
+                .HasKey(at => new { at.ALbumId, at.TagId });
+
+            builder
+                .Entity<Album>()
+                .HasMany(a => a.Tags)
+                .WithOne(t => t.Album)
+                .HasForeignKey(t => t.ALbumId);
+
+            builder
+                .Entity<Tag>()
+                .HasMany(t => t.ALbums)
+                .WithOne(a => a.Tag)
+                .HasForeignKey(a => a.TagId);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {

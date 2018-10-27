@@ -23,7 +23,8 @@ namespace SocialNetwork
                 //seeder.AddPictures(db, 200);
                 //seeder.AddAlbums(db, 100);
                 //seeder.PutPicturesInAlbums(db);
-
+                //seeder.AddTags(db, 200);
+                //seeder.AddTagsToALbums(db);
 
 
                 //ListUsersWithCountOfFriends(db);
@@ -31,7 +32,30 @@ namespace SocialNetwork
                 //ListAlbumsWithOwnerAndpicturesCount(db);
                 //ListPicturesInMoreThanTwoAlbums(db);
                 //ListAlbumsByUserId(db, 1);
+                ListAlbumsByGivenTag(db, "#my-cool-album-tag_1");
             }
+        }
+
+        private static void ListAlbumsByGivenTag(SocialNetworkDbContext db, string tag)
+        {
+            var albums = db.ALbums
+                .Where(a => a.Tags
+                    .Any(t => t.Tag.TagValue == tag))
+                .OrderByDescending(a => a.Tags.Count)
+                .Select(a => new
+                {
+                    a.Name,
+                    Owner = a.Owner.Name
+                })
+                .OrderBy(a => a.Name)
+                .ToList();
+
+            foreach (var a in albums)
+            {
+                Console.WriteLine($"{a.Name} - {a.Owner}");
+            }
+
+            Console.WriteLine($"Total count: {albums.Count}");
         }
 
         private static void ListAlbumsByUserId(SocialNetworkDbContext db, int userId)

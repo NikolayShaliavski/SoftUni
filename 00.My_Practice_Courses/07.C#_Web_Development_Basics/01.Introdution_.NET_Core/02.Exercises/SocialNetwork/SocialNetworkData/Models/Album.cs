@@ -20,5 +20,7 @@ namespace SocialNetworkData.Models
         public User Owner { get; set; }
 
         public List<AlbumPicture> Pictures { get; set; } = new List<AlbumPicture>();
+
+        public List<AlbumTag> Tags { get; set; } = new List<AlbumTag>();
     }
 }
