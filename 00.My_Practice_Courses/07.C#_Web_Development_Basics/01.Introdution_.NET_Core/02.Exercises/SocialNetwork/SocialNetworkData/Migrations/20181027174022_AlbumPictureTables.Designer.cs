@@ -10,7 +10,7 @@ using SocialNetworkData.DatabaseContext;
 namespace SocialNetworkData.Migrations
 {
     [DbContext(typeof(SocialNetworkDbContext))]
-    [Migration("20181026160550_AlbumPictureTables")]
+    [Migration("20181027174022_AlbumPictureTables")]
     partial class AlbumPictureTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

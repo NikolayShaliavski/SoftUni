@@ -30,6 +30,21 @@ namespace SocialNetworkData.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Pictures",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Title = table.Column<string>(nullable: false),
+                    Caption = table.Column<string>(nullable: true),
+                    Path = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Pictures", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AlbumPicture",
                 columns: table => new
                 {
@@ -71,6 +86,9 @@ namespace SocialNetworkData.Migrations
 
             migrationBuilder.DropTable(
                 name: "ALbums");
+
+            migrationBuilder.DropTable(
+                name: "Pictures");
         }
     }
 }

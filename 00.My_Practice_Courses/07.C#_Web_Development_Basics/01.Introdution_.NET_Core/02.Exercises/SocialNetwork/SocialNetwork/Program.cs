@@ -2,6 +2,7 @@
 using SocialNetworkData.DatabaseContext;
 using SocialNetworkData.Models;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace SocialNetwork
@@ -15,7 +16,7 @@ namespace SocialNetwork
                 //db.Database.Migrate();
                 //Console.WriteLine("Database ready...");
 
-                //DataSeeder seeder = new DataSeeder();
+                DataSeeder seeder = new DataSeeder();
                 //seeder.AddUsers(db, 50);
                 //seeder.AddUserFriends(db);
                 //seeder.DeleteUsers(db, 25);
@@ -28,11 +29,50 @@ namespace SocialNetwork
                 //ListUsersWithCountOfFriends(db);
                 //ListActiveUserswithMoreThan15Friends(db);
                 //ListAlbumsWithOwnerAndpicturesCount(db);
-                ListPicturesInMoreThanOneAlbums(db);
+                //ListPicturesInMoreThanTwoAlbums(db);
+                //ListAlbumsByUserId(db, 1);
             }
         }
 
-        private static void ListPicturesInMoreThanOneAlbums(SocialNetworkDbContext db)
+        private static void ListAlbumsByUserId(SocialNetworkDbContext db, int userId)
+        {
+            var albums = db.ALbums
+                .Where(a => a.UserId == userId)
+                .Select(a => new
+                {
+                    a.Name,
+                    Owner = a.Owner.Name,
+                    Pictures = a.IsPublic ? db.Pictures
+                                                .Where(p => a.Pictures
+                                                    .Any(ap => ap.PictureId == p.Id))
+                                                .Select(p => new
+                                                {
+                                                    p.Title,
+                                                    p.Path
+                                                })
+                                                .ToList() : null
+                })
+                .OrderBy(a => a.Name)
+                .ToList();
+
+            foreach (var a in albums)
+            {
+                Console.WriteLine($"{a.Name} - {a.Owner}");
+                // Album is public
+                if (a.Pictures != null)
+                {
+                    foreach (var p in a.Pictures)
+                    {
+                        Console.WriteLine($"   {p.Title} - {p.Path}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("   Private content!");
+                }
+            }
+        }
+        private static void ListPicturesInMoreThanTwoAlbums(SocialNetworkDbContext db)
         {
             var pictures = db.Pictures
                 .Where(p => p.Albums.Count > 2)

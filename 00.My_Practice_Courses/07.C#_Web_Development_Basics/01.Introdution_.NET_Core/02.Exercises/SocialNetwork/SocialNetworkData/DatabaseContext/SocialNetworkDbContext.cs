@@ -68,7 +68,7 @@ namespace SocialNetworkData.DatabaseContext
         }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=SocialNetwork;Integrated Security=True;");
+            builder.UseSqlServer("Server=.;Database=SocialNetwork;Integrated Security=True;");
             base.OnConfiguring(builder);
         }
 

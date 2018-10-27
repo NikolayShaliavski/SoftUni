@@ -71,8 +71,9 @@ namespace SocialNetwork
                     Path = $@"D:\Photos\Picture_{i}.jpg"
                 };
                 db.Pictures.Add(pic);
+                db.SaveChanges();
             }
-            db.SaveChanges();
+            
         }
         public void AddAlbums(SocialNetworkDbContext db, int count)
         {
@@ -93,8 +94,9 @@ namespace SocialNetwork
                     UserId = userIds[Random.Next(0, userIds.Count)]
                 };
                 db.ALbums.Add(album);
+                db.SaveChanges();
             }
-            db.SaveChanges();
+            
         }
         public void PutPicturesInAlbums(SocialNetworkDbContext db)
         {
