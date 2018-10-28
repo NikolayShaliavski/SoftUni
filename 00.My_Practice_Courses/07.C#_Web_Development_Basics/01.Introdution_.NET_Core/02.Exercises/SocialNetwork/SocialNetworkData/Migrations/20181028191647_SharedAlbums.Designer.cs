@@ -10,8 +10,8 @@ using SocialNetworkData.DatabaseContext;
 namespace SocialNetworkData.Migrations
 {
     [DbContext(typeof(SocialNetworkDbContext))]
-    [Migration("20181027190045_TagsTable")]
-    partial class TagsTable
+    [Migration("20181028191647_SharedAlbums")]
+    partial class SharedAlbums
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -147,6 +147,19 @@ namespace SocialNetworkData.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("SocialNetworkData.Models.UserAlbum", b =>
+                {
+                    b.Property<int>("UserId");
+
+                    b.Property<int>("AlbumId");
+
+                    b.HasKey("UserId", "AlbumId");
+
+                    b.HasIndex("AlbumId");
+
+                    b.ToTable("UserAlbums");
+                });
+
             modelBuilder.Entity("SocialNetworkData.Models.Album", b =>
                 {
                     b.HasOne("SocialNetworkData.Models.User", "Owner")
@@ -191,6 +204,19 @@ namespace SocialNetworkData.Migrations
                     b.HasOne("SocialNetworkData.Models.User", "ToUser")
                         .WithMany("ToFriends")
                         .HasForeignKey("ToUserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("SocialNetworkData.Models.UserAlbum", b =>
+                {
+                    b.HasOne("SocialNetworkData.Models.Album", "Album")
+                        .WithMany("SharedAlbums")
+                        .HasForeignKey("AlbumId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("SocialNetworkData.Models.User", "User")
+                        .WithMany("SharedAlbums")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

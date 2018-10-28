@@ -25,6 +25,7 @@ namespace SocialNetwork
                 //seeder.PutPicturesInAlbums(db);
                 //seeder.AddTags(db, 200);
                 //seeder.AddTagsToALbums(db);
+                //seeder.ShareAlbums(db);
 
 
                 //ListUsersWithCountOfFriends(db);
@@ -33,10 +34,71 @@ namespace SocialNetwork
                 //ListPicturesInMoreThanTwoAlbums(db);
                 //ListAlbumsByUserId(db, 1);
                 //ListAlbumsByGivenTag(db, "#my-cool-album-tag_1");
-                ListUsersWithAlbumsWithMoreThanThreeTags(db);
+                //ListUsersWithAlbumsWithMoreThanThreeTags(db);
+                //ListAlbumTags(db, 1);
+                //ListUsersWithShareFriends(db);
+                ListALbumsSharedWithUser(db, "User_1");
             }
         }
 
+        private static void ListALbumsSharedWithUser(SocialNetworkDbContext db, string userName)
+        {
+            var albums = db.ALbums
+                .Where(a => a.SharedAlbums.Any(sh => sh.User.Name == userName))
+                .Select(a => new
+                {
+                    a.Name,
+                    Pictures = a.Pictures.Count
+                })
+                .OrderByDescending(a => a.Pictures)
+                .ThenBy(a => a.Name)
+                .ToList();
+
+            foreach (var a in albums)
+            {
+                Console.WriteLine($"{a.Name} - {a.Pictures}");
+            }
+        }
+        private static void ListUsersWithShareFriends(SocialNetworkDbContext db)
+        {
+            var users = db.Users
+                .Select(u => new
+                {
+                    u.Name,
+                    Shared = db.UserAlbums
+                        .Where(ua => u.Albums
+                            .Any(a => a.Id == ua.AlbumId))
+                        .Select(ua => new
+                        {
+                            User = ua.User.Name,
+                            Album = ua.Album.Name
+                        })
+                        .ToList()
+                })
+                .OrderBy(u => u.Name)
+                .ToList();
+
+            foreach (var u in users)
+            {
+                Console.WriteLine($"{u.Name}");
+                foreach (var sh in u.Shared)
+                {
+                    Console.WriteLine($"   User: {sh.User}, Album: {sh.Album}");
+                }
+            }
+        }
+        private static void ListAlbumTags(SocialNetworkDbContext db, int albumId)
+        {
+            var tags = db.Tags
+                .Where(t => t.ALbums.Any(a => a.ALbumId == albumId))
+                .Select(t => t.TagValue)
+                .ToList();
+
+            foreach (var tag in tags)
+            {
+                Console.WriteLine(tag);
+            }
+        }
         private static void ListUsersWithAlbumsWithMoreThanThreeTags(SocialNetworkDbContext db)
         {
             var users = db.Users
@@ -50,10 +112,8 @@ namespace SocialNetwork
                         .Select(a => new
                         {
                             a.Name,
-                            Tags = db.Tags
-                                .Where(t => a.Tags
-                                    .Any(at => at.TagId == t.Id))
-                                .Select(t => t.TagValue)
+                            Tags = a.Tags
+                                .Select(t => t.Tag.TagValue)
                                 .ToList()
                         })
                         .ToList()
@@ -105,7 +165,7 @@ namespace SocialNetwork
                 {
                     a.Name,
                     Owner = a.Owner.Name,
-                    Pictures = a.IsPublic ? db.Pictures
+                    Pictures = a.IsPublic ? db.Pictures // Use -> a.Pictures.Select(p => new { p.Picture.Title, p.Picture.Path })
                                                 .Where(p => a.Pictures
                                                     .Any(ap => ap.PictureId == p.Id))
                                                 .Select(p => new
@@ -142,13 +202,13 @@ namespace SocialNetwork
                 .Select(p => new
                 {
                     p.Title,
-                    OwnerNames = db.Users
+                    OwnerNames = db.Users // Use -> p.Albums.Select(a => a.Album.Owner.Name)
                         .Where(u => u.Albums
                             .Any(a => p.Albums
                                 .Any(ap => ap.AlbumId == a.Id)))
                         .Select(u => u.Name)
                         .ToList(),
-                    AlbumNames = db.ALbums
+                    AlbumNames = db.ALbums // Use -> p.Albums.Select(a => a.Album.Name)
                         .Where(a => p.Albums
                             .Any(ap => ap.AlbumId == a.Id))
                         .Select(a => a.Name)

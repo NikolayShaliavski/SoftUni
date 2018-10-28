@@ -37,6 +37,10 @@ namespace SocialNetworkData.Models
 
         public List<FriendShip> ToFriends { get; set; } = new List<FriendShip>();
 
+        // ALbums which user has created - it's own albums, one-to-many
         public List<Album> Albums { get; set; } = new List<Album>();
+
+        // Albums shared by other users - many-to-many
+        public List<UserAlbum> SharedAlbums { get; set; } = new List<UserAlbum>();
     }
 }

@@ -1,4 +1,5 @@
-﻿using SocialNetworkData.DatabaseContext;
+﻿using Microsoft.EntityFrameworkCore;
+using SocialNetworkData.DatabaseContext;
 using SocialNetworkData.Helpers;
 using SocialNetworkData.Models;
 using System;
@@ -122,7 +123,7 @@ namespace SocialNetwork
         {
             for (int i = 1; i <= count; i++)
             {
-                string tagValue = TagTransformer.Transform($"my- cool - album   -tag_  {i}");
+                string tagValue = TagTransformer.Transform($"my- - album   -tag_  {i}");
                 Tag tag = new Tag
                 {
                     TagValue = tagValue
@@ -150,6 +151,52 @@ namespace SocialNetwork
                     }
                     tag.ALbums.Add(new AlbumTag { ALbumId = albumId, TagId = tag.Id });
                 }
+            }
+            db.SaveChanges();
+        }
+        // Not working
+        public void ShareAlbums(SocialNetworkDbContext db)
+        {
+            var users = db.Users
+                .Include(u => u.Albums)
+                .ToList();
+
+            foreach (var user in users)
+            {
+                // No albums to share
+                if (user.Albums.Count == 0)
+                {
+                    continue;
+                }
+                // Every user will share his albums with at least one other user
+                int shareCount = Random.Next(1, db.Users.Count());
+                for (int i = 0; i < shareCount; i++)
+                {
+                    int shareUserId = users[Random.Next(0, users.Count)].Id;
+                    // Cannot share albums with myself
+                    if (shareUserId == user.Id)
+                    {
+                        i--;
+                        continue;
+                    }
+                    // Outer user has already shared his albums with this one - search for another
+                    if (db.UserAlbums.Any(ua => ua.UserId == shareUserId) &&
+                        db.UserAlbums.Any(ua => ua.AlbumId == user.Albums.First().Id))
+                    {
+                        i--;
+                        continue;
+                    }
+                    foreach (var album in user.Albums)
+                    {
+                        UserAlbum ua = new UserAlbum
+                        {
+                            UserId = shareUserId,
+                            AlbumId = album.Id
+                        };
+                        db.UserAlbums.Add(ua);
+                    }
+                }
+                db.SaveChanges();
             }
             db.SaveChanges();
         }

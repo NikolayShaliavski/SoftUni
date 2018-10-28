@@ -17,7 +17,11 @@ namespace SocialNetworkData.Models
 
         public int UserId { get; set; }
 
+        // The owner of the album - user which has created it - many-to-one
         public User Owner { get; set; }
+
+        // Users with which the album is shared - many-to-many
+        public List<UserAlbum> SharedAlbums { get; set; } = new List<UserAlbum>();
 
         public List<AlbumPicture> Pictures { get; set; } = new List<AlbumPicture>();
 
