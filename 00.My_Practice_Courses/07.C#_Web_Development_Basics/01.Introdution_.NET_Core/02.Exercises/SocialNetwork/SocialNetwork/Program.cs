@@ -32,10 +32,50 @@ namespace SocialNetwork
                 //ListAlbumsWithOwnerAndpicturesCount(db);
                 //ListPicturesInMoreThanTwoAlbums(db);
                 //ListAlbumsByUserId(db, 1);
-                ListAlbumsByGivenTag(db, "#my-cool-album-tag_1");
+                //ListAlbumsByGivenTag(db, "#my-cool-album-tag_1");
+                ListUsersWithAlbumsWithMoreThanThreeTags(db);
             }
         }
 
+        private static void ListUsersWithAlbumsWithMoreThanThreeTags(SocialNetworkDbContext db)
+        {
+            var users = db.Users
+                .Where(u => u.Albums
+                    .Any(a => a.Tags.Count > 3))
+                .Select(u => new
+                {
+                    u.Name,
+                    Albums = u.Albums
+                        .Where(a => a.Tags.Count > 3)
+                        .Select(a => new
+                        {
+                            a.Name,
+                            Tags = db.Tags
+                                .Where(t => a.Tags
+                                    .Any(at => at.TagId == t.Id))
+                                .Select(t => t.TagValue)
+                                .ToList()
+                        })
+                        .ToList()
+                })
+                .OrderByDescending(u => u.Albums.Count)
+                .ThenByDescending(u => u.Albums.Sum(a => a.Tags.Count))
+                .ThenBy(u => u.Name)
+                .ToList();
+
+            foreach (var u in users)
+            {
+                Console.WriteLine($"{u.Name}");
+                foreach (var a in u.Albums)
+                {
+                    Console.WriteLine($"   {a.Name}");
+                    foreach (var t in a.Tags)
+                    {
+                        Console.WriteLine($"      {t}");
+                    }
+                }
+            }
+        }
         private static void ListAlbumsByGivenTag(SocialNetworkDbContext db, string tag)
         {
             var albums = db.ALbums
@@ -57,7 +97,6 @@ namespace SocialNetwork
 
             Console.WriteLine($"Total count: {albums.Count}");
         }
-
         private static void ListAlbumsByUserId(SocialNetworkDbContext db, int userId)
         {
             var albums = db.ALbums
