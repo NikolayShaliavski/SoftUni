@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using WebServer.Server.Http.Contracts;
+using WebServer.Server.Validation;
 
 namespace WebServer.Server.Http
 {
@@ -14,10 +15,7 @@ namespace WebServer.Server.Http
         }
         public void Add(HttpHeader header)
         {
-            if (header == null)
-            {
-                throw new InvalidOperationException("Header is null.");
-            }
+            CoreValidator.ThrowIfNull(header, nameof(header));
             this.headers[header.Key] = header;
         }
         public bool ContainsKey(string key)

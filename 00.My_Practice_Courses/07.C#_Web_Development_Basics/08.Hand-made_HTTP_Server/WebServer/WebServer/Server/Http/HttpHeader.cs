@@ -1,4 +1,6 @@
-﻿namespace WebServer.Server.Http
+﻿using WebServer.Server.Validation;
+
+namespace WebServer.Server.Http
 {
     public class HttpHeader
     {
@@ -8,6 +10,7 @@
 
         public HttpHeader(string key, string value)
         {
+            CoreValidator.ThrowIfNullOrEmpty(key);
             this.Key = key;
             this.Value = value;
         }

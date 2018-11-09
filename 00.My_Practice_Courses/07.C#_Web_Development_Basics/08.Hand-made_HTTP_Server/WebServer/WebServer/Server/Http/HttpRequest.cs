@@ -38,7 +38,7 @@ namespace WebServer.Server.Http
         }
         private void ParseRequest(string requestString)
         {
-            string[] requestLines = requestString.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            string[] requestLines = requestString.Split(Environment.NewLine);
 
             string[] requestLine = requestLines[0].Trim().Split(new[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
@@ -66,7 +66,7 @@ namespace WebServer.Server.Http
             }
             string query = this.Url.Split('?')[1];
 
-            this.ParseQuery(query, QueryParameters);
+            this.ParseQuery(query, this.QueryParameters);
         }
         private void ParseQuery(string query, Dictionary<string, string> dict)
         {
@@ -104,7 +104,7 @@ namespace WebServer.Server.Http
             }
             if (this.HeaderCollection.ContainsKey("Host"))
             {
-                throw new BadRequestException("Invalid request: requeried header \"Host\" is missing.");
+                throw new BadRequestException("Invalid request: requiered header \"Host\" is missing.");
             }
         }
         private HttpRequestMethod ParseRequestmethod(string method)
