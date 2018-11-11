@@ -35,7 +35,7 @@ namespace WebServer.Server.Routing
         }
         public void AddRoute(string route, HttpRequestMethod method, IRequestHandler handler)
         {
-            if (this.routes.ContainsKey(method))
+            if (!this.routes.ContainsKey(method))
             {
                 throw new NotSupportedException($"Method \"{method.ToString()}\" is not supported.");
             }

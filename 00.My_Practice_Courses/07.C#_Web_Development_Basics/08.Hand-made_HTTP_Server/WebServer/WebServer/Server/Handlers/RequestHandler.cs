@@ -18,8 +18,8 @@ namespace WebServer.Server.Handlers
         }
         public IHttpResponse Handle(IHttpContext httpContext)
         {
-            IHttpResponse httpResponse = this.handlingFunc.Invoke(httpContext.Request);
-            if (httpResponse.Headers.ContainsKey(HttpHeader.HEADER_CONTENT_TYPE))
+            IHttpResponse httpResponse = this.handlingFunc(httpContext.Request);
+            if (!httpResponse.Headers.ContainsKey(HttpHeader.HEADER_CONTENT_TYPE))
             {
                 httpResponse.Headers.Add(HttpHeader.HEADER_CONTENT_TYPE, "texp/plain");
             }

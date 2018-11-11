@@ -4,6 +4,7 @@ using System.Net;
 using WebServer.Server.Enums;
 using WebServer.Server.Exceptions;
 using WebServer.Server.Http.Contracts;
+using WebServer.Server.Validation;
 
 namespace WebServer.Server.Http
 {
@@ -25,6 +26,8 @@ namespace WebServer.Server.Http
 
         public HttpRequest(string requestString)
         {
+            CoreValidator.ThrowIfNullOrEmpty(requestString, nameof(requestString));
+
             this.FormData = new Dictionary<string, string>();
             this.HeaderCollection = new HttpHeaderCollection();
             this.QueryParameters = new Dictionary<string, string>();

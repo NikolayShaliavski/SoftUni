@@ -78,13 +78,13 @@ namespace WebServer.Server.Routing
                     throw new InvalidOperationException($"Route parameter in '{currentToken}' is not valid.");
                 }
 
-                // Maybe need to get first group
+                // Maybe need to get the first group ???????????????????????
                 string match = parameterMatch.Value;
                 string parameter = match.Substring(1, match.Length - 2);
 
                 parameters.Add(parameter);
 
-                // Maybe same as parameter !!!!!!!!!!!!!!!!!!!!!!!
+                // Maybe same as 'parameter' ????????????????????
                 string currentTokenWithoutCurlyBrackets = currentToken.Substring(1, currentToken.Length - 2);
                 result.Append($"{currentTokenWithoutCurlyBrackets}{end}");
             }

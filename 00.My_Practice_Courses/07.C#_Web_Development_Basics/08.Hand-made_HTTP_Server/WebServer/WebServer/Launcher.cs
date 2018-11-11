@@ -1,12 +1,27 @@
-﻿using System;
+﻿using WebServer.Application;
+using WebServer.Server;
+using WebServer.Server.Contracts;
+using WebServer.Server.Routing;
+using WebServer.Server.Routing.Contracts;
 
 namespace WebServer
 {
-    class Launcher
+    public class Launcher : IRunnable
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            new Launcher().Run();
+        }
 
+        public void Run()
+        {
+            IAppRouteConfig appRouteConfig = new AppRouteConfig();
+
+            IApplication app = new MainApplication();
+            app.Configure(appRouteConfig);
+
+            MyCoolServer server = new MyCoolServer(1337, appRouteConfig);
+            server.Run();
         }
     }
 }

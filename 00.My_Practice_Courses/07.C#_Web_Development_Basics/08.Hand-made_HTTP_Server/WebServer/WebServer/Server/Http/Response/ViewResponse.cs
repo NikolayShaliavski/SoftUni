@@ -1,6 +1,6 @@
-﻿using WebServer.Server.Enums;
+﻿using WebServer.Server.Contracts;
+using WebServer.Server.Enums;
 using WebServer.Server.Exceptions;
-using WebServer.Server.Http.Contracts;
 
 namespace WebServer.Server.Http.Response
 {
