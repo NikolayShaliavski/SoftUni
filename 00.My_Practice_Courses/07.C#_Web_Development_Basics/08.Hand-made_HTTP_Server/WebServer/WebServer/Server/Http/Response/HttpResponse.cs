@@ -2,47 +2,36 @@
 using System.Text;
 using WebServer.Server.Enums;
 using WebServer.Server.Http.Contracts;
+using WebServer.Server.Validation;
 
 namespace WebServer.Server.Http.Response
 {
     public abstract class HttpResponse : IHttpResponse
     {
-        private readonly IView view;
-        private IHttpHeaderCollection headerCollection;
-        private HttpStatusCode statusCode;
-        private string statusMessage => this.statusCode.ToString();
+        public IHttpHeaderCollection Headers { get; }
 
-        protected HttpResponse(string redirectUrl)
-        {
-            this.headerCollection = new HttpHeaderCollection();
-            this.statusCode = HttpStatusCode.Found;
-            this.AddHeader("Location", redirectUrl);
-        }
-        protected HttpResponse(HttpStatusCode responseCode, IView view)
-        {
-            this.headerCollection = new HttpHeaderCollection();
-            this.statusCode = responseCode;
-            this.view = view;
-        }
-        public string Response
-        {
-            get
-            {
-                StringBuilder response = new StringBuilder();
-                response.AppendLine($"HTTP/1.1 {this.statusCode} {this.statusMessage}");
-                response.AppendLine(this.headerCollection.ToString());
-                response.AppendLine();
+        public HttpStatusCode StatusCode { get; protected set; }
 
-                if ((int)this.statusCode < 300 || (int)this.statusCode > 400)
-                {
-                    response.AppendLine(this.view.View());
-                }
-                return response.ToString();
-            }
+        public string StatusMessage => this.StatusCode.ToString();
+
+        protected HttpResponse()
+        {
+            this.Headers = new HttpHeaderCollection();
         }
+
         public void AddHeader(string key, string value)
         {
-            this.headerCollection.Add(new HttpHeader(key, value));
+            CoreValidator.ThrowIfNullOrEmpty(key, nameof(key));
+
+            this.Headers.Add(new HttpHeader(key, value));
+        }
+        public override string ToString()
+        {
+            StringBuilder response = new StringBuilder();
+            response.AppendLine($"HTTP/1.1 {(int)this.StatusCode} {this.StatusMessage}");
+            response.AppendLine(this.Headers.ToString());
+
+            return response.ToString();
         }
     }
 }

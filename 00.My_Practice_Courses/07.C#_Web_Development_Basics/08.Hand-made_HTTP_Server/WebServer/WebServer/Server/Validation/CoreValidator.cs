@@ -8,14 +8,14 @@ namespace WebServer.Server.Validation
         {
             if (value == null)
             {
-                throw new NullReferenceException($"Value of {name} cannot be null.");
+                throw new ArgumentNullException(name);
             }
         }
-        public static void ThrowIfNullOrEmpty(string value)
+        public static void ThrowIfNullOrEmpty(string text, string name)
         {
-            if (string.IsNullOrWhiteSpace(value))
+            if (string.IsNullOrWhiteSpace(text))
             {
-                throw new InvalidOperationException($"Value cannot be null or empty.");
+                throw new ArgumentException($"{name} cannot be null or empty.", name);
             }
         }
     }

@@ -1,8 +1,13 @@
-﻿namespace WebServer.Server.Http.Contracts
+﻿using WebServer.Server.Enums;
+
+namespace WebServer.Server.Http.Contracts
 {
     public interface IHttpResponse
     {
-        string Response { get; }
-        void AddHeader(string key, string value);
+        HttpStatusCode StatusCode { get; }
+
+        string StatusMessage { get; }
+
+        IHttpHeaderCollection Headers { get; }
     }
 }
