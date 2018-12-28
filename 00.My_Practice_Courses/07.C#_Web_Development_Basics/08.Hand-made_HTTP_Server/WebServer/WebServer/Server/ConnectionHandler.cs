@@ -31,21 +31,24 @@ namespace WebServer.Server
         {
             string request = await this.ReadRequest();
 
-            IHttpContext context = new HttpContext(request);
+            if (!string.IsNullOrEmpty(request))
+            {
+                IHttpContext context = new HttpContext(request);
 
-            IRequestHandler handler = new HttpHandler(this.serverRouteConfig);
+                IRequestHandler handler = new HttpHandler(this.serverRouteConfig);
 
-            IHttpResponse response = handler.Handle(context);
+                IHttpResponse response = handler.Handle(context);
 
-            ArraySegment<byte> toBytes = new ArraySegment<byte>(Encoding.UTF8.GetBytes(response.ToString()));
+                ArraySegment<byte> toBytes = new ArraySegment<byte>(Encoding.UTF8.GetBytes(response.ToString()));
 
-            await this.client.SendAsync(toBytes, SocketFlags.None);
+                await this.client.SendAsync(toBytes, SocketFlags.None);
 
-            Console.WriteLine("===================Request===================");
-            Console.WriteLine(request);
-            Console.WriteLine("===================Response===================");
-            Console.WriteLine(response.ToString());
-            Console.WriteLine();
+                Console.WriteLine("===================Request===================");
+                Console.WriteLine(request);
+                Console.WriteLine("===================Response===================");
+                Console.WriteLine(response.ToString());
+                Console.WriteLine();
+            }
 
             this.client.Shutdown(SocketShutdown.Both);
         }

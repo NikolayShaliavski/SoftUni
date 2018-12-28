@@ -6,7 +6,7 @@ namespace WebServer.Application.Views
     {
         public string View()
         {
-            return "<body><h1>Welcome</h1></body>";
+            return "<body><h1>Welcome from 'My cool web server'</h1></body>";
         }
     }
 }

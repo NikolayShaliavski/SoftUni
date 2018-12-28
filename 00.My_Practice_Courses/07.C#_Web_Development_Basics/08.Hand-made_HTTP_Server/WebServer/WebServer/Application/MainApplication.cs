@@ -8,7 +8,22 @@ namespace WebServer.Application
     {
         public void Configure(IAppRouteConfig appRouteConfig)
         {
-            appRouteConfig.AddGet("/", request => new HomeController().Index());
+            appRouteConfig.AddGet(
+                "/",
+                req => new HomeController().Index());
+
+            appRouteConfig.AddGet(
+                "/register",
+                req => new UserController().RegisterGet());
+
+            appRouteConfig.AddPost(
+                "/register",
+                req => new UserController().RegisterPost(req.FormData["name"]));
+
+            // To match all characters use '.*' instead
+            appRouteConfig.AddGet(
+                "/user/{(?<name>[a-zA-Z0-9_]+)}",
+                req => new UserController().Details(req.UrlParameters["name"]));
         }
     }
 }
