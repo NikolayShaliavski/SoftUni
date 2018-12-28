@@ -7,7 +7,9 @@ namespace WebServer.Server.Http.Contracts
     {
         Dictionary<string, string> FormData { get; }
 
-        IHttpHeaderCollection HeaderCollection { get; }
+        IHttpHeaderCollection Headers { get; }
+
+        IHttpCookieCollection Cookies { get; }
 
         string Path { get; }
 

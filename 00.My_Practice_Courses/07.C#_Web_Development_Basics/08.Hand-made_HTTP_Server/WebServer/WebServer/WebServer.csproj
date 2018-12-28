@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Server\Http\HttpRequest.cs~RF2030e918.TMP" />
+  </ItemGroup>
+
 </Project>

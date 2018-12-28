@@ -12,7 +12,9 @@ namespace WebServer.Server.Http
     {
         public Dictionary<string, string> FormData { get; private set; }
 
-        public IHttpHeaderCollection HeaderCollection { get; private set; }
+        public IHttpHeaderCollection Headers { get; private set; }
+
+        public IHttpCookieCollection Cookies { get; private set; }
 
         public string Path { get; private set; }
 
@@ -29,7 +31,8 @@ namespace WebServer.Server.Http
             CoreValidator.ThrowIfNullOrEmpty(requestString, nameof(requestString));
 
             this.FormData = new Dictionary<string, string>();
-            this.HeaderCollection = new HttpHeaderCollection();
+            this.Headers = new HttpHeaderCollection();
+            this.Cookies = new HttpCookieCollection();
             this.QueryParameters = new Dictionary<string, string>();
             this.UrlParameters = new Dictionary<string, string>();
 
@@ -37,6 +40,9 @@ namespace WebServer.Server.Http
         }
         public void AddUrlParameter(string key, string value)
         {
+            CoreValidator.ThrowIfNullOrEmpty(key, nameof(key));
+            CoreValidator.ThrowIfNullOrEmpty(value, nameof(value));
+
             this.UrlParameters[key] = value;
         }
         private void ParseRequest(string requestString)
@@ -54,6 +60,7 @@ namespace WebServer.Server.Http
             this.Url = requestLine[1];
             this.Path = this.Url.Split(new[] { "?", "#" }, StringSplitOptions.RemoveEmptyEntries)[0];
             this.ParseHeaders(requestLines);
+            this.ParseCookies();
             this.ParseQueryParameters();
 
             if (this.RequestMethod == HttpRequestMethod.POST)
@@ -71,6 +78,9 @@ namespace WebServer.Server.Http
 
             this.ParseQuery(query, this.QueryParameters);
         }
+        // Parse request parameters
+        // GET - extract them from url
+        // POST - from request body
         private void ParseQuery(string query, Dictionary<string, string> dict)
         {
             if (!query.Contains("="))
@@ -91,6 +101,7 @@ namespace WebServer.Server.Http
                 dict[key] = value;
             }
         }
+        // Parse all resuest headers
         private void ParseHeaders(string[] requestLines)
         {
             int endIndex = Array.IndexOf(requestLines, string.Empty);
@@ -103,13 +114,42 @@ namespace WebServer.Server.Http
                     continue;
                 }
                 HttpHeader header = new HttpHeader(headerArgs[0].Trim(), headerArgs[1].Trim());
-                this.HeaderCollection.Add(header);
+                this.Headers.Add(header);
             }
-            if (this.HeaderCollection.ContainsKey("Host"))
+            if (this.Headers.ContainsKey("Host"))
             {
                 throw new BadRequestException("Invalid request: requiered header \"Host\" is missing.");
             }
         }
+        // Extract all values under 'Cookie' key in the headers collection
+        private void ParseCookies()
+        {
+            if (this.Headers.ContainsKey(HttpHeader.HEADER_COOKIE))
+            {
+                ICollection<HttpHeader> allCookies = this.Headers.GetHeader(HttpHeader.HEADER_COOKIE);
+                foreach (var cookieHeader in allCookies)
+                {
+                    string cookieValue = cookieHeader.Value;
+                    if (string.IsNullOrWhiteSpace(cookieValue))
+                    {
+                        continue;
+                    }
+                    string[] cookiesParts = cookieValue.Split(new string[] { ";" }, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var part in cookiesParts)
+                    {
+                        string[] cookieValuePair = part.Split(new string[] { "=" }, StringSplitOptions.RemoveEmptyEntries);
+                        // Invalid cookie
+                        if (cookieValuePair.Length != 2)
+                        {
+                            continue;
+                        }
+                        HttpCookie cookie = new HttpCookie(cookieValuePair[0], cookieValuePair[1], false);
+                        this.Cookies.Add(cookie);
+                    }
+                }
+            }
+        }
+        // Parse HTTP request method
         private HttpRequestMethod ParseRequestmethod(string method)
         {
             HttpRequestMethod requestMethod;

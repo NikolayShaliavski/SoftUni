@@ -19,12 +19,27 @@ namespace WebServer.Server.Handlers
         public IHttpResponse Handle(IHttpContext httpContext)
         {
             IHttpResponse httpResponse = this.handlingFunc(httpContext.Request);
+            this.SetCookies(httpContext, httpResponse);
             if (!httpResponse.Headers.ContainsKey(HttpHeader.HEADER_CONTENT_TYPE))
             {
                 httpResponse.Headers.Add(HttpHeader.HEADER_CONTENT_TYPE, "texp/plain");
             }
 
             return httpResponse;
+        }
+        private void SetCookies(IHttpContext httpContext, IHttpResponse httpResponse)
+        {
+            foreach (var cookie in httpContext.Request.Cookies)
+            {
+                if (cookie == null)
+                {
+                    continue;
+                }
+                if (cookie.IsNew)
+                {
+                    httpResponse.Headers.Add(HttpHeader.HEADER_SET_COOKIE, cookie.ToString());
+                }
+            }
         }
     }
 }
