@@ -52,6 +52,7 @@ namespace WebServer.Server.Http
                 {
                     builder.Append($"{header.Key}: {headerValue.Value}");
                 }
+                builder.AppendLine();
             }
             return builder.ToString();
         }

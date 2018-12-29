@@ -16,6 +16,8 @@ namespace WebServer.Server.Http
 
         public IHttpCookieCollection Cookies { get; private set; }
 
+        public IHttpSession Session { get; set; }
+
         public string Path { get; private set; }
 
         public Dictionary<string, string> QueryParameters { get; private set; }
@@ -67,6 +69,8 @@ namespace WebServer.Server.Http
             {
                 this.ParseQuery(requestLines[requestLines.Length - 1], this.FormData);
             }
+
+            this.SetSession();
         }
         private void ParseQueryParameters()
         {
@@ -159,6 +163,16 @@ namespace WebServer.Server.Http
                 throw new BadRequestException("Invalid HTTP request method.");
             }
             return requestMethod;
+        }
+        private void SetSession()
+        {
+            if (this.Cookies.ContainsKey(SessionStore.SESSION_COOKIE_KEY))
+            {
+                HttpCookie cookie = this.Cookies.Get(SessionStore.SESSION_COOKIE_KEY);
+                string sessionId = cookie.Value;
+
+                this.Session = SessionStore.Get(sessionId);
+            }
         }
     }
 }

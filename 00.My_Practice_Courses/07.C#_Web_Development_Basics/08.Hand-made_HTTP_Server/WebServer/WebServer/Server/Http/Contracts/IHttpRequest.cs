@@ -11,6 +11,8 @@ namespace WebServer.Server.Http.Contracts
 
         IHttpCookieCollection Cookies { get; }
 
+        IHttpSession Session { get; set; }
+
         string Path { get; }
 
         Dictionary<string, string> QueryParameters { get; }

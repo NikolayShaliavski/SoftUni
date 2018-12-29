@@ -18,7 +18,17 @@ namespace WebServer.Server.Handlers
         }
         public IHttpResponse Handle(IHttpContext httpContext)
         {
+            string sessionId = this.TrySetSession(httpContext);
+
             IHttpResponse httpResponse = this.handlingFunc(httpContext.Request);
+
+            if (sessionId != null)
+            {
+                httpResponse.Headers.Add(
+                    HttpHeader.HEADER_SET_COOKIE,
+                    $"{SessionStore.SESSION_COOKIE_KEY}={sessionId}; HttpOnly; path=/");
+            }
+
             this.SetCookies(httpContext, httpResponse);
             if (!httpResponse.Headers.ContainsKey(HttpHeader.HEADER_CONTENT_TYPE))
             {
@@ -26,6 +36,18 @@ namespace WebServer.Server.Handlers
             }
 
             return httpResponse;
+        }
+        private string TrySetSession(IHttpContext context)
+        {
+            string sessionId = null;
+
+            if (!context.Request.Cookies.ContainsKey(SessionStore.SESSION_COOKIE_KEY))
+            {
+                sessionId = Guid.NewGuid().ToString();
+
+                context.Request.Session = SessionStore.Get(sessionId);
+            }
+            return sessionId;
         }
         private void SetCookies(IHttpContext httpContext, IHttpResponse httpResponse)
         {
