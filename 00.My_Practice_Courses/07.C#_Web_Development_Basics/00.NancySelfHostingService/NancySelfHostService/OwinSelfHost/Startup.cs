@@ -6,7 +6,7 @@ namespace OwinSelfHost
     {
         public void Configuration(IAppBuilder app)
         {
-            app.MaxConcurrentRequests(1000);
+            app.MaxConcurrentRequests(-1);
             app.UseNancy();
         }
     }
